@@ -22,3 +22,4 @@ dt = bs(f.content, 'lxml')
 test = dt.find('table')
 
 # Print test
+dt[0]

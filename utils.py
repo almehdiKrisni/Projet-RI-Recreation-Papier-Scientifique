@@ -7,15 +7,19 @@ from bs4 import BeautifulSoup as bs
 import string
 import pandas as pd
 import pprint
+import re
+import time
 
 ################################## Scraping functions ###################################
 
 # Function to scrape website data from "allrecipes.com"with a number of pages to visit and the researched values
 # Returns a dictionnary or a pandas database (request with parameter) of the scraping
 # The counter starts from the adress
-def recipeCollector(startCounter, counter, research, toPd=False) :
+def recipeCollector(startCounter, counter, research, toCSV=False, filepath="data/default_file.csv") :
+    # 
+    
     # We create the dictionnary and root adress
-    nutr = dict()
+    nutr = []
     root = "https://www.allrecipes.com/recipe/"
 
     # Note - It is possible some addresses won't return any recipe
@@ -45,12 +49,13 @@ def recipeCollector(startCounter, counter, research, toPd=False) :
             
             # We create a sub-dictionnary that will contain the data and we save the recipe's ID
             recipeInfo = dict()
+            recipeInfo["name"] = recipeName.text
             recipeInfo["id"] = c
 
             # We collect the calories per serving
             tmp1 = recipe.find("div", {"class" : "recipeNutritionSectionBlock"})
             tmp2 = tmp1.find("div", {"class" : "section-body"}).text.split(";")[0].split()[0]
-            recipeInfo["calories"] = tmp2
+            recipeInfo["calories"] = int(tmp2)
 
             # We collect the requested data
             recipe_nutr_info = recipe.find_all('div', {"class" : "nutrition-row"})
@@ -63,14 +68,20 @@ def recipeCollector(startCounter, counter, research, toPd=False) :
 
                     # Looking for the values asked for in the 'research' array
                     if d in research :
-                        recipeInfo[d] = v
+                        if "mg" in v :
+                            recipeInfo[d] = float(re.sub("[^0-9.]", "", v)) / 1000
+                        else :
+                            recipeInfo[d] = float(re.sub("[^0-9.]", "", v))
 
             # We save the data
-            nutr[recipeName.text] = recipeInfo
+            nutr.append(recipeInfo)
+
+    # We create a CSV file if asked
+    if (toCSV) :
+        df = pd.DataFrame(nutr)
+        df.fillna(0, inplace=True)
+        df.to_csv(filepath)
 
     # We return the collected data
     print("Number of recipes collected :", len(nutr))
     return nutr
-
-
-

@@ -1,0 +1,101 @@
+,name,id,calories,sugars,fat,saturated fat,sodium
+0,Tina's Shortbread Chocolate Chip Cookies,15300,317,14.2,21.9,11.9,0.0725
+1,Vel's Christmas Shortbread,15301,106,3.6,6.2,3.9,0.0448
+2,Southwest Chicken,15302,310,1.9,6.4,1.0,0.8634
+3,Coconut Cake IV,15303,408,36.8,19.5,12.1,0.4933
+4,Black Walnut Cookies II,15304,147,12.1,8.8,0.6,0.0506
+5,Blueberry Almond Cookies,15305,214,14.1,11.2,2.5,0.18209999999999998
+6,Special Occasion Stuffed Crown Pork Roast,15306,713,22.1,36.9,16.6,1.0460999999999998
+7,Stuffed Crown Roast of Pork,15307,971,1.6,59.4,21.3,0.819
+8,Butterscotch Oatmeal Cookies II,15308,128,8.7,6.6,4.4,0.049100000000000005
+9,Butterscotch Pecan Cookies,15309,318,24.0,18.5,4.7,0.2748
+10,Cherry Cordial Cookies,15310,394,33.3,18.2,9.1,0.0741
+11,Chewy Crispy Coconut Cookies,15311,101,8.3,4.4,2.9,0.13040000000000002
+12,Chewy Gooey Cookies,15312,271,21.9,14.6,4.4,0.21030000000000001
+13,Chocolate Espresso Cookies,15313,275,21.6,18.3,8.7,0.0605
+14,Chocolate Rocky Road Cookies,15314,171,13.1,9.6,4.1,0.0696
+15,Chocolate Swirl and Chip Cookies,15315,183,17.0,8.6,5.0,0.1123
+16,Cracker Jack Cookies I,15316,186,13.1,9.6,4.6,0.16519999999999999
+17,Dishpan Cookies II,15317,174,16.3,8.1,2.8,0.15619999999999998
+18,Fabulous Chocolate Chip Cookies,15318,265,25.2,10.4,6.1,0.1641
+19,Farm Macaroons,15319,42,6.6,1.1,1.0,0.0277
+20,Filled Date Cookies,15320,232,25.8,7.9,4.1,0.1759
+21,Herb and Chicken Pasta,15321,597,3.4,18.5,2.4,0.5591
+22,Fruit Cocktail Drop Cookies,15322,196,11.3,9.5,1.9,0.0577
+23,German Rocks,15323,179,13.8,9.4,2.4,0.0595
+24,Ginger-Touched Oatmeal Peanut Butter Cookies,15324,509,35.2,28.5,9.6,0.5788
+25,French Silk Frosting,15325,220,26.3,12.8,8.0,0.0751
+26,Grandma Strojny's Mud Cookies,15326,211,19.7,5.8,0.8,0.37739999999999996
+27,Capirotada (Mexican Bread Pudding),15327,465,54.6,13.3,4.6,0.3978
+28,Bread Pudding III,15328,450,40.3,16.5,8.3,0.6536000000000001
+29,Helen's Raisin Drop Cookies,15329,239,19.8,9.6,2.4,0.0658
+30,Jack's Chocolate Chip Cookies,15330,241,19.4,13.2,6.2,0.12190000000000001
+31,Jacksonville Crisps,15331,173,11.7,8.9,2.0,0.0557
+32,Jailhouse Rocks,15332,458,50.0,18.6,11.3,0.1759
+33,Kori's Whole Wheat Cookies,15333,237,16.9,11.4,6.8,0.167
+34,Kristen's Awesome Oatmeal Cookies,15334,135,10.6,5.9,1.4,0.1035
+35,Light Chocolate Chip Cookies,15335,106,10.7,4.0,2.5,0.0888
+36,Individual Beef Wellingtons,15336,946,2.5,66.0,23.3,0.4614
+37,Bimini Bread,15337,106,0.7,1.8,0.8,0.1261
+38,Old Fashioned Chicken and Dumplings,15338,400,1.0,25.6,7.7,0.6995
+39,Toffee Chunk Cheesecake,15339,924,67.3,56.5,31.3,0.5367000000000001
+40,Mexican Layered Dip,15340,195,1.4,12.8,6.6,0.5254
+41,French Onion Soup IV,15341,393,2.4,19.3,8.3,8.6228
+42,Guadalajara Soup,15342,651,1.3,48.6,14.5,0.532
+43,Menudo,15343,296,5.7,6.9,2.0,0.632
+44,Chicken Vegetable Soup,15344,98,5.2,2.8,0.5,0.3192
+45,Christmas Bread Pudding,15345,510,49.4,22.8,7.1,0.3444
+46,Jean's Homemade Chicken Noodle Soup,15346,124,4.1,5.6,0.9,1.0117
+47,Caramel Shortbread Squares,15347,119,9.3,7.3,4.6,0.0445
+48,"Bean, Bacon and Pepper Soup",15348,385,7.4,13.4,4.4,0.31560000000000005
+49,Double Flavor Fudge,15349,149,20.4,6.3,4.5,0.033100000000000004
+50,Popcorn Candy Balls,15350,562,65.1,23.8,14.5,0.2223
+51,Veggie Chicken Rice Casserole,15351,591,0.9,29.2,8.0,0.8646
+52,Sesame Chicken,15352,279,1.7,14.1,2.1,0.3117
+53,Coconut Walnut Biscotti,15353,237,12.1,10.7,4.4,0.1423
+54,Delectable Carrot Fritters,15354,140,2.7,6.1,2.5,0.45480000000000004
+55,Slow Cooker Corn Chowder,15355,266,7.9,8.8,3.3,0.8234
+56,"Bratwurst, Potato and Cabbage Soup",15356,368,10.8,21.7,9.4,0.7212000000000001
+57,Caramel Corn and Pretzel Mix,15357,354,18.5,19.3,5.1,0.2335
+58,Michelle's Roast Chicken,15358,326,2.2,19.7,5.3,0.49269999999999997
+59,Spicy Tortilla Roll-Ups,15359,109,0.3,2.8,1.7,0.1981
+60,Soy Sauce Chicken and Rice,15360,434,4.2,17.8,3.8,1.8174000000000001
+61,Smoked Salmon Spread,15361,219,0.1,19.0,11.3,0.45280000000000004
+62,Avocado Pie,15362,288,21.7,16.3,3.6,0.1965
+63,Creamy Mexican Dip,15363,270,0.9,24.2,13.4,0.2896
+64,Shepherd's Pie III,15364,314,6.2,11.4,3.9,0.1955
+65,Boiling Water Crust II,15365,285,0.1,19.6,4.9,0.2921
+66,Date and Nut Bread,15366,112,7.0,4.2,0.5,0.09809999999999999
+67,Martha's Vegetable Beef Soup,15367,184,4.7,10.5,4.2,0.5829
+68,Deviled Eggs I,15368,107,0.5,8.7,2.1,0.09620000000000001
+69,Carrot Spice and Walnut Pie,15369,331,33.2,16.7,6.3,0.4038
+70,Cauliflower Cheese Pie,15370,428,6.9,26.9,11.5,0.9531000000000001
+71,Lemon Meringue Pie II,15371,330,47.6,8.3,3.2,0.1369
+72,Cheese Dipping Sauce,15372,210,3.0,16.4,10.4,0.8228
+73,Best Ever Blueberry Cobbler,15373,336,31.4,16.6,10.0,0.1421
+74,Chocolate Meringue Pie,15374,260,33.5,8.7,3.5,0.1425
+75,Fried Chicken with Creamy Gravy,15375,507,2.3,29.0,7.0,0.5882999999999999
+76,Italian Teething Cookies,15376,172,19.7,1.5,0.4,0.0587
+77,Christmas Strawberries,15377,341,46.8,8.7,5.2,0.19140000000000001
+78,Cheater's Enchiladas,15378,472,0.8,31.5,18.3,0.3543
+79,Tanya's Snickerdoodles,15379,212,18.1,8.0,4.8,0.13119999999999998
+80,Crabmeat Toasts,15380,293,0.1,16.5,8.1,0.6217999999999999
+81,Black Walnut Cookies,15381,84,3.0,5.4,2.5,0.0396
+82,Chocolate Sugar Cookies,15382,202,12.4,10.6,3.2,0.11
+83,Yeast Raised Christmas Waffles,15383,638,9.5,30.7,17.8,0.42469999999999997
+84,"Hearty Potato, Bacon and Onion Soup",15384,578,5.5,36.5,16.0,0.359
+85,Orange Bread,15385,34,4.8,1.1,0.2,0.1684
+86,Chili III,15386,388,5.3,18.2,7.1,1.1593
+87,Lactose Free Corn Chowder,15387,185,6.3,3.6,0.7,0.052399999999999995
+88,Potato Soup VIII,15388,187,11.1,0.4,0.2,0.3311
+89,Red Potato Soup,15389,200,7.7,8.6,2.6,0.6372000000000001
+90,Easy Vegetable Soup I,15390,164,5.1,0.6,0.1,0.9658
+91,One Bowl Chocolate Cake I,15391,157,17.3,5.7,1.1,0.21680000000000002
+92,Wellesley Fudge Cake I,15392,165,15.0,7.1,4.2,0.1894
+93,Carrot Rice Loaf,15393,243,8.1,8.0,2.3,0.15680000000000002
+94,Pasta Chicken and Sun-Dried Tomatoes,15394,242,3.2,8.3,1.3,0.11359999999999999
+95,Incredible Chicken,15395,515,6.7,34.2,9.8,0.38730000000000003
+96,C and L's Stuffed Black Olives,15396,778,2.1,71.2,11.9,1.0694000000000001
+97,Herb Bread,15397,164,3.0,3.2,0.8,0.3251
+98,Italian Ties,15398,100,3.7,2.9,1.1,0.028300000000000002
+99,Cinnamon Coffee Cake II,15399,282,24.3,15.7,2.1,0.2749

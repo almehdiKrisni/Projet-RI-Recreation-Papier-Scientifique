@@ -1,0 +1,89 @@
+,name,id,calories,sugars,fat,saturated fat,sodium
+0,Pasta Pascal,22200,497,5.4,20.1,2.4,0.2351
+1,Lemon Ice I,22202,347,74.2,3.3,2.1,0.0678
+2,Cereal Treats II,22203,124,11.3,3.0,1.9,0.1105
+3,Oven Barbecued Beef Brisket II,22204,978,9.9,75.4,30.3,0.8036
+4,Parmesan Dijon Chicken,22206,396,0.9,12.2,6.4,0.4803
+5,Old Fashioned Molasses Cookies,22207,129,9.1,4.5,1.2,0.13419999999999999
+6,Strawberry Fudge,22208,261,54.4,4.4,2.7,0.047299999999999995
+7,Pesto Chicken Sandwich,22210,375,1.4,18.2,4.9,0.5618
+8,Orange Pineapple Slushie,22211,254,55.3,0.7,0.1,0.0077
+9,Oaty Cereal Bars,22212,178,16.3,8.9,1.5,0.149
+10,Tiger Butter,22213,267,24.9,16.8,8.5,0.0782
+11,Sweetened Popcorn,22214,102,16.8,3.1,1.4,0.0436
+12,Chrusciki II,22215,67,1.2,3.8,1.1,0.0063
+13,Sauteed Chicken with Asian Rice,22217,536,2.3,9.0,1.4,0.3492
+14,Grampa's Brandy Alexander,22218,302,33.3,7.5,4.6,0.065
+15,Peking Pork Chops,22219,161,8.5,6.3,2.3,1.3366
+16,Creamy Caramel Flan,22220,350,40.4,16.6,9.6,0.19119999999999998
+17,Spicy Peanut Chicken,22221,297,4.7,17.8,3.7,0.5207999999999999
+18,Spinach and Chicken Skillet,22222,295,3.5,3.1,0.8,0.3377
+19,PJ,22223,218,18.7,0.0,0.0,0.0144
+20,Easy and Elegant Pork Tenderloin,22224,437,1.3,23.5,3.7,0.6247
+21,Austrian Chocolate Balls,22225,82,7.7,4.0,1.9,0.0152
+22,Stuffed Chicken Breasts with Gouda and Spinach,22226,226,0.8,8.2,3.5,0.5814
+23,Salty Dog I,22227,154,0.0,0.1,0.0,0.4884
+24,Slow Cooker Roast Beef,22228,555,0.5,40.8,16.4,1.3685999999999998
+25,Gator Smoothies,22229,96,17.8,2.3,1.4,0.0535
+26,Slow-Cooker Barbecue Ribs,22230,497,26.3,29.6,10.9,1.2445
+27,Chocolate Mint Sugar Cookie Drops,22231,149,12.3,7.5,2.5,0.0675
+28,Pistachio Cream Dessert,22232,219,14.3,13.5,7.6,0.1895
+29,Coffee Nudge,22233,308,19.6,4.2,2.1,0.0289
+30,Caponatax,22235,14,0.9,0.5,0.1,0.0253
+31,Super Easy Chicken Manicotti,22236,417,11.4,11.1,4.7,1.0614000000000001
+32,Strawberry Margarita Cake,22237,247,23.3,13.4,6.5,0.2109
+33,Scalloped Potatoes and Pork Chops,22238,567,6.0,33.0,19.3,0.44830000000000003
+34,Vegetable Chicken Stir-Fry,22239,308,4.5,11.7,1.5,0.7606
+35,Chicken Almond Baguette,22240,377,2.3,24.2,3.6,0.4567
+36,Bundt Dutch Apple Cake,22241,408,37.4,17.3,2.9,0.09809999999999999
+37,Chinese Firecrackers,22242,121,0.7,4.6,1.0,0.1706
+38,Chocolate Oat Squares,22243,199,17.4,9.4,4.7,0.1467
+39,Frying Pan Okra,22244,44,4.0,1.7,1.0,0.0154
+40,Greek Spaghetti II,22245,661,3.2,24.8,14.7,0.726
+41,Cajun Pasta Fresca,22246,294,4.7,7.5,2.3,1.1783
+42,Carrot Rice Nut Burger,22248,270,2.6,16.2,1.9,0.0531
+43,Super Fudge Brownies,22250,265,8.7,16.8,3.9,0.083
+44,Mouthwatering Barbecued Chicken,22251,470,11.4,25.4,9.8,1.4091
+45,Spaghetti Pizza Lasagna,22252,511,8.9,26.6,11.9,0.8335
+46,Banana Tortilla Snacks,22254,520,47.1,19.3,4.2,0.357
+47,Oyster Shooters,22255,216,1.8,0.2,0.0,0.1303
+48,Tequila Shrimp,22256,205,0.1,7.9,3.2,0.1736
+49,Quick Chicken Soup,22257,182,4.4,2.8,1.1,0.222
+50,Roast Loin of Pork,22258,213,2.2,9.9,2.2,0.338
+51,Mocha Cake V,22259,568,46.1,28.8,10.9,0.5408999999999999
+52,Raspberry Peach Chicken,22260,323,10.8,3.0,0.8,0.2979
+53,Pot Roast for Many,22261,577,12.1,26.7,9.4,1.1921
+54,Greek Honey Cake,22262,423,53.0,19.3,8.4,0.1963
+55,Brussels Sprouts with Grapes,22263,310,11.5,20.9,7.5,0.5916
+56,Banana Layer Cake,22264,576,66.2,24.6,11.6,0.25839999999999996
+57,Apple Sheet Cake,22265,260,26.0,10.7,5.1,0.16390000000000002
+58,Grandma's Carrot Cake,22266,643,59.1,35.5,10.4,0.3237
+59,Cheesy Fried Squash,22267,537,11.2,37.7,6.3,0.33030000000000004
+60,Alfredo Blue,22268,487,2.1,29.9,17.3,0.2617
+61,Rich Mocha Cake,22269,681,72.5,29.3,7.6,0.24919999999999998
+62,Spaghetti Sauce III,22270,169,7.0,8.2,3.1,0.4913
+63,Spinach Chickpea Curry,22271,346,5.8,12.3,1.8,0.8486
+64,Sparkling Grilled Ham,22272,524,25.8,34.0,10.3,1.7552999999999999
+65,Hearty Ham Casserole,22273,452,6.9,27.4,14.1,1.2712
+66,Artichoke Pie,22274,365,0.9,22.7,7.5,0.7737999999999999
+67,Crazy Mixed Up Cake,22275,351,35.4,14.7,5.1,0.41919999999999996
+68,Caramel Apple Pie III,22277,366,15.9,15.3,2.8,0.2551
+69,Easy Fruit Cobbler Cake,22278,431,55.7,7.5,1.1,0.4385
+70,Summer Garden Pork Chops,22280,374,9.1,24.9,4.9,1.7977
+71,Black Bottom Cupcakes II,22281,171,15.1,8.9,4.0,0.145
+72,Raspberry Sour Cream Pie,22282,307,18.2,16.8,6.5,0.1674
+73,Marinara Sauce,22283,159,1.2,10.5,1.5,0.7308
+74,Shoofly Pie V,22285,480,29.1,25.0,12.8,0.4099
+75,Shredded Beef Enchiladas,22286,577,2.2,38.0,18.6,0.6668
+76,Southwestern Chicken Stir-Fry,22287,213,2.5,8.7,1.5,0.2565
+77,Cheesy Confetti Rice,22288,274,0.8,14.4,8.6,0.3005
+78,Tasty Green Beans,22289,305,5.5,23.1,4.1,2.7434000000000003
+79,Peppermint Punch,22290,137,15.2,7.1,3.9,0.0365
+80,Turkey Delight,22291,123,1.1,1.7,0.4,0.176
+81,Turkey Pot Pie III,22292,397,1.1,22.9,5.9,0.7852
+82,Orzo with Mushrooms and Walnuts,22293,290,5.1,9.5,1.2,0.4855
+83,Sunset Cooler,22294,257,61.6,0.2,0.0,0.0033
+84,Yellow Squash and Zucchini Delight,22296,63,5.8,0.3,0.0,0.174
+85,Melt In Your Mouth Pork Chops,22297,196,10.7,6.3,2.3,4.5887
+86,Pat's Baked Beans,22298,399,27.0,9.1,2.7,0.9499
+87,Pork Sausage and Cabbage Pitas,22299,648,2.8,49.5,18.2,1.4798

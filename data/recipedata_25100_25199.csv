@@ -1,0 +1,101 @@
+,name,id,calories,sugars,fat,saturated fat,sodium
+0,Jam Filled Butter Cookies,25100,82,4.9,4.1,2.5,0.0292
+1,Macaroons Con Peanut Butter,25101,180,10.3,10.0,2.0,0.1151
+2,Mocha Nut Butter Balls,25102,101,4.8,7.2,2.8,0.0517
+3,Lauren's Sugar and Spice Black Pepper Cookies,25103,93,5.7,6.0,1.6,0.0487
+4,Lime Sandwich Sugar Cookies,25104,150,14.5,5.5,3.3,0.0965
+5,Ma Ma's Sugar Cookies,25105,230,16.8,10.0,2.5,0.2763
+6,Old Fashioned Sugar Cookies II,25106,54,3.8,2.6,1.6,0.0371
+7,Peanut Butter and Chocolate Peanut Butter Cup Cookies,25107,214,17.7,10.3,6.6,0.1575
+8,Peanut Butter and Chocolate Balls,25108,159,12.5,9.8,3.8,0.0943
+9,Quick and Easy Cherry Bars,25109,213,14.7,8.6,5.1,0.0998
+10,The Perfect Chocolate Chip Cookie,25110,219,17.0,11.7,2.8,0.1103
+11,Peanut Butter Brownies II,25111,668,47.0,43.7,23.4,0.4061
+12,Zucchini Brownies,25112,209,22.8,8.6,1.5,0.1999
+13,Sugar Free Brownies,25113,74,0.8,5.7,1.0,0.0696
+14,Shannon's Wicked Brownies,25114,320,28.9,17.3,10.0,0.1447
+15,Peanut Butter Cereal O's,25115,153,10.5,6.5,1.2,0.1366
+16,Perfect Cashew and Peanut Butter Gluten-free Cookies,25116,122,7.6,6.7,1.2,0.09820000000000001
+17,Peanut Butter Chip Cookies II,25117,145,10.6,8.8,3.0,0.1185
+18,Peanut Butter Chip Cookies III,25118,178,12.3,10.6,3.7,0.11259999999999999
+19,Peanut Butter Chocolate Chip Cookies III,25119,77,5.7,4.4,2.0,0.052
+20,Peanut Butter Cookies X,25120,84,4.9,4.7,1.3,0.0455
+21,Pudding No-Bake Oatmeal Cookies,25121,184,20.3,7.1,4.1,0.111
+22,Zucchini Bars,25122,590,58.5,29.7,6.1,0.54
+23,Pistachio White Chocolate Chip Cookies,25123,133,7.7,8.6,3.9,0.072
+24,The Best Chocolate Chip Cookies,25124,240,17.5,14.1,4.4,0.1142
+25,Peanutbutteriest Cookies Ever,25125,104,7.3,6.4,2.6,0.0902
+26,Yummy Peanut Butter Cookies,25126,120,7.7,6.7,1.3,0.1359
+27,Potato Chip Cookies VII,25127,59,2.1,3.2,1.4,0.0202
+28,White Chip Chocolate Cookies,25128,113,10.6,5.8,3.5,0.07790000000000001
+29,Philippine-Made Sugar Cookie,25129,96,6.3,5.4,3.2,0.0695
+30,Soft Sugar Cookies V,25130,103,6.3,4.5,2.8,0.075
+31,Sour Cream Sugar Cookies V,25131,114,6.7,5.4,1.9,0.0649
+32,Spool Sugar Cookies,25132,209,14.5,11.5,1.9,0.16219999999999998
+33,"The Easiest, Yummiest Sugar Cookies EVER!!!",25133,122,10.9,5.4,3.3,0.09259999999999999
+34,The Best Mint Chocolate Cookies,25134,113,7.5,7.3,3.1,0.0619
+35,Throw Together Mexican Casserole,25135,664,8.5,21.8,7.4,1.9602
+36,Chop Suey,25136,270,3.8,17.5,4.9,0.8027000000000001
+37,Three Bean Potluck Casserole,25137,734,35.8,35.6,12.4,1.4979
+38,Decadent Chocolate Cake with Raspberry Sauce,25138,280,21.6,17.9,9.8,0.1042
+39,Chicken or Turkey Tetrazzini Deluxe,25139,493,4.7,24.7,12.7,0.9439
+40,Egg Foo Yung II,25140,240,4.8,12.6,4.2,1.4429
+41,Bean and Beef Shaloupias,25141,814,5.6,36.0,18.6,1.5092999999999999
+42,"Veal, Chicken and Beef Canelloni",25142,557,16.7,30.1,15.9,1.4229
+43,Pastrami Chicken Bake,25143,514,1.1,29.7,11.7,0.9053
+44,Kim's Ultimate Meatloaf,25144,490,16.4,27.0,8.7,0.6931
+45,Mexican Casserole,25145,384,4.2,16.6,6.4,1.2864
+46,Upside Down Pizza,25146,469,10.7,26.1,10.4,0.9659
+47,Sarge's EZ Pulled Pork BBQ,25147,270,0.0,18.8,7.0,0.196
+48,Roasted Pork Tenderloin,25148,199,11.7,3.8,1.3,1.0632000000000001
+49,Cuban Shredded Pork,25149,202,2.6,10.7,2.6,0.1032
+50,Pork Chops for the Slow Cooker,25150,146,8.5,4.3,1.6,1.3366
+51,Tangy Slow Cooker Pork Roast,25151,210,7.6,7.7,2.8,0.4828
+52,Lemon Chicken Salad,25152,361,6.6,25.3,4.9,0.3339
+53,Tri-Pepper Salad,25153,37,5.1,0.5,0.2,0.1694
+54,Spinach Salad with Curry Vinaigrette,25154,297,0.9,29.5,6.1,0.2698
+55,Red Skinned Potato Salad,25155,430,1.7,36.9,6.9,0.5357999999999999
+56,"Tomato, Cucumber and Red Onion Salad with Mint",25156,110,6.8,7.1,1.0,0.3949
+57,New Twist To An Old Favorite,25157,76,6.0,2.6,1.5,0.1529
+58,Best Chicken Salad Ever II,25158,304,26.6,7.0,1.5,0.5631
+59,Hammin' Up The Waldorf,25159,348,18.5,22.5,6.0,1.1187
+60,Summer Corn Salad,25160,306,9.5,15.6,2.2,0.0087
+61,Tangy Pickled Mushrooms,25161,33,2.2,0.4,0.1,0.6756
+62,Betsy's Mandarin Orange Salad,25162,397,32.9,26.8,3.8,0.5085
+63,Lime Grilled Chicken Caesar Salad,25163,259,4.9,10.6,1.8,1.0995
+64,Lime Fruit Salad in a Mold,25164,242,50.4,0.3,0.0,0.10679999999999999
+65,Wilted Spinach Salad,25165,221,7.2,13.1,4.2,0.5686
+66,Spring Pea Medley with Edible Bowl,25166,151,5.4,6.1,3.7,0.1019
+67,Sweet and Sour Chicken Salad,25167,396,5.3,26.7,7.7,0.1723
+68,Salata,25168,291,3.2,27.8,3.8,0.1482
+69,French Dressing II,25169,186,15.9,13.8,2.2,0.1717
+70,Chicken Salad II,25170,352,11.6,26.3,4.1,0.3326
+71,Italian Dressing Mix,25171,8,1.0,0.1,0.0,1.2358
+72,Elegant Brunch Chicken Salad,25172,657,9.8,57.7,10.9,0.5706
+73,Blueberry Party Salad,25173,300,53.7,6.6,4.2,0.1696
+74,Blue Cheese Potato Salad,25174,481,2.7,34.4,8.0,0.5521
+75,"Cabbage, Tomato and Onion Salad",25175,101,8.7,4.0,2.1,0.0221
+76,Simple Caesar Salad Dressing,25176,19,0.3,0.7,0.4,0.1598
+77,Carrot and Raisin Salad II,25177,343,34.3,16.3,5.3,0.6245
+78,Chicken Curried Salad,25178,425,3.5,15.3,2.9,0.5223
+79,Coleslaw II,25179,357,19.1,27.8,4.3,0.0487
+80,Creamy Fruit Salad III,25180,495,56.5,24.3,15.1,0.2551
+81,Creamy Orange-Ginger Dressing,25181,28,3.9,0.5,0.3,0.167
+82,Fruit Dip VII,25182,190,14.8,13.9,11.2,0.0188
+83,Lemon Dill Salad Dressing,25183,273,1.1,29.2,4.4,0.22119999999999998
+84,Slow Cooker Chicken Creole,25184,189,6.6,1.9,0.4,0.4305
+85,Slow Cooker Chicken Stew,25185,378,4.7,7.6,2.1,0.9238
+86,Mexican Casserole with Tortillas,25186,480,2.3,26.6,12.0,1.1032
+87,Easy Baked Chicken Wings,25187,595,67.1,23.0,5.3,1.523
+88,Crispy Wings,25188,322,3.9,15.4,3.2,0.22640000000000002
+89,Chicken Alfredo Pizza,25189,411,3.3,18.3,9.0,0.5172
+90,Mushroom in the Middle Meatloaf,25190,929,4.5,70.8,25.1,2.1504000000000003
+91,Quick Turkey and Rice,25191,328,4.3,4.9,1.0,0.1976
+92,Dairy-Free Apple Coffee Cake,25192,748,74.8,30.3,5.1,0.1651
+93,Italian Meatballs,25193,841,28.1,45.1,16.7,2.1641999999999997
+94,German Rouladen,25194,264,4.1,17.4,7.6,1.4495
+95,Saucy Stuffed Peppers,25195,467,23.4,19.8,9.7,1.4176
+96,Beef and Pita Casserole,25196,341,3.4,13.8,7.1,0.7235
+97,Waikiki Meatballs,25197,442,29.4,21.9,7.8,0.5157999999999999
+98,The Best Meatloaf,25198,288,2.5,17.9,7.0,0.867
+99,Sweet and Sour Meatballs (Suan T'ien Niu Jou Po Lo La Tzu),25199,341,27.8,15.1,5.3,0.599

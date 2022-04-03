@@ -1,0 +1,100 @@
+,name,id,calories,sugars,fat,saturated fat,sodium
+0,Christmas Eve Beef Stew,12900,474,9.9,14.6,5.5,0.6111
+1,Black Bean Soup I,12901,311,2.8,7.4,1.4,1.8017999999999998
+2,Louisiana Shrimp and Eggs Gumbo,12902,490,4.6,23.5,4.3,0.3357
+3,Rosemary Chicken Noodle Soup,12903,468,4.2,17.6,4.4,0.1029
+4,Mussel and Potato Stew,12904,199,0.6,11.3,1.6,0.1206
+5,Super Easy Chicken Noodle Soup,12905,294,0.4,13.6,3.9,1.2298
+6,Chicken and Corn Chili,12906,188,5.3,2.3,0.6,1.0124
+7,Luscious Lima Bean Soup,12907,220,6.7,3.5,0.5,0.046200000000000005
+8,Italian Halibut Chowder,12908,262,6.9,10.3,1.4,0.3997
+9,Venison Italian Soup,12909,253,7.4,2.7,0.8,0.9945
+10,MullaKinVowles Soup,12910,229,5.2,7.3,4.3,0.3995
+11,Sweet Potato Soup,12911,373,9.5,18.9,8.7,1.2819
+12,Chilled Cantaloupe Soup,12912,69,13.7,0.3,0.1,0.0156
+13,Oxtail Soup I,12913,588,3.4,26.8,11.0,1.4089
+14,Provincial Beef Stew,12914,548,11.3,32.7,11.8,0.8885
+15,Spicy Potato Soup I,12915,342,4.5,5.0,0.8,0.024300000000000002
+16,Sitta Soup,12916,346,7.4,7.8,1.2,1.0487
+17,Christmas Onion Soup,12917,116,7.4,6.2,2.4,0.3752
+18,Tuscan Soup,12918,559,6.3,25.2,9.1,1.7452999999999999
+19,Asparagus Soup I,12919,168,2.6,0.5,0.1,0.313
+20,Chinese Egg Soup,12920,35,0.7,1.9,0.3,0.6391
+21,Hamburger Soup I,12921,185,7.2,7.5,2.8,1.338
+22,Cheesy Potato and Corn Chowder,12922,289,11.0,11.8,5.4,1.0208
+23,Corn Chowder with Sausage,12923,634,12.7,36.4,14.1,1.3774000000000002
+24,Chicken Noodle Soup I,12924,227,0.7,10.9,2.5,0.0419
+25,Swiss Potato Soup,12925,339,9.8,18.6,9.3,1.7637
+26,French Onion Soup I,12926,732,8.4,29.4,18.0,2.0042
+27,Ham and Bean Soup I,12927,826,5.3,53.2,18.4,1.6005
+28,Creamy Onion Soup,12928,181,9.2,5.9,1.3,1.3328
+29,Garden Cheese Soup,12929,276,6.0,14.7,8.1,1.0478
+30,Cornish Hen Soup,12930,214,3.8,10.0,1.9,0.9245
+31,Tortilla Soup I,12931,148,1.8,2.8,0.6,0.0378
+32,Lemon Chicken Soup I,12932,818,1.7,47.9,13.7,0.2381
+33,Patty's Mom's Black Bean Soup,12933,345,5.0,3.3,0.7,0.4749
+34,Chicken Gumbo Soup,12934,116,2.8,0.7,0.1,0.0704
+35,Cucumber Soup I,12935,117,1.7,8.6,3.4,0.5634
+36,Spicy Black and Red Bean Soup,12936,172,7.2,2.5,0.3,0.7747
+37,French Onion Soup With Browned Garlic,12937,171,6.0,0.9,0.2,0.7122
+38,Beefy Mushroom Barley Soup,12938,250,2.8,17.2,6.1,0.4223
+39,Lobster Soup,12939,307,8.6,18.1,6.9,0.5275
+40,Seafood Gumbo,12940,357,5.3,24.0,3.3,1.3981
+41,Kidney Bean Soup,12941,301,3.7,10.7,3.5,0.6273
+42,Italian Sausage Soup,12942,385,4.4,24.4,8.8,1.2587000000000002
+43,Sauerkraut Soup I,12943,205,2.4,10.2,6.2,0.6668999999999999
+44,Love Soup Mix in a Jar,12944,126,2.1,0.8,0.2,0.5917
+45,Borscht with Meat,12945,482,6.9,37.4,13.5,1.4992
+46,Bermuda Fish Chowder,12946,227,6.6,5.9,0.9,0.6568999999999999
+47,Chi Tan T'ang (Egg Drop Soup),12947,62,0.3,2.8,0.9,1.8722999999999999
+48,Lump Soup,12948,367,11.7,24.7,14.8,0.8393999999999999
+49,Green Chile Stew with Pork,12949,462,4.8,29.8,9.3,0.6027
+50,Chicken Andouille Gumbo,12950,782,4.0,60.8,15.5,1.419
+51,The Aztec Five-Step,12951,587,10.2,34.4,13.7,0.802
+52,Bourtheto,12952,687,8.7,22.1,3.2,0.757
+53,Tex Mex Potato Soup,12953,219,2.8,13.2,5.8,0.3793
+54,Kansas City Steak Soup,12954,226,2.1,15.6,3.3,0.8935
+55,Hamburger Soup II,12955,492,9.6,24.7,9.7,0.5296000000000001
+56,Corn Chowder I,12956,492,14.3,25.9,10.0,0.9511000000000001
+57,Kitchen Sink Soup,12957,160,5.5,1.9,0.5,1.0081
+58,Cheese Soup I,12958,424,15.0,17.0,8.9,2.5276
+59,Camp Soup,12959,116,4.8,4.3,1.7,0.43360000000000004
+60,Moroccan Lentil Soup,12960,329,4.8,3.6,0.5,0.317
+61,Winter's Night Stew,12961,568,4.6,28.8,10.0,1.9714
+62,Chocolate Soup I,12962,658,36.9,50.3,31.3,0.1475
+63,Greek Lemon Chicken Soup,12963,124,1.7,6.6,1.7,1.2368
+64,Smoked Tomato Bisque,12964,240,9.4,18.5,11.2,0.8216
+65,Curried Carrot Soup,12965,133,10.0,5.4,0.7,0.4147
+66,Seafood Gumbo Stock,12966,112,4.7,1.3,0.3,0.1623
+67,Prep-Ahead Slow Cooker Beef Stew,12967,684,10.0,35.5,14.3,0.4661
+68,Brown Jug Soup,12968,399,7.5,21.8,11.2,2.0991999999999997
+69,Hearty Meatball Soup I,12969,260,5.7,13.0,3.1,0.8984
+70,Navy Bean Soup I,12971,236,4.2,3.4,1.0,0.8786
+71,Chili Without The Beans,12972,411,5.7,21.1,8.4,0.548
+72,Wild Rice Zoop,12973,369,2.5,26.3,11.1,1.04
+73,Butternut Squash Soup with Cream Cheese,12974,398,3.7,33.4,17.7,1.0814000000000001
+74,Hamburger Goulash,12975,334,5.6,12.4,4.8,1.0208
+75,Cowboy Stew I,12976,655,19.9,27.9,10.9,2.1759
+76,Bologna Potato Soup,12977,429,4.2,21.8,9.2,1.0318
+77,Egusi Soup,12978,758,7.0,51.0,14.0,0.8583
+78,Apricot Lentil Soup,12979,263,6.6,7.4,1.0,0.0066
+79,Chicken Stew 'Fricot',12980,671,7.9,23.5,7.6,0.2099
+80,Quick Clam Chowder,12981,412,4.9,26.0,13.7,1.1978
+81,Basic Vegetable Stock,12982,37,1.8,1.4,0.2,0.2266
+82,Basic Chicken Stock,12983,200,2.0,13.0,3.7,0.6748999999999999
+83,Basic Beef Stock,12984,61,3.6,0.4,0.1,0.9783999999999999
+84,Greek Steffotto,12985,474,23.1,27.5,11.0,0.3407
+85,Cream of Fresh Tomato Soup,12986,298,19.1,15.9,5.0,0.235
+86,Corn and Potato Chowder,12987,579,19.9,27.0,7.3,1.1867999999999999
+87,Parmesan Potato Soup,12988,427,12.2,21.3,7.1,1.0928
+88,Quick Creamy Potato Soup,12989,404,7.2,24.8,8.5,1.0262
+89,Smoky Potato Cheese Soup,12990,648,17.3,39.4,18.3,1.6159000000000001
+90,Tomato-Curry Lentil Stew,12991,206,4.5,0.8,0.1,0.19440000000000002
+91,Cheese and Broccoli Chicken Soup,12992,434,1.3,26.6,16.2,1.0591
+92,Drunken Winter Stew,12993,288,5.4,0.7,0.1,0.354
+93,Crabmeat and Corn Soup,12994,265,4.3,15.7,9.3,0.5376000000000001
+94,Spanish Rice Soup,12995,389,12.0,10.2,2.6,1.8080999999999998
+95,Cauliflower-Cheese Soup,12996,385,11.1,24.7,15.6,0.36760000000000004
+96,Baked Potato Soup I,12997,748,15.8,49.3,19.6,1.3352
+97,Meatball Soup,12998,256,4.3,10.7,3.8,0.7132999999999999
+98,Spicy Black Bean Vegetable Soup,12999,165,4.3,3.4,0.4,0.6834

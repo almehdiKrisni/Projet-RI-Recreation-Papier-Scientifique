@@ -1,0 +1,100 @@
+,name,id,calories,sugars,fat,saturated fat,sodium
+0,Mock Macaroons,10600,83,7.2,4.2,0.6,0.0435
+1,Peanut Butter Cocoa No-Bake Cookies,10601,203,17.8,9.9,3.7,0.0633
+2,No Bake Chocolate Oat Bars,10602,142,6.7,9.9,5.1,0.061399999999999996
+3,Grandma Wright's No Bakes,10603,87,8.8,3.7,1.6,0.027399999999999997
+4,Cocoa Oatmeal Cookies,10604,106,8.4,4.5,2.6,0.08270000000000001
+5,Chocolate Chip Oatmeal Cookies,10605,239,18.6,12.9,6.3,0.1338
+6,Chocolate Sour Cream Cookies,10606,90,5.6,5.3,2.7,0.039799999999999995
+7,Oatmeal Lace Cookies,10607,131,9.4,6.3,3.9,0.05
+8,Bittersweet Chocolate Mousse Brownies,10608,347,17.9,26.4,15.7,0.0943
+9,Tea Cookies II,10609,117,13.8,3.3,2.2,0.1382
+10,Tea Time Tasties,10610,347,14.1,26.5,8.6,0.1411
+11,Spicy Oatmeal Raisin Cookies,10611,160,11.4,7.9,1.8,0.1514
+12,Ooey Gooey Chocolate Chip Cookies,10612,125,11.4,6.3,3.8,0.0606
+13,Belgian Iron Cookies,10613,249,10.7,7.5,4.3,0.1002
+14,Carrot Cookies III,10614,88,5.5,4.5,1.1,0.0479
+15,Toffee Nut Cookies,10615,210,12.9,13.3,6.5,0.0585
+16,Cinnamon Pinwheels,10616,238,6.3,17.5,11.0,0.1144
+17,Old Fashioned Oatmeal Cookies III,10617,126,10.6,4.8,2.7,0.0551
+18,Raspberry Oatmeal Bars,10618,210,18.0,8.7,1.4,0.2078
+19,Dutch Molasses Cookies,10619,304,22.9,8.9,1.6,0.30660000000000004
+20,Koulourakia II,10620,142,4.5,7.2,3.3,0.07629999999999999
+21,Fortune Cookies IV,10621,125,6.3,7.0,0.9,0.15969999999999998
+22,Cereal Chocolate Roll,10622,369,29.7,16.0,6.6,0.2072
+23,Spritz Cookies IV,10623,66,2.5,3.4,2.0,0.0361
+24,Hermits II,10624,176,13.1,7.0,3.5,0.1205
+25,Frosted Corn Flake Cereal Clusters,10625,220,12.3,14.9,5.8,0.13440000000000002
+26,Chocolate Clusters,10626,239,17.2,15.4,7.0,0.0339
+27,Chocolate Crispy Cookies,10627,155,14.1,7.1,4.3,0.1135
+28,Oatmeal Chocolate Chip Cookies III,10628,290,22.2,15.1,9.1,0.2125
+29,Michelle's Peanut Butter Dots,10629,406,19.0,26.5,12.1,0.2102
+30,Fran's Greek Butter Cookies,10630,308,6.3,22.0,10.3,0.1164
+31,Grapefruit Bars,10631,103,8.9,4.6,1.2,0.07390000000000001
+32,Angel Crisps,10632,82,6.4,4.2,1.8,0.0663
+33,Flourless Brazil Nut Macaroons,10633,151,8.5,9.6,2.0,0.0692
+34,Swedish Nut Bars,10634,375,27.2,23.5,2.4,0.0354
+35,Elizabeth Dole's Pecan Roll Cookies,10635,180,3.3,14.3,5.4,0.054799999999999995
+36,Barbara Bush's Chocolate Chips,10636,153,12.8,8.3,5.0,0.1421
+37,Spring Biscotti,10637,145,9.8,6.3,2.2,0.1062
+38,Cranberry Pistachio Biscotti,10638,92,5.7,4.3,0.6,0.055299999999999995
+39,Brown Edge Cookies,10639,146,12.6,5.2,1.5,0.1613
+40,Caramel Slices,10640,209,17.9,9.1,2.3,0.0376
+41,Monster Cookies V,10641,116,9.7,5.9,2.1,0.07640000000000001
+42,Caramel Filled Chocolate Cookies,10642,253,21.9,13.0,6.4,0.1275
+43,Cookie Mix in a Jar IV,10643,244,34.8,4.4,2.8,0.1014
+44,Cookie Mix in a Jar V,10645,263,34.7,4.8,2.9,0.0864
+45,Brownie Mix in a Jar II,10646,118,18.9,2.0,0.3,0.1178
+46,Cookie Mix in a Jar VI,10647,207,24.1,6.6,2.5,0.16019999999999998
+47,Cookie Mix in a Jar VII,10648,132,21.7,0.6,0.3,0.0639
+48,Cookie Mix in a Jar VIII,10649,208,26.8,3.6,1.2,0.1316
+49,Cookie Mix in a Jar IX,10650,166,25.2,1.5,0.7,0.0515
+50,Cookie Mix in a Jar X,10651,256,27.6,8.0,2.8,0.0834
+51,Cookie Mix in a Jar XI,10652,244,42.8,0.2,0.0,0.10679999999999999
+52,Brownie Mix in a Jar III,10653,131,22.5,0.5,0.4,0.0644
+53,Flourless Cow Pies,10654,148,11.4,7.8,2.9,0.10959999999999999
+54,Raspberry Meringue Bars,10655,264,19.8,14.5,5.6,0.0891
+55,Irish Soda Bread Cookies,10656,73,5.6,2.8,1.7,0.055799999999999995
+56,Irish Flag Cookies,10657,198,9.9,10.7,6.6,0.147
+57,Irish Flag Frosting,10658,27,6.8,0.0,0.0,0.0324
+58,Oatmeal Apricot Crisps,10659,266,24.4,8.2,3.7,0.1621
+59,Refrigerator Gingersnaps,10660,92,6.4,3.6,0.9,0.0846
+60,Oatmeal Peanut Butter Bars,10661,148,7.4,7.7,2.9,0.056100000000000004
+61,Pecan Butter Balls,10662,182,4.2,14.1,1.9,0.0878
+62,Esther's Christmas Cookies,10663,123,13.2,5.0,1.7,0.0866
+63,Best Ever Chocolate Chip Cookies I,10664,191,16.8,9.2,2.6,0.169
+64,Peanut Butter Cookies IV,10665,142,13.3,6.8,3.1,0.1198
+65,Chocolate Chocolate Chip Cookies II,10666,467,41.3,25.2,15.3,0.2336
+66,Fruit Madness Cookies,10667,111,19.2,2.0,1.6,0.062200000000000005
+67,Sugar Cookies VIII,10668,214,14.0,10.7,6.6,0.1469
+68,Can't Get Enough Caramel Cookies!,10669,188,18.0,8.4,1.5,0.328
+69,Peanut Butter Balls III,10670,318,29.5,18.9,7.2,0.1544
+70,Pumpkin Cookies III,10671,120,7.2,7.0,1.6,0.13190000000000002
+71,Old-Fashioned Lemon Bars,10672,115,11.4,4.7,1.2,0.07440000000000001
+72,Seven-Day Wonders,10673,81,7.5,4.3,0.8,0.0034
+73,Mel's Magnificent Chocolate Chip Cookies,10674,411,33.7,20.6,12.5,0.32830000000000004
+74,Peanut Butter Chocolate Chip Cookies II,10675,225,13.7,15.1,5.7,0.1685
+75,Chewy Chocolate Peanut Butter Chip Cookies,10676,132,10.1,7.2,5.3,0.0955
+76,Date Drop Cookies II,10677,152,16.5,6.2,1.5,0.0685
+77,Chocolate Marshmallow Puffs,10678,168,13.4,7.6,2.0,0.1269
+78,Neapolitan Cookies II,10679,97,2.9,6.3,3.6,0.0709
+79,Bun Bars,10680,1292,120.8,77.4,30.1,0.8098
+80,Cream Cheese Chocolate Chip Cookies,10681,551,40.6,30.4,11.4,0.4004
+81,Baby Ruth Cookies,10682,190,14.4,9.0,5.4,0.2179
+82,Shortbread,10683,276,8.4,15.7,9.8,0.0025
+83,Monster Cookies VI,10684,119,10.9,5.8,2.3,0.0752
+84,Empanadas,10685,226,18.4,10.3,6.4,0.0841
+85,Scottish Lace Cookies,10686,74,8.4,1.9,0.5,0.1031
+86,Mrs. Sigg's Snickerdoodles,10687,92,6.8,4.3,1.8,0.0551
+87,Dave's Big Raisin Cookies,10688,75,6.8,2.7,0.7,0.0792
+88,Golden Chocolate Chip Cookies,10689,133,10.3,7.8,3.9,0.10640000000000001
+89,Cinderellas,10690,158,11.8,4.3,3.1,0.046
+90,Crunchy Chocolate Bars,10691,127,8.4,8.4,3.2,0.0663
+91,Chocolate Lover's Dream Cookies,10692,172,14.5,8.6,5.3,0.08259999999999999
+92,Chinese Almond Cakes,10693,185,8.5,9.6,5.2,0.1193
+93,MandelBread,10694,79,3.6,4.4,0.6,0.0189
+94,Dad's Oatmeal Cookies,10695,168,13.9,7.1,4.1,0.11109999999999999
+95,Dutch Almond Boterkoek,10696,333,22.5,18.3,10.0,0.1221
+96,Mandelgeback,10697,83,4.3,5.0,2.4,0.028
+97,Puffy Chocolaty Chip Cookies,10698,300,22.9,16.9,10.2,0.1881
+98,Nutties,10699,207,15.3,8.0,5.4,0.2811

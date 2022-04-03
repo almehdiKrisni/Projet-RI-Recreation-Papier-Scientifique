@@ -1,0 +1,101 @@
+,name,id,calories,sugars,fat,saturated fat,sodium
+0,Double Chocolate Walnut Brownies,11000,531,41.6,35.3,16.5,0.1308
+1,Graham Moist Lemon Bars,11001,248,39.7,6.7,3.4,0.1008
+2,Shaped Vanilla Cookies,11002,326,17.1,16.1,2.9,0.4338
+3,Peppermint Patty Brownies,11003,653,50.7,28.1,6.6,0.5366000000000001
+4,Volcanoes,11004,209,14.0,9.5,5.1,0.162
+5,Nature Nuts Chewy Bars,11005,274,33.4,8.2,5.1,0.1667
+6,No Bake Deluxe Hamburger Cookies,11006,360,14.2,10.6,4.5,0.1328
+7,Sesame Seed Cookies II,11007,163,6.0,8.9,3.9,0.13369999999999999
+8,Chocolate Toffee Cookies II,11008,260,12.7,14.5,7.7,0.1706
+9,Double-Peanut Double-Chocolate Chip Cookies,11009,187,13.6,11.3,6.9,0.0831
+10,Biscotti Toscani,11010,84,5.9,3.8,1.8,0.0456
+11,Cup of Everything Cookies,11011,376,22.5,22.8,8.5,0.2314
+12,Maple Walnut Bars,11012,311,24.5,16.5,8.5,0.1407
+13,Super Chunky Cookies,11013,280,21.4,15.4,8.6,0.0917
+14,Peanut Butter Cookies with Chocolate Chunks,11014,416,31.3,22.9,8.9,0.2706
+15,Devil Dogs,11015,706,53.3,35.9,15.7,0.6972
+16,Peanut Butter Carrot Cookies,11016,96,7.7,4.7,2.2,0.056
+17,Pumpkin Bars II,11017,637,64.1,32.7,10.8,0.7885
+18,Carmelitas,11018,148,14.4,6.6,2.8,0.074
+19,Mayonnaise Cookies,11019,182,11.3,9.8,1.5,0.1396
+20,Welsh Cakes,11020,235,21.0,7.3,3.4,0.1658
+21,Raisin Coconut Treasure Cookies,11021,261,23.4,13.6,6.4,0.1777
+22,Sue's Oatmeal Macadamia Nut Cookies,11022,315,23.4,15.7,3.6,0.2115
+23,Almond Crescents III,11023,63,1.8,4.6,1.2,0.009
+24,Joey's Peanut Butter Cookies,11024,106,6.5,6.4,2.4,0.0808
+25,Peanut Butter Balls IV,11025,206,23.0,11.4,4.3,0.0715
+26,Macadamia Nut Chocolate Chip Cookies,11026,109,7.2,7.3,3.2,0.0714
+27,Pistachio Chocolate Chip Cookies,11027,143,8.8,7.8,3.8,0.1338
+28,Peanut Butter and Jelly Cookies,11028,66,5.5,3.2,0.8,0.0466
+29,No Bake Fudge Cookies,11029,266,26.1,11.8,4.8,0.0901
+30,Chewy Maple Cookies,11030,181,18.6,7.2,2.6,0.1388
+31,Benne Cookies,11031,86,7.7,4.4,2.3,0.032100000000000004
+32,Oatmeal Craisin Cookies,11032,238,24.2,8.7,5.1,0.2338
+33,Evil Cookies,11033,551,51.9,26.4,8.3,0.21359999999999998
+34,Cinnamon Graham Crunchy Cookies,11034,224,18.2,11.7,6.1,0.1688
+35,Quick Lemon Crisps,11035,56,2.8,2.4,0.6,0.052399999999999995
+36,Sweet Oatcakes,11036,59,11.5,0.4,0.2,0.005900000000000001
+37,Aebleskiver,11037,63,1.2,2.8,1.3,0.1247
+38,Molasses Sugar Cookies II,11038,187,13.7,9.0,2.2,0.2105
+39,Kristil's Frat House Cookies,11039,140,10.9,8.1,4.9,0.0901
+40,Play Dough Cookies,11040,302,16.8,14.7,9.0,0.1982
+41,Magic Marshmallow Puffs,11041,403,26.0,20.2,6.9,0.49260000000000004
+42,Fun Cookie Suckers,11042,151,8.4,7.3,4.5,0.0991
+43,The Ultimate Brownie,11043,378,25.7,26.0,9.3,0.12040000000000001
+44,Chocolate Cookie Pizza,11044,305,29.8,16.2,8.7,0.1103
+45,Power Bars,11045,183,15.3,3.2,0.6,0.1726
+46,Mary's Brownies,11046,305,25.9,17.9,7.1,0.0619
+47,Cherry Yum Yum,11047,215,11.8,11.6,5.9,0.0732
+48,Oatmeal Cocoa Macaroons,11048,309,35.2,11.4,3.6,0.0149
+49,Chocolate Chip Cookies Without Chocolate Chips,11049,149,8.2,9.3,4.9,0.133
+50,Berry Crumb Bars,11050,312,21.6,14.4,3.6,0.048100000000000004
+51,Italian Almond Biscuits,11051,105,8.9,4.7,0.6,0.026600000000000002
+52,Angel Cookies II,11052,259,13.2,19.2,4.5,0.1458
+53,Caramel Brownies I,11053,544,51.5,28.2,12.8,0.4952
+54,Grandmom's Sand Tarts,11054,178,5.7,11.5,6.7,0.07859999999999999
+55,Old Time Soft Sugar Cookies,11055,115,8.8,4.6,1.2,0.0858
+56,Butter Icing for Sugar Cookies,11056,162,22.3,4.4,2.8,0.0319
+57,Gingerbread Cutouts,11057,2921,191.9,106.1,26.2,1.1870999999999998
+58,Buttercream Icing,11058,181,23.6,9.8,4.2,0.033600000000000005
+59,Cranberry Crunch Squares,11059,393,43.2,16.5,9.9,0.12919999999999998
+60,Chocolate Madeleines,11060,183,15.1,10.4,5.9,0.1097
+61,Julia's Best Ever Chocolate Chip Cookies In A Jar,11061,264,32.5,8.6,5.0,0.0847
+62,Pudding Chocolate Chippers,11062,177,17.2,8.9,3.2,0.1129
+63,Deep Dish Brownies,11063,340,33.6,17.8,10.6,0.2899
+64,Cookie Jar Sugar Cookies,11064,412,25.2,18.2,11.2,0.31
+65,Double Chocolate Nummies,11065,201,16.2,11.7,7.1,0.1184
+66,No Bake Cookies IV,11066,88,5.4,5.2,2.8,0.032299999999999995
+67,Ricotta Cookies II,11067,69,5.6,2.5,1.5,0.039299999999999995
+68,Chocolate Pinwheels,11068,101,6.9,4.5,2.7,0.089
+69,Cookies with Chocbit Topping,11069,555,28.6,25.6,14.7,0.42460000000000003
+70,Two Tone Brownies,11070,159,14.5,8.2,4.9,0.0448
+71,Chocolate Gingerbread Cookies,11071,196,16.4,7.0,4.3,0.1366
+72,Cori's Krispie Cookies,11072,118,6.6,6.9,3.7,0.08259999999999999
+73,Bourbon Pecan Shortbread,11073,100,3.4,6.3,3.3,0.0366
+74,Fruitcake Cookies I,11074,96,9.7,4.1,0.8,0.0384
+75,Building Gingerbread,11075,234,22.6,7.1,1.7,0.1115
+76,Orange Balls II,11076,161,16.7,7.1,2.8,0.052899999999999996
+77,Peanut Butter Bars IV,11077,302,26.1,17.6,7.5,0.1095
+78,Raisin Honey Chews,11078,230,21.0,9.5,2.3,0.1404
+79,Chocolate Syrup Brownies,11079,217,26.1,9.1,4.1,0.0562
+80,Whole Wheat Snickerdoodles II,11080,139,10.9,6.5,4.0,0.1095
+81,Elsye's Brownies,11081,334,42.8,13.3,7.9,0.1003
+82,Sugar Cookie Glaze,11082,22,5.1,0.0,0.0,0.0006
+83,Sfinge di Ricotta,11083,91,4.2,2.1,0.9,0.0351
+84,Cowboy Cookies (Dunkin' Platters),11084,393,34.9,16.8,10.1,0.289
+85,Oatmeal-Walnut-Raisin Chewies,11085,323,26.3,16.6,6.0,0.1345
+86,Norway's Best Pepper Cookies,11086,144,6.7,7.8,4.9,0.1083
+87,Really Basic Peanut Butter Cookies,11087,67,6.6,3.7,0.8,0.0366
+88,Coconut Icebox Cookies,11088,118,9.5,5.0,3.3,0.1381
+89,Butterscotch Bars I,11089,160,15.0,7.8,3.7,0.07440000000000001
+90,Buffalo Chip Cookies,11090,514,48.7,22.7,5.3,0.37939999999999996
+91,Old Time Popcorn Balls,11091,220,29.7,6.3,1.0,0.2392
+92,Cream Cheese Bars I,11092,473,53.1,20.5,10.1,0.4106
+93,Gingerbread Boys And Girls,11093,546,46.9,7.3,1.8,0.4284
+94,Apple-Cran-Cherry Oatmeal Cookies,11094,179,16.7,5.2,2.9,0.0808
+95,Gingersnaps III,11095,121,10.4,5.4,1.4,0.107
+96,Soldier Buttons,11096,552,26.3,32.0,19.8,0.2349
+97,Peanut Butter Bars V,11097,317,24.8,15.3,4.0,0.1776
+98,Cherry Squares,11098,123,13.5,5.2,2.8,0.0502
+99,Pride Of Iowa Cookies,11099,362,24.9,18.3,4.7,0.18580000000000002

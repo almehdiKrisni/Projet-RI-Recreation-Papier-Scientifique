@@ -1,0 +1,98 @@
+,name,id,calories,sugars,fat,saturated fat,sodium
+0,Pizza Sauce I,25401,38,1.0,3.5,0.5,0.2926
+1,Pizza Sauce II,25402,33,2.7,1.8,0.3,0.22180000000000002
+2,Toads in the Hole I,25403,359,1.7,19.0,5.4,0.474
+3,Toads in the Hole II,25404,367,2.2,17.5,4.6,0.3365
+4,Corn Dog Casserole,25405,454,6.3,29.2,12.8,1.4459000000000002
+5,Reuben Hot Dish,25406,363,5.5,17.0,7.9,1.6822000000000001
+6,Reuben Casserole,25407,450,9.5,24.3,10.0,2.0784000000000002
+7,Hedgehog Meatballs,25408,413,6.4,21.3,8.0,0.6006
+8,Hamburger Hash,25409,358,3.9,16.3,6.4,0.7349
+9,Hunter's Hash,25410,510,10.8,23.7,9.5,0.7765
+10,Asparagus Portobello Pasta,25413,390,9.0,10.1,2.9,1.2482
+11,Slow Cooker Barbecue Goose Sandwich,25414,190,2.0,15.2,7.2,0.1625
+12,Runzas (Bierocks),25415,750,9.9,27.5,10.0,1.2217
+13,Runzas II (Bierocks),25416,371,4.9,15.9,6.9,0.5391
+14,Toaster Oven Pizza,25417,752,5.5,52.5,18.2,2.5006
+15,Healthy Turkey Loaf,25418,112,1.4,5.1,1.4,0.1743
+16,Turkey Meatballs,25419,567,2.2,22.2,5.9,2.2128
+17,Chili Casserole,25420,324,4.4,12.7,5.2,0.9094
+18,Broiler Casserole,25421,310,16.6,5.3,1.3,0.564
+19,Amazing All-Purpose Marinade,25422,108,8.4,6.9,1.0,0.0060999999999999995
+20,Wild Rice Casserole with Sausage,25423,496,3.5,33.5,9.9,1.7417
+21,Slow Cooker Bean Casserole AKA Sweet Chili,25424,470,19.2,25.5,9.3,1.0864
+22,Slow Cooker Pizza,25425,820,12.2,43.3,18.9,2.1811
+23,Slow Cooker Lentils and Sausage,25426,357,4.2,21.2,7.1,0.9662999999999999
+24,Barbequed Crabs,25427,422,2.1,25.3,14.9,2.6084
+25,Honey Garlic BBQ Sauce II,25428,61,7.2,3.0,1.8,0.38439999999999996
+26,Star Fruit Steak,25429,338,3.5,21.5,8.5,0.5275
+27,Teriyaki Marinade with Ginger and Garlic,25430,29,3.8,0.0,0.0,0.7222999999999999
+28,Outdoor Vegetable Skillet,25431,103,4.3,7.8,1.3,0.145
+29,Simple Country Ribs,25432,882,66.8,38.3,13.8,3.5178000000000003
+30,Andy's Barbeque Pork,25433,394,8.6,23.7,8.7,0.42819999999999997
+31,BBQ Sauce to Live For,25434,50,10.6,0.1,0.0,0.2307
+32,Amanda's Big Beef Sauce,25435,83,1.4,8.6,1.3,0.1134
+33,Applesauce Barbeque Sauce,25436,49,12.0,0.0,0.0,0.09240000000000001
+34,Barbeque Sauce III,25437,30,5.3,0.4,0.1,0.1281
+35,BBQ Sauce for Cheaters,25438,62,10.4,0.1,0.0,0.48369999999999996
+36,Chile Barbeque Sauce,25439,40,8.8,0.0,0.0,0.0943
+37,Delicious Barbeque Sauce,25440,83,8.0,4.7,0.7,0.138
+38,Devil's Steak Sauce,25441,62,14.0,0.0,0.0,0.2322
+39,Frank's Famous Barbeque Sauce,25442,72,10.5,0.5,0.1,0.3028
+40,Sweet Sauce for Vegetables,25443,171,8.2,15.4,9.7,0.1114
+41,Carne Asada Marinade,25444,256,0.3,28.0,3.9,0.0003
+42,Key West Chicken,25445,184,4.5,6.2,1.3,0.7353
+43,Teriyaki Marinade IV,25446,158,25.5,0.0,0.0,1.4356
+44,Zesty Barbeque Marinade,25447,59,5.1,0.3,0.1,0.5676
+45,Memphis Rub,25448,62,7.5,1.3,0.2,1.7858
+46,Deb's Spicy Summer Evening Mushrooms,25449,68,3.0,0.4,0.1,3.6155999999999997
+47,Doreen's Teriyaki Steak Marinade,25450,30,3.4,0.0,0.0,0.48360000000000003
+48,Doreen's Steak Marinade,25451,90,3.7,7.3,1.1,0.5292
+49,Tarragon Tuna Steaks,25452,337,0.0,18.5,3.5,0.06709999999999999
+50,Doreen's Asian-Inspired Swordfish Steaks,25453,460,0.3,34.0,6.1,0.8723
+51,Doreen's Ham Slices on the Grill,25454,245,55.3,1.3,0.4,0.26039999999999996
+52,Rosemary Garlic Rub,25455,177,0.1,18.3,2.6,1.4427999999999999
+53,Campfire Potatoes,25456,275,2.6,13.8,8.7,0.214
+54,Mouthwatering Whiskey Grill Glaze,25457,276,58.0,0.1,0.0,0.3272
+55,Rib Rub,25458,48,8.6,0.2,0.0,0.5812
+56,North Carolina-Style Pulled Pork,25459,426,10.1,23.1,8.3,1.6984000000000001
+57,Grandpa Bob's Spicy Barbeque Sauce,25460,24,3.7,0.0,0.0,0.48910000000000003
+58,Linda's Beef Marinade,25461,126,20.6,1.0,0.2,0.887
+59,Joe's Favorite Hamburgers,25462,209,1.8,13.2,5.1,0.1187
+60,Grilled Tuna Fish Steaks,25463,171,0.4,7.6,1.3,0.9933
+61,Unbelievable Grilled Garlic Bread,25464,289,1.3,18.7,4.5,0.4724
+62,Grilled Onion Blossom,25465,70,3.4,4.4,2.8,0.0339
+63,Easy Cajun Grilled Veggies,25466,95,2.7,7.3,1.1,0.2328
+64,Ham and Pineapple Kabobs,25467,342,25.3,19.3,6.2,1.0969
+65,Drunken Camper Mix,25468,453,5.2,0.1,0.0,1.836
+66,Asian Barbequed Steak,25469,160,0.3,10.7,3.8,0.5822
+67,Fajita Marinade III,25470,248,0.5,27.3,4.3,0.0004
+68,Jamaican Jerk Chicken,25471,221,3.8,6.4,1.2,0.4739
+69,Korean Beef Ribs,25472,1390,14.0,119.5,42.2,1.9935
+70,The Perfect Basic Burger,25473,317,0.9,17.8,6.8,0.4745
+71,Marinated Barbequed Vegetables,25474,157,6.8,11.2,1.6,0.0083
+72,Glazed Country Ribs,25475,654,9.5,45.1,12.4,0.5622999999999999
+73,Spareribs with Savory Sage Rub,25476,633,0.2,53.2,17.1,0.35719999999999996
+74,BBQ Potato Roast,25477,532,3.3,22.3,3.5,2.0213
+75,Foil Wrapped Veggies,25478,223,5.0,8.3,1.2,0.0351
+76,Soy Garlic Steak,25479,282,1.3,18.5,5.3,0.7187
+77,Travis's Turkey Burgers with a Bite,25480,228,0.2,12.5,3.4,0.448
+78,Moroccan Lamb Kabobs,25481,554,15.9,37.6,14.9,0.2802
+79,Barbequed Thai Style Chicken,25482,324,3.6,18.3,6.3,0.6407999999999999
+80,Sensational Sirloin Kabobs,25483,327,13.7,17.4,6.9,0.608
+81,Skippy Burgers,25484,459,2.7,30.9,12.4,0.4883
+82,Hearty Egg Rolls,25485,526,1.4,26.4,7.2,0.372
+83,Candied Dills,25486,62,15.3,0.0,0.0,0.19440000000000002
+84,Shrimp Stuffed Mushrooms,25487,191,1.9,12.5,6.8,0.2137
+85,Easy Chicken Taco Filling,25488,70,0.6,0.8,0.2,0.038700000000000005
+86,Monterey Chicken,25489,642,23.8,37.5,15.4,2.8066
+87,"Broccoli, Rice, Cheese, and Chicken Casserole",25490,756,7.6,30.8,15.2,1.6422999999999999
+88,Whiskey Chicken,25491,288,19.4,1.6,0.4,0.9833999999999999
+89,Firecracker Fried Chicken Drumsticks,25492,475,0.3,28.1,5.1,0.7956
+90,Dilled Garlic,25493,22,0.1,0.1,0.0,0.43839999999999996
+91,Stuffed Mushrooms Casino,25494,394,1.8,27.7,16.2,0.7021000000000001
+92,Jean's Marinated Mushrooms,25495,142,2.5,14.2,3.1,0.2924
+93,Tangy Egg Salad Spread,25496,71,0.3,6.5,1.3,0.18109999999999998
+94,Savory Crab Stuffed Mushrooms,25497,176,1.5,11.8,6.9,0.2333
+95,Stuffed Mushrooms with Spinach,25498,163,0.6,15.7,8.2,0.1986
+96,Stuffed Mushrooms with Swiss Cheese,25499,138,0.8,13.7,8.6,0.07590000000000001

@@ -1,0 +1,101 @@
+,name,id,calories,sugars,fat,saturated fat,sodium
+0,Pepparkakor II,11600,127,8.7,5.3,3.3,0.10859999999999999
+1,Soft Molasses Cookies IV,11601,194,14.0,6.5,1.2,0.24430000000000002
+2,Easy Layer Bar Cookies,11602,530,48.7,32.5,18.8,0.1899
+3,Sugar Cookies XI,11603,270,17.4,12.3,4.7,0.2742
+4,Honey Drops,11604,112,9.0,4.9,3.0,0.10640000000000001
+5,Luscious Lemon Snaps,11605,159,12.7,7.0,0.9,0.1295
+6,Hazelnut Melting Moments,11606,224,10.2,15.2,6.6,0.0559
+7,Raisin Puffs,11607,74,5.9,3.1,0.8,0.0359
+8,Eggnog Cookies I,11608,135,11.2,5.8,3.4,0.1037
+9,Magic Walnut Cookies,11609,133,16.4,7.1,2.1,0.0073
+10,Gingerbread Bears,11610,263,11.3,10.8,6.6,0.1396
+11,Cherry Icebox Cookies,11611,238,8.6,12.8,4.0,0.0995
+12,Crispy Golden Macaroons,11612,96,12.3,2.0,1.7,0.06559999999999999
+13,Applesauce Cookies I,11613,174,13.1,8.3,1.8,0.08120000000000001
+14,Pet Cookies,11614,92,0.0,3.3,0.7,0.0107
+15,Chrusciki I,11615,256,3.6,23.5,3.4,0.0625
+16,Whoopie Pies V,11616,192,18.7,8.6,5.2,0.1135
+17,Apple Pie Bars,11617,272,25.5,11.0,6.7,0.22130000000000002
+18,Pumpkin Cookies I,11618,115,10.4,5.0,2.5,0.0888
+19,Skillet Cookies II,11619,215,28.4,9.1,5.8,0.105
+20,Oatmeal Raisin Cookies IV,11620,178,14.1,8.1,3.6,0.1147
+21,Oatmeal Raisin Cookies V,11621,193,15.3,6.8,3.9,0.11059999999999999
+22,Pumpkin Raisin Cookies,11622,688,71.4,25.0,5.3,0.4315
+23,Grandma's Chew Bread,11623,205,24.9,5.6,0.7,0.0875
+24,Snickerdoodles I,11624,125,9.1,6.1,1.5,0.0714
+25,Moonbeams,11625,106,8.4,5.9,1.4,0.0655
+26,Nitey Night Cookies,11626,362,41.0,21.5,6.1,0.0216
+27,Chocolate Chip Dream,11627,168,15.5,8.8,5.5,0.08940000000000001
+28,Black Gold,11628,137,10.4,9.0,5.3,0.114
+29,Date and Nut Bars,11629,301,34.8,12.8,2.7,0.18409999999999999
+30,Yum Yum Squares,11630,164,19.1,6.5,3.4,0.0444
+31,Iowa City Oatmeal Cookies,11631,208,14.7,9.7,4.5,0.13269999999999998
+32,Almond Yummies,11632,147,16.8,2.0,0.4,0.012
+33,Rocky Roads,11633,97,8.7,5.4,2.7,0.0665
+34,Spice Bars,11634,149,15.3,5.3,1.3,0.0865
+35,Pumpkin Roll-Out Cookies,11635,155,6.3,8.1,5.0,0.02
+36,Sesame Crisps,11636,44,3.7,2.2,1.3,0.0352
+37,Christmas Pastels,11637,76,3.5,3.5,0.9,0.06620000000000001
+38,Non-Edible Cinnamon Ornaments,11638,373,21.0,2.8,0.8,0.030699999999999998
+39,Pfefferneuse (Peppernuts),11639,133,10.6,3.3,2.0,0.114
+40,Chocolate Thumbprints II,11640,215,11.2,12.3,7.5,0.1173
+41,Crescent Cookies,11641,94,1.5,6.6,3.1,0.045
+42,Old Fashioned Tea Cakes II,11642,161,11.3,5.9,3.5,0.099
+43,Orange Spiced Krumkake,11643,85,7.1,3.6,2.2,0.03
+44,Laura's Tahini Cookies,11644,329,13.7,21.3,10.6,0.1268
+45,Cooper's Kolacky Cookies,11645,407,19.3,25.1,15.8,0.2214
+46,Paul's Pumpkin Bars,11646,279,24.8,15.2,4.7,0.2825
+47,Almond Puff,11647,166,7.5,10.4,5.8,0.0704
+48,Scotch Cake Cookies,11648,46,1.5,2.7,1.5,0.0551
+49,Easy Chocolate Crackled Cookies,11649,159,14.3,7.9,2.4,0.1643
+50,Pumpkin Bars with Maple Glaze,11650,127,14.5,5.1,0.8,0.0676
+51,Grandma's Sugar Cookies,11651,271,22.0,9.8,2.5,0.1389
+52,My Nancy's Pizzelles,11652,135,9.4,5.9,1.1,0.15159999999999998
+53,Best Peanut Butter Fudge,11653,466,42.4,26.0,20.5,0.19669999999999999
+54,Mary Mazzie's Anise Cookies,11654,290,25.2,9.6,1.7,0.1574
+55,Apricot and White Chip Cookies with Almonds,11655,310,26.3,17.1,9.3,0.151
+56,Can't Tell They're Low-fat Brownies,11656,129,17.8,3.6,0.8,0.037
+57,Ginger Snaps IV,11657,113,7.5,5.5,3.3,0.0402
+58,Chocolate Spice Cookies,11658,87,3.6,4.7,0.9,0.0341
+59,Marmalade Chews,11659,224,25.0,6.7,1.7,0.18309999999999998
+60,Pink Icing Cookies,11660,245,17.3,9.0,5.3,0.1802
+61,Butter Nut Balls,11661,191,9.3,11.4,5.3,0.055600000000000004
+62,Peanut Butter Balls VI,11662,208,8.0,13.2,4.4,0.0339
+63,Kourambiedes III,11663,210,5.3,14.8,6.9,0.0070999999999999995
+64,Rigatoni,11664,527,8.5,6.5,1.4,0.1846
+65,Lucy's Mac and Corn,11665,350,3.6,21.8,13.4,0.6713
+66,Mediterranean Farfalle,11666,692,2.6,48.0,13.4,0.893
+67,Shrimp and Artichoke Linguine,11667,451,3.6,10.8,1.6,0.2159
+68,Pasta in Vodka Sauce,11668,717,4.3,26.2,8.3,0.6862
+69,Greek Pasta with Tomatoes and White Beans,11669,460,8.3,5.9,3.2,0.5928
+70,Lyndee's Chicken Penne Pasta,11670,333,8.4,7.1,1.4,0.3138
+71,Shrimp Linguine,11671,517,2.0,24.6,13.9,0.4358
+72,Linguine with Scampi,11672,701,3.1,37.5,22.5,0.4502
+73,Easy Crab Linguine,11673,569,15.7,15.9,9.1,0.9153
+74,Pasta and Herbs,11674,379,0.1,24.8,14.8,0.21619999999999998
+75,Linguine with Peppers and Sausage,11675,438,6.4,13.6,4.9,0.5568
+76,Cucumber and Dill Pasta Salad,11676,203,2.8,5.5,3.1,0.2238
+77,"Easy, Cheesy Baked Macaroni",11677,496,6.4,13.3,7.4,0.8834
+78,Polish Cabbage Noodles,11678,570,9.4,22.6,12.8,0.184
+79,Homemade Mac and Cheese,11679,845,0.0,48.2,29.8,0.8812000000000001
+80,Italian Spaghetti with Ham,11680,554,1.9,28.6,14.3,1.2709000000000001
+81,Pasta and Cauliflower,11681,720,7.7,29.6,4.5,0.09029999999999999
+82,Vodka Rigatoni,11682,558,3.3,31.1,17.5,1.2143
+83,Macaroni And Cheese I,11683,341,4.9,15.4,9.3,0.4014
+84,Pasta with Blue Cheese and Walnuts,11684,419,1.9,20.5,6.8,0.3993
+85,Lime Chicken and Mushroom Pasta,11685,466,5.8,12.8,2.1,0.0464
+86,"Summer Pasta with Basil, Tomatoes and Cheese",11686,580,6.1,33.0,11.2,0.7596
+87,Pasta with Yogurt Sauce,11687,295,3.4,10.6,5.1,0.4171
+88,Cajun Seafood Pasta,11688,695,3.3,36.7,21.6,1.0540999999999998
+89,Greek Pasta Salad I,11689,746,5.4,56.1,14.9,1.2787
+90,Thai Noodles,11690,571,5.3,18.5,3.6,0.3717
+91,Tomato and Garlic Pasta,11691,260,7.5,6.8,1.4,0.2356
+92,Alla Checca,11692,610,4.1,30.7,4.6,0.0767
+93,Puttanesca I,11693,490,3.4,34.0,4.7,0.7277
+94,Ricotta Apple Lasagna,11694,360,15.0,13.5,8.1,0.19319999999999998
+95,Cavatelli and Broccoli,11695,317,3.7,10.3,1.7,0.2344
+96,Mean Woman Pasta,11696,611,7.4,20.5,3.0,1.7198
+97,Tuna and Red Pepper Sauce,11697,293,2.7,8.4,1.3,0.2819
+98,Goat Cheese and Arugula over Penne,11698,317,2.1,17.8,6.8,0.334
+99,Mussels Mariniere with Linguine,11699,772,9.2,13.6,6.3,0.517

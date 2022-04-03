@@ -1,0 +1,101 @@
+,name,id,calories,sugars,fat,saturated fat,sodium
+0,Carib Black Bean Soup,13300,199,2.4,5.1,1.3,0.128
+1,Onion Soup Atu,13301,518,5.3,23.9,12.2,6.6322
+2,Fijian Dhal Soup,13302,168,3.6,3.0,0.4,0.8111
+3,Hearty Chicken Soup,13303,419,7.4,14.9,4.0,0.72
+4,Smoky Cod and Parsnip Chowder,13304,348,5.7,19.2,11.6,0.43739999999999996
+5,Spring Veal Stew,13305,320,5.7,9.6,2.7,0.1188
+6,Santa Fe Wild Rice Soup,13306,177,5.5,1.2,0.2,0.0221
+7,Restaurant-Quality Baked Potato Soup,13307,492,3.3,29.2,11.1,1.4185
+8,Lance's French Onion Soup,13308,664,7.7,33.1,18.2,1.4632
+9,Rich and Simple French Onion Soup,13309,586,0.0,44.0,24.3,1.5923
+10,Split Pea Soup Atu,13310,212,4.4,7.2,2.6,0.7041000000000001
+11,Potato and Cheddar Soup,13311,169,4.3,9.9,5.9,0.2773
+12,Creamy Vegetable Chowder,13312,203,8.2,6.8,2.2,0.8015
+13,Best Cream Of Broccoli Soup,13313,207,7.0,12.4,7.4,0.528
+14,Corn Cheese Chowder,13314,397,13.1,20.6,13.0,1.407
+15,Sauerkraut Soup II,13315,387,6.3,23.4,7.8,2.5565
+16,Golden Potato Soup,13316,299,5.0,14.7,9.0,1.3894000000000002
+17,Hearty Lentil Soup I,13317,258,2.7,7.7,1.0,0.32539999999999997
+18,Favorite Lentil Soup,13318,249,1.8,7.5,1.0,0.31460000000000005
+19,Potato Soup III,13319,634,8.7,27.4,13.2,0.6516000000000001
+20,Cincinnati Chili II,13320,488,10.3,29.0,11.5,1.0035
+21,Shank Beef Soup,13321,1153,14.9,24.4,8.9,0.1802
+22,Oxtail Soup II,13322,908,14.1,38.0,15.5,1.2612999999999999
+23,Hamburger Vegetable Soup,13323,466,7.3,16.2,5.9,2.6866
+24,Cream of Potato Soup I,13324,270,8.2,10.8,3.6,1.2047
+25,Cream of Broccoli Soup III,13325,89,6.3,2.5,1.2,0.8302999999999999
+26,Potato Soup IV,13326,389,8.8,19.8,10.8,1.2828
+27,Chicken Soup with Drop-In Noodles,13327,401,3.4,6.1,2.0,1.4183
+28,Quick Country Cupboard Soup,13328,193,6.1,2.1,0.4,1.0422
+29,Quick Chili I,13329,489,6.3,31.3,12.4,1.9094
+30,South of The Border Chicken Soup,13330,235,1.8,9.9,1.5,0.6865
+31,Tangy Chili,13331,528,9.2,25.1,9.6,1.4523
+32,Beef Stew III,13332,479,4.0,27.5,9.7,0.4594
+33,Jamie's Minestrone,13333,228,11.3,8.3,1.4,1.142
+34,Pasta Fagioli Soup II,13334,256,5.1,1.1,0.3,0.9964
+35,Oatmeal and Tomato Soup,13335,181,5.0,10.5,1.8,0.3353
+36,Taco Soup IV,13336,474,6.9,31.1,12.4,1.0932
+37,Hamburger Soup III,13337,479,7.4,25.9,10.3,1.6325999999999998
+38,Quick and Easy Vegetable Soup,13338,116,6.4,0.6,0.1,0.6395
+39,Minestrone Soup II,13339,387,13.2,17.4,5.9,1.6337000000000002
+40,Chilled Beet Soup,13340,211,4.3,18.2,11.3,0.0809
+41,Quick and Zesty Vegetable Soup,13341,242,4.0,15.6,6.2,0.283
+42,Knefla Soup I,13342,549,12.3,17.2,5.6,1.7835999999999999
+43,Egg Drop Soup II,13343,27,0.2,1.2,0.4,0.0182
+44,Chicken Soup Au Pistou,13344,203,3.4,5.9,1.4,0.241
+45,French Beef Stew,13345,343,4.7,20.1,7.2,0.49069999999999997
+46,Bean Soup,13346,247,2.9,3.8,1.1,0.5428999999999999
+47,Pat's Cream of Potato Soup,13347,307,2.4,14.2,5.7,0.7727
+48,Chicken Soup I,13348,192,3.0,9.1,2.5,0.0824
+49,Spicy Black Bean Soup,13349,293,3.8,6.1,1.9,1.736
+50,Thermos Bottle Stew,13350,479,6.4,25.4,9.8,0.7373999999999999
+51,Chicken Tortilla Soup I,13351,377,2.7,19.1,7.2,0.9432
+52,Best Cream of Potato Soup,13352,252,5.4,11.8,2.9,0.4668
+53,"Potato, Broccoli and Cheese Soup",13353,448,4.9,22.8,12.7,1.1889
+54,Taco Soup V,13354,299,5.1,7.5,2.5,1.3774000000000002
+55,Taco Soup VI,13355,529,13.3,21.0,8.0,2.1976999999999998
+56,Quick Veggie Soup,13356,217,8.5,1.0,0.2,1.0568
+57,Chicken Pot Pie Soup,13357,367,7.1,11.5,3.5,1.133
+58,Beef Stew IV,13358,395,3.6,21.3,7.6,0.468
+59,Beefy Tomato Soup,13359,389,6.7,26.9,10.8,0.4144
+60,Connie's Quick Stew,13360,643,20.3,31.2,11.9,1.1854
+61,Moab Chowder,13361,410,4.7,7.5,3.3,5.7808
+62,Swan's Summer Soup,13362,289,15.6,16.2,2.4,0.041100000000000005
+63,Old-Fashioned Onion Soup,13363,255,8.2,12.8,7.7,0.66
+64,Terri's Chicken Carcass Stew,13364,238,5.6,2.8,0.6,1.0403
+65,Pine Nut Rice Soup,13365,275,16.7,12.5,1.9,0.0091
+66,Shrimp Rice Soup,13366,586,0.1,6.8,1.1,0.159
+67,Chicken Tortilla Soup II,13367,418,4.6,22.3,3.9,0.7963
+68,Chicken Corn Soup I,13368,271,0.9,12.4,3.5,0.09
+69,Mom's Goulash,13369,896,5.7,38.6,15.0,0.5331
+70,Pasta e Fagioli II,13370,258,4.7,5.6,1.6,0.6705
+71,Fish Chowder I,13371,347,4.2,14.0,4.9,0.2786
+72,Beef and Barley Soup II,13372,353,4.3,9.6,3.4,0.1426
+73,Chicken Noodle Soup II,13373,343,6.8,6.0,1.6,1.3139
+74,Corn Chowder with Beef,13374,292,5.9,12.5,5.1,0.293
+75,Cheesy Vegetable Soup I,13375,653,4.1,55.7,24.6,1.2855999999999999
+76,Tortilla and Bean Soup,13376,205,1.8,1.4,0.2,1.0912
+77,Vegetable Beef Soup II,13377,250,5.8,13.1,5.2,1.3802999999999999
+78,Stuffed Pepper Soup IV,13378,341,8.1,11.9,4.6,1.0394
+79,Easy Potato Cheese Soup,13379,362,3.0,16.9,9.6,0.5065
+80,Ham and Bean Soup II,13380,459,5.1,14.0,4.7,0.949
+81,Tomato Soup I,13381,275,5.8,25.3,15.6,0.5538
+82,Cream of Potato Soup II,13382,291,7.4,8.6,5.1,1.2310999999999999
+83,Calico Wild Rice Soup,13383,256,3.1,1.8,0.4,0.5157999999999999
+84,Split Pea Soup,13384,310,9.5,1.0,0.2,0.2551
+85,Cucumber Soup II,13385,143,4.2,6.5,2.8,0.8993
+86,Easy Avgolemono Soup,13386,390,8.7,12.1,4.4,1.064
+87,Sauerkraut Meatball Soup,13387,737,6.9,52.5,17.8,2.1822
+88,Potato Soup V,13388,356,6.2,21.9,13.7,0.8823
+89,Quick and Easy Clam Chowder,13389,425,2.6,32.5,19.0,0.7396
+90,Chicken Chili II,13390,407,4.1,12.2,2.0,0.9347000000000001
+91,Strawberry Soup III,13391,52,7.5,0.8,0.3,0.065
+92,Classic Vichyssoise,13392,334,5.9,8.9,5.4,0.056600000000000004
+93,Long Soup,13393,256,3.3,8.9,1.6,1.6234000000000002
+94,Velvety Chicken Corn Soup,13394,166,4.4,5.0,0.7,1.2557
+95,French Onion Soup III,13395,234,2.4,12.8,7.9,0.6617999999999999
+96,Veggie Cheddar Soup,13396,345,7.0,19.4,10.8,0.7371
+97,Pasta e Fagioli III,13397,333,5.5,3.1,0.4,0.15009999999999998
+98,Chicken Cheese Chowder,13398,691,17.7,41.3,18.4,2.2094
+99,Really Easy Chowder,13399,73,2.9,0.5,0.1,0.284

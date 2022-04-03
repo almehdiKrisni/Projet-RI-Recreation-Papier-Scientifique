@@ -1,0 +1,100 @@
+,name,id,calories,sugars,fat,saturated fat,sodium
+0,Green Beans with Almonds,16000,97,1.9,5.5,1.4,0.07440000000000001
+1,Fish Chowder II,16001,494,16.4,12.9,4.1,0.7128
+2,Canned Fruit Cobbler,16002,480,30.2,27.2,17.1,0.4317
+3,Hamburger Soup IV,16003,797,10.0,31.7,12.5,0.5968
+4,Tropical Mango Mousse,16004,87,16.8,0.3,0.1,0.0233
+5,Broiled Mochi with Nori Seaweed,16005,109,0.3,0.2,0.0,0.9073
+6,Viennese Crescent Holiday Cookies,16006,95,6.8,5.3,2.5,0.0335
+7,Easy Lemon Pie,16007,255,27.7,10.5,3.9,0.1666
+8,Cracker Pie II,16008,238,25.7,11.2,0.9,0.2072
+9,Red Wine Cake,16009,686,48.4,38.8,23.1,0.32680000000000003
+10,Roasted Red Pepper Chicken,16010,671,7.7,33.4,14.6,1.0191000000000001
+11,Chicken Veggie Soup I,16011,98,2.7,0.2,0.0,0.0995
+12,Fat Tuesday Salmon,16012,623,4.0,31.2,6.1,1.0205
+13,Saint Paddy's Dill Dip,16013,275,1.8,28.0,7.0,0.5942000000000001
+14,Mussels Marinara di Amore,16014,304,2.4,5.4,0.8,0.18780000000000002
+15,Caramelized Brussels Sprouts with Pistachios,16015,271,10.2,15.9,7.9,0.09290000000000001
+16,Hungarian Lentil Soup,16016,258,7.2,6.0,1.4,1.2775999999999998
+17,Homemade Chocolate Covered Cherries,16017,209,34.8,4.7,2.9,0.0235
+18,Caramels,16018,115,10.7,6.3,4.0,0.0304
+19,World's Best Pumpkin Pie,16019,319,42.0,9.6,2.8,0.3549
+20,Collard Greens,16021,255,3.3,23.2,8.4,0.4234
+21,New Year's Day Black-Eyed Peas,16022,120,3.5,3.4,1.2,0.25639999999999996
+22,Shrimp Scampi Cheesecake Appetizer,16023,701,1.8,56.3,26.7,1.0751
+23,Southern Collard Greens,16024,471,1.4,34.3,9.6,0.1301
+24,Stuffed Brie,16025,224,9.1,16.4,10.3,0.281
+25,Sweet Tart Punch,16026,285,54.8,2.6,1.5,0.0795
+26,Tuscan Cream Cheese Spread,16027,365,3.5,27.4,16.6,1.0923
+27,Cherry Nut Delight,16028,1108,47.8,63.2,31.3,0.4089
+28,Chocolate Strawberry Shortcake,16029,375,26.0,19.0,13.7,0.4765
+29,Lesley's Valentine Brownies with Raspberry Coulis,16030,562,53.5,32.5,11.5,0.33
+30,Luscious Chocolate Truffles,16031,53,7.0,2.5,1.6,0.006900000000000001
+31,Sweetheart Cookie Sandwiches,16032,99,9.6,4.0,1.5,0.055200000000000006
+32,The Best Valentine Sugar Cookies,16033,163,8.6,7.0,1.8,0.124
+33,Strawberry Fluff,16034,236,31.0,8.6,6.8,0.2848
+34,Irish Lamb Stew,16035,672,5.6,39.3,15.6,1.1894
+35,Sweet Potato Latkes,16036,68,3.1,2.0,0.5,0.037200000000000004
+36,Grandma Jackie's Valentine Cake,16037,430,38.5,22.8,11.1,0.3506
+37,Quick Pasta Primavera,16038,278,12.0,9.1,5.1,0.156
+38,Coffee Liqueur III,16039,274,33.4,0.0,0.0,0.0017
+39,Sambousa,16040,649,0.7,54.1,9.6,0.31810000000000005
+40,Toll House Walnut Pie,16041,628,38.5,45.4,20.4,0.2898
+41,Caribbean Coconut Chicken,16042,272,3.7,13.3,9.9,0.0872
+42,Southern Raisin and Coconut Pie,16043,460,36.0,27.3,11.5,0.24869999999999998
+43,Pecan Fondant Logs,16044,1028,119.3,54.7,13.1,0.4178
+44,Matzo Brei,16045,222,1.4,9.6,2.1,0.07
+45,Molasses Snowballs,16046,263,6.2,20.0,3.7,0.0023
+46,Peanut Butter Temptations II,16047,248,19.6,13.8,5.8,0.241
+47,Chocolate Caramel Brownies,16048,460,48.2,22.1,12.1,0.3978
+48,Granny Kat's Pumpkin Roll,16049,316,34.4,14.1,8.4,0.3055
+49,Cotechino con Lenticchie,16050,558,2.2,26.9,9.0,0.5848
+50,Sam's Kicking Cranberry Sauce,16051,170,31.4,0.1,0.0,0.1707
+51,Paradise Pumpkin Pie I,16052,361,30.0,19.4,9.0,0.3574
+52,Moist Date Cake,16053,458,46.6,15.9,2.3,0.18180000000000002
+53,Chocolate Crepes,16054,434,32.5,27.6,17.0,0.2055
+54,Peppermint Pink Valentine Mold,16055,177,19.2,8.8,5.0,0.1017
+55,Two Ton Bourbon Pecan Cake,16056,1499,49.8,111.1,25.6,0.406
+56,Ultimate Valentine's Day Chocolate Truffle,16057,1264,117.5,84.7,49.8,0.0251
+57,Jam Cake,16058,361,36.8,15.2,7.5,0.16340000000000002
+58,Stole My Heart Chocolate Cake,16059,585,40.5,25.4,14.1,0.5817
+59,Valentine's Pie,16060,441,31.3,23.4,13.6,0.25
+60,Zucchini Pancakes,16061,362,2.0,26.9,10.3,0.9369
+61,Italian Restaurant-Style Dressing,16062,156,0.1,12.9,2.0,1.1950999999999998
+62,Ranch Oyster Crackers,16063,275,1.9,14.1,2.9,1.1162999999999998
+63,Orange Fluff II,16064,457,71.7,14.0,8.7,0.4739
+64,Anna's Custard Pie,16065,234,15.7,11.2,3.4,0.177
+65,Awesome Slow Cooker Pot Roast,16066,426,0.9,23.7,8.8,0.6387
+66,Chocolate Walnut Loaf,16067,167,12.1,12.3,3.1,0.2702
+67,Hot Honey Chicken,16068,519,34.8,20.9,6.0,0.2322
+68,Passover Rolls II,16069,471,2.5,33.0,5.1,0.6524
+69,Passover Chocolate Mousse Pie,16070,276,25.1,15.7,8.4,0.0596
+70,Raisin Farfel Kugel,16071,412,40.9,13.1,6.4,0.31989999999999996
+71,Passover Brownies,16072,325,28.9,21.3,10.3,0.1055
+72,Potato Latkes I,16073,102,0.7,4.4,1.1,0.6196
+73,Broccoli Casserole III,16074,330,1.9,25.6,14.2,0.577
+74,Best Chicken Salad Ever I,16075,253,16.2,16.4,1.8,0.1699
+75,Cheesy Potato Kugel,16076,260,1.5,15.2,6.3,0.1768
+76,Norwegian Potato Lefsa,16077,756,5.5,18.1,10.9,0.9894
+77,Passover Chocolate Chip Meringues,16078,727,122.6,26.0,15.4,0.6465
+78,Fereni Starch Pudding,16079,223,12.9,9.9,1.6,0.0352
+79,Judy's Strawberry Pretzel Salad,16080,371,33.6,22.3,14.7,0.3272
+80,Beef and Noodle Bake,16081,640,24.5,23.8,10.5,1.9407
+81,Anytime Fruit Salad,16082,516,65.6,19.3,15.4,0.5785
+82,Creamy Mandarin Orange Salad,16083,196,11.5,14.1,4.5,0.09540000000000001
+83,Pakistani Spicy Chickpeas,16084,205,2.5,7.1,0.9,0.6215
+84,Salad de Colores,16085,141,7.7,5.4,0.7,0.254
+85,Bacon Cheeseburger Upside Down Pizza,16086,668,6.2,48.2,19.1,0.9471
+86,Rocky Road Drops,16087,308,26.8,16.7,7.2,0.055
+87,Hush Puppies I,16088,531,4.1,33.6,5.1,0.8032999999999999
+88,Hush Puppies II,16089,123,0.7,7.9,1.1,0.2336
+89,Dressing for Potato Salad,16090,136,1.1,13.9,3.5,0.1174
+90,Baby Back Ribs,16091,697,32.8,37.4,13.6,1.6072
+91,Aunt Fannie's Dinner,16092,318,5.7,14.3,5.4,0.5642999999999999
+92,Best Cranberry Salad,16093,340,54.0,11.4,1.0,0.0963
+93,Taffy Apple Salad IV,16094,445,52.4,19.4,8.8,0.0469
+94,Italian Restaurant-Style Salad Dressing I,16095,63,4.4,4.7,0.5,0.2334
+95,Pioneer Potato Candy,16096,516,94.6,13.3,7.8,0.1623
+96,Pumpkin Cheesecake Pie,16097,418,28.6,27.9,14.4,0.49889999999999995
+97,Alyson's Broccoli Salad,16098,559,13.5,48.1,7.6,0.5835
+98,Mexican Salad,16099,312,4.3,17.0,2.3,0.309

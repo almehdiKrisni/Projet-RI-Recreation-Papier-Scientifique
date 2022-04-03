@@ -1,0 +1,101 @@
+,name,id,calories,sugars,fat,saturated fat,sodium
+0,Flank Steak with Garlic Wine Sauce,14600,458,0.7,25.7,13.2,0.1799
+1,Italian Meatball Sandwich Casserole,14601,1046,15.4,64.7,25.9,1.8755
+2,Easy Vegetable Beef Soup with Ground Beef,14602,213,3.1,12.0,4.8,0.5366000000000001
+3,Meatloaf,14603,362,6.1,23.3,9.0,0.5057
+4,Stroganoff Sandwich,14604,493,3.0,29.8,15.0,0.7542000000000001
+5,Rump Roast Au Jus,14605,358,0.2,17.6,6.6,0.161
+6,Beef Tenderloin With Roasted Shallots,14606,653,2.2,50.6,20.4,0.6452
+7,Mom's Authentic Kosher Cholent Recipe,14607,1067,5.3,49.2,17.6,0.6161
+8,Slow Cooker Barbeque,14608,344,16.6,17.9,7.0,0.8952
+9,Veal Stew,14609,464,3.7,25.4,6.3,0.5121
+10,Curried Meatloaf,14610,503,10.3,35.9,13.2,0.7248
+11,Spicy Orange Beef,14611,397,12.4,22.3,6.9,1.2632999999999999
+12,Swiss Steak Stew,14612,349,4.2,14.9,5.7,0.4475
+13,Apricot Brisket,14613,822,41.4,43.8,15.6,0.5498
+14,Herald's Impossibly Easy Cheeseburger Pie,14614,403,4.0,29.0,13.2,0.5542
+15,Tin Foil Stew,14615,776,13.2,42.7,19.8,0.31539999999999996
+16,Simply Elegant Steak and Rice,14616,418,2.1,17.4,5.4,1.0487
+17,Barbecued Beef Cubes or Hamburger,14617,446,16.3,14.7,6.2,0.7767999999999999
+18,Cola Pot Roast II,14618,424,6.3,23.3,8.9,0.7358
+19,Garlic Lovers Beef,14619,851,1.2,58.8,20.0,0.4011
+20,Spicy Shredded Beef,14620,352,2.8,27.3,9.1,0.6303
+21,Beef Pot Roast,14621,551,0.6,41.9,16.6,0.4457
+22,Mexican Lasagna I,14622,804,5.5,47.7,24.6,1.3395
+23,Best Prime Rib Roast,14623,630,7.7,50.9,19.7,0.3197
+24,Rib Eye Steaks with a Soy and Ginger Marinade,14624,467,12.4,27.1,10.7,1.894
+25,Beef and Salsa Dip,14625,338,2.9,25.3,14.1,0.6437999999999999
+26,Ground Beef Stroganoff,14626,696,3.0,44.0,13.0,0.4819
+27,Ugandan Kabobs,14627,382,2.3,28.1,9.3,0.32930000000000004
+28,Beef Stroganoff I,14628,483,0.9,40.6,21.6,0.1555
+29,Mushroom Meatloaf,14629,765,10.1,50.8,19.9,1.5499
+30,Osso Buco,14630,251,3.3,14.5,5.2,0.9479
+31,Mushroom Sauce,14631,167,0.9,14.8,9.3,0.4998
+32,Steak and Rice,14632,619,6.3,23.3,7.3,1.689
+33,Fiesta Chili Beef and Rice,14633,578,3.8,27.1,10.7,1.1863
+34,Johnny Appleseed Meatballs,14634,332,3.6,26.1,9.2,0.5684
+35,Swiss Steak Italian Style,14635,705,19.5,24.8,6.5,1.3015999999999999
+36,Southwestern Haystacks,14636,877,6.3,42.6,21.4,0.844
+37,Pot Roast in Beer,14637,387,1.7,21.8,6.9,0.4182
+38,Savory Tater Tot Casserole,14638,573,1.5,35.0,11.2,0.9402
+39,London Broil,14639,487,0.1,32.5,5.9,1.1923
+40,Easy Ground Beef Stroganoff,14640,524,3.8,40.5,16.4,1.9225999999999999
+41,Steak Continental,14641,438,0.6,24.8,8.8,1.6467
+42,Italian Style Pot Roast,14642,742,4.9,42.9,16.4,1.208
+43,Easy Pot Roast,14643,550,2.5,32.0,12.5,0.4327
+44,Best Ever Meatloaf with Brown Gravy,14644,451,1.2,33.7,13.9,0.43069999999999997
+45,Dried Beef Cheese Ball,14645,96,0.5,8.1,5.1,0.4289
+46,Barbecued Beef,14646,276,11.6,16.2,6.3,0.5622999999999999
+47,Oven Barbecued Beef Brisket I,14647,672,7.3,53.6,21.6,0.44
+48,Mother's Pot Roast,14648,552,4.3,36.6,15.3,0.5704
+49,Barbecue Beef for Sandwiches,14649,200,2.2,13.3,5.6,0.207
+50,Best Barbecued Beef,14650,618,1.1,40.5,18.6,0.1596
+51,Taco Bake I,14651,413,2.7,26.9,12.7,1.037
+52,Best Ever Meatloaf I,14652,270,1.4,18.7,7.4,0.2166
+53,Bitkas,14653,443,5.3,29.9,9.1,1.2537
+54,Beef Paprika,14654,426,9.3,30.8,11.3,1.0884
+55,Cola Pot Roast I,14655,324,6.2,21.0,7.4,1.1661
+56,Meatloaf with Fried Onions and Ranch Seasoning,14656,668,4.5,46.7,17.0,1.0127000000000002
+57,Ropa Vieja,14657,559,1.6,40.9,14.9,0.5986
+58,Sweet and Sour Meatballs I,14658,562,29.9,35.2,14.2,0.0988
+59,Roasted Vegetable and Beef Stew,14659,1048,9.9,55.2,18.6,0.7627999999999999
+60,Cuban Beef Stew,14660,353,5.9,17.2,5.7,0.4985
+61,Hollandaise Sauce,14661,450,0.2,49.4,30.4,0.0123
+62,Wine Sauce,14662,174,0.8,9.0,5.6,0.071
+63,Sun-dried Tomato Butter,14663,109,0.4,11.6,7.3,0.0039
+64,Cilantro and Lime Butter,14664,102,0.0,11.5,7.3,0.0019
+65,Tarragon Butter,14665,107,0.1,11.6,7.3,0.0024
+66,Teri Tips,14666,156,5.2,10.2,3.2,0.4731
+67,Barbecued Shredded Beef,14667,447,16.2,24.4,9.8,0.7253
+68,Steak Fajitas,14668,896,6.2,37.8,11.1,1.1816
+69,Beef Pot Pie I,14669,861,6.8,57.7,16.2,0.2795
+70,Easiest Pot Roast Ever,14670,526,4.5,25.3,10.0,0.5474
+71,Beef Heart Braised in Wine,14671,430,2.2,15.4,6.8,0.4215
+72,Tongue and Mustard Sandwiches,14672,391,3.5,19.7,8.5,1.2239
+73,Liver and Onions,14673,303,3.3,15.7,8.7,0.16140000000000002
+74,Stout Steak,14674,344,0.5,12.5,4.8,1.57
+75,Brisket with BBQ Sauce,14675,560,7.8,42.3,16.4,1.6125
+76,Zesty Porcupine Meatballs,14676,408,10.3,21.6,8.2,1.2505
+77,Deli Style Brisket,14677,202,1.4,15.7,6.1,0.0726
+78,Calves' Liver with Sherry,14678,425,3.6,15.0,3.0,0.6684
+79,Sesame Beef,14679,354,13.0,22.5,4.5,0.9441
+80,Thit Bo Xao Dau,14680,376,1.4,28.6,8.3,0.1989
+81,Vietnamese Beef Pho,14681,528,4.0,13.6,5.4,2.8438000000000003
+82,Loosemeat Sandwiches I,14682,527,12.0,32.9,11.3,0.856
+83,Nuoc Cham Sauce,14683,32,6.7,0.1,0.0,0.7311
+84,Slow Cooker London Broil,14684,198,3.4,11.1,4.1,0.8011
+85,Slow Cooker Beef Stew,14685,576,4.1,30.3,11.9,0.5415
+86,Beef Burgundy Casserole,14686,474,1.8,31.0,12.6,0.5341
+87,Army SOS Creamed Ground Beef,14687,201,4.4,10.8,4.7,0.5183
+88,Beef Noodle Shepherd's Pie,14688,369,1.8,24.1,9.2,0.6137
+89,French Dip Sandwiches,14689,373,1.6,14.4,5.3,1.1729
+90,Cabbage Roll Casserole,14690,352,7.6,20.6,8.3,0.8401000000000001
+91,Sausage Casserole I,14691,635,7.1,37.6,13.3,1.053
+92,Caramel Apple Pork Chops,14692,262,14.0,16.0,6.0,0.027399999999999997
+93,Awesome Honey Pecan Pork Chops,14693,518,17.7,30.7,11.0,0.1016
+94,Cuban Pork Roast I,14694,626,1.2,49.3,16.4,0.7968999999999999
+95,Cuban Pork Roast II,14695,633,0.2,39.8,13.8,0.12140000000000001
+96,Leftover Ham And Noodles,14696,309,2.4,4.2,1.2,0.09490000000000001
+97,Garlic Ginger Chops,14697,291,2.9,10.0,3.0,3.8278000000000003
+98,Cantonese Dinner,14698,272,11.8,13.2,3.0,1.156
+99,Owen's Peachy Pig Out,14699,580,19.9,38.9,13.8,0.4601

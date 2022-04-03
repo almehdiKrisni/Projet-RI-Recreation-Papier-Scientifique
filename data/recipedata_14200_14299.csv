@@ -1,0 +1,100 @@
+,name,id,calories,sugars,fat,saturated fat,sodium
+0,Home On The Range Tuna Salad,14200,227,0.9,14.8,3.2,0.5745
+1,Potato Salad I,14201,299,10.3,13.1,2.3,0.308
+2,Potato Salad II,14202,330,6.2,7.8,1.0,2.578
+3,Mediterranean Pasta Salad,14203,340,3.1,13.6,4.2,0.4715
+4,Ruby Red Layered Salad,14204,333,43.6,12.1,7.5,0.129
+5,Apple Stick Salad,14205,110,24.7,0.2,0.0,0.15419999999999998
+6,Cucumbers And Egg Salad,14206,176,3.6,13.4,2.9,0.6063
+7,Green Pea Salad,14207,357,10.7,26.8,4.0,0.3413
+8,Allison's Pasta Salad,14208,351,8.0,25.9,10.1,0.7689
+9,Shieldzini,14209,38,3.5,1.8,0.3,0.7417999999999999
+10,Charlotte's Tortellini Salad,14210,356,6.1,19.5,5.3,0.49
+11,Macaroni Salad with Pickles,14211,689,7.6,40.3,8.5,1.1196
+12,Tortellini Salad I,14212,286,2.4,19.2,4.8,0.3525
+13,Chuck Wagon Salad,14213,227,14.1,4.1,1.5,0.688
+14,Turkey Macaroni Salad,14214,858,5.9,57.2,11.1,1.0212
+15,Cucumber And Yogurt Salad,14215,55,3.9,2.6,0.7,0.028
+16,Key West Crab Salad,14216,183,12.7,3.7,0.6,0.3117
+17,Fruity Pasta Salad With Lemon Poppy Seed Dressing,14217,89,6.3,0.7,0.2,0.0158
+18,Chicken and Melon Salad,14218,246,17.6,6.5,2.7,0.1023
+19,Summer Potato Salad,14219,313,3.0,22.8,3.6,0.3406
+20,Tarragon Chicken Salad,14220,154,2.1,5.6,1.8,0.0787
+21,Escarole Siciliano,14221,224,1.9,17.5,2.4,0.4496
+22,Hot and Sour Slaw,14222,55,5.2,1.2,0.2,0.504
+23,Super Duper Bean Salad,14223,471,29.3,19.4,2.5,0.9518
+24,Cilantro Cucumber Salad,14224,26,2.5,0.3,0.1,0.206
+25,Tuna Salad With Fresh Dill,14225,41,1.4,0.3,0.1,0.0783
+26,French Potato Salad,14226,500,3.1,22.4,3.0,1.4739
+27,Fruit and Nut Slaw,14227,219,29.6,6.8,0.8,0.2439
+28,Caribbean Sweet Potato Salad,14228,231,7.2,12.6,1.2,0.2904
+29,Tabbouleh I,14229,162,2.1,9.5,1.3,0.3034
+30,Garlic Croutons,14230,89,0.2,7.8,4.9,0.1008
+31,Guacamole,14231,262,3.0,22.2,3.2,0.5957
+32,Kitchen Sink Salad Dressing,14232,131,4.1,12.5,1.7,0.2025
+33,Layered Cheddar-Fruit Salad,14233,402,25.3,28.7,10.8,0.2985
+34,Kecia's Broccoli Salad,14234,675,29.1,52.4,13.1,0.6527000000000001
+35,Caesar Salad I,14235,544,1.1,44.2,5.9,0.9917
+36,Shell Pasta Salad with Salmon and Green Beans,14236,139,1.2,4.3,0.9,0.0569
+37,Kerry's Beany Salad,14237,379,2.5,19.0,2.6,0.4765
+38,Chickpea Salad with Red Onion and Tomato,14238,262,1.4,11.8,1.6,0.4044
+39,Salad Nicoise,14239,287,17.2,8.7,1.9,1.3059
+40,Sweet Pea and Dill Salad,14240,402,10.4,28.3,7.1,0.29469999999999996
+41,Orange Vinaigrette Brown Rice Salad,14241,425,22.8,9.0,1.3,0.31089999999999995
+42,Colorful Bulgur Salad,14242,65,3.1,0.7,0.1,0.1274
+43,Cranberry Gelatin Salad,14243,206,34.9,6.6,0.6,0.077
+44,Old-Fashioned Strawberry Pretzel Salad,14244,521,45.9,28.2,18.7,0.6027
+45,Easy Seven Layer Vegetable Salad,14245,471,6.2,45.0,10.6,0.5391
+46,Five Cup Salad,14246,169,14.7,7.4,5.0,0.0376
+47,Make-Ahead Spaghetti Salad,14247,338,4.8,11.9,1.4,0.5277999999999999
+48,Cracker Salad,14248,481,3.7,26.2,9.9,0.8893
+49,Napa Cabbage Noodle Salad,14249,666,22.8,59.4,5.8,0.14930000000000002
+50,Nell's Macaroni Salad,14250,356,3.9,19.8,3.2,0.3534
+51,Orange Fluff I,14251,393,49.8,16.8,13.8,0.32680000000000003
+52,Asian Chicken Salad,14252,414,6.3,18.0,3.2,0.2246
+53,Taco Salad I,14253,846,14.2,56.5,15.4,1.5796
+54,Potato Salad Dressing I,14254,61,9.9,1.9,0.5,0.0422
+55,Joy's Taco Salad,14255,570,13.4,30.7,10.1,1.4008
+56,Rice A Roni™ Salad,14256,275,2.8,12.8,2.0,0.6592
+57,Spaghetti Salad II,14257,204,3.0,10.4,1.3,0.6562
+58,Rainbow Salad,14258,240,49.6,2.6,1.6,0.2696
+59,Eastern Rice Salad,14259,249,2.8,17.6,2.7,0.4682
+60,Mediterranean Lentil Salad,14260,147,3.0,7.1,1.0,0.45280000000000004
+61,Vegan Thai Noodle Salad,14261,390,8.2,22.6,3.5,0.7399
+62,Beef Fajita Salad,14262,301,5.2,19.3,5.3,0.7982
+63,Simple Sicilian Salad Dressing,14263,129,1.5,13.5,1.9,0.19640000000000002
+64,Honey Mustard Dressing I,14264,152,11.9,11.3,1.7,0.42269999999999996
+65,Prune Whip,14265,152,27.7,0.2,0.0,0.0571
+66,Ranch Dressing I,14266,99,0.9,9.6,2.5,0.09759999999999999
+67,Restaurant-Style Coleslaw I,14267,184,9.4,12.6,2.0,0.2479
+68,Fiesta Dressing,14268,34,0.0,3.0,1.9,0.1039
+69,Chunks of Glass,14269,438,42.7,26.9,16.5,0.2763
+70,Spicy Tex-Mex Salad,14270,542,11.9,33.1,6.5,1.0773
+71,Spinach Salad I,14271,556,19.4,43.9,8.6,0.8812000000000001
+72,Spaghetti Shrimp Salad,14272,613,6.1,31.7,4.9,0.6197999999999999
+73,Teriyaki Chicken Salad,14273,467,7.0,31.7,5.4,2.9661
+74,Greek Salad II,14274,755,10.8,68.2,14.5,1.181
+75,Refrigerator Pickles,14275,45,10.3,0.1,0.0,0.0593
+76,Strawberry Spinach Salad I,14276,491,33.6,35.2,4.5,0.0629
+77,Antipasto Pasta Salad,14278,451,4.3,29.1,8.2,0.9775
+78,Caesar Salad II,14279,245,1.2,21.8,3.7,0.2422
+79,Broccoli Salad,14280,374,20.3,27.2,4.4,0.3529
+80,Bodacious Broccoli Salad,14281,273,3.4,24.0,7.9,0.5427000000000001
+81,Classic Tossed Salad,14282,204,3.7,16.4,4.7,0.639
+82,Mardi's Broccoli Salad,14283,308,8.6,22.5,3.7,1.2255
+83,Grandma's Cherry Salad,14284,153,4.8,0.2,0.1,0.015099999999999999
+84,Chinese Cabbage Salad I,14285,291,10.0,21.3,3.6,0.26289999999999997
+85,Instant Pistachio Salad,14286,159,24.0,4.9,4.1,0.1325
+86,Garden Delight,14287,103,6.9,4.6,2.7,0.665
+87,Danny's Salad,14288,127,14.8,4.9,1.3,0.1277
+88,Refried Bean Salad,14289,444,7.5,7.9,2.6,1.4062000000000001
+89,Raw Vegetable Salad,14290,283,10.1,23.3,4.4,0.3735
+90,Strawberry Romaine Salad I,14291,257,17.0,16.8,2.6,0.2048
+91,Tortellini Salad with Grilled Tomato Vinaigrette,14292,528,4.9,38.4,10.6,0.7469
+92,Great Chicken Salad,14293,519,6.6,39.1,7.1,0.4712
+93,Santa Fe Chicken Salad,14294,907,13.0,63.0,15.4,1.8067
+94,Seven Layer Salad,14295,387,5.5,32.7,10.2,0.6673
+95,Almond Ice,14296,71,15.6,0.1,0.0,0.005
+96,Asian Coleslaw,14297,184,10.7,12.6,2.0,0.5136000000000001
+97,Aunt Betty's French Dressing,14298,73,8.0,4.6,0.6,0.07959999999999999
+98,Baja Bean Salad,14299,271,2.3,10.2,1.6,0.42469999999999997

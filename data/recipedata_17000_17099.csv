@@ -1,0 +1,100 @@
+,name,id,calories,sugars,fat,saturated fat,sodium
+0,Uncle Terry Meat,17000,722,3.5,59.5,20.2,0.5597000000000001
+1,Marinated Pork Roast,17001,410,6.1,19.1,6.3,0.42419999999999997
+2,Smoker Sauce,17002,47,9.3,0.1,0.0,0.4243
+3,Old Fashioned Cream Scones,17003,223,2.8,11.1,6.4,0.3413
+4,Spicy Tomato Salsa,17004,57,5.9,0.6,0.1,0.9709
+5,Chungles Pasta,17005,517,4.3,21.4,5.9,0.7822
+6,Ninety Minute Cinnamon Rolls,17006,347,27.0,12.5,2.4,0.26189999999999997
+7,Cranberry Sauce Chicken I,17007,232,13.1,6.2,1.0,0.43310000000000004
+8,Black-Eyed Peas Spicy Style,17008,119,0.8,0.8,0.2,0.4333
+9,Easy Beef Pie,17009,632,5.8,36.3,8.5,1.0275999999999998
+10,Chocolate Peanut Butter Pie VI,17010,376,39.4,15.8,5.5,0.26430000000000003
+11,Tangy Cranberry Bread,17011,49,7.1,1.6,1.0,0.2518
+12,Light and Fresh Dressing,17012,279,10.3,26.6,3.5,0.498
+13,Banana Peanut Butter Bread,17013,266,16.2,13.9,5.1,0.1792
+14,Peanut Butter Cup Pie,17014,597,31.4,38.8,11.3,0.689
+15,Walnut Caramel Tart,17015,545,33.7,22.1,3.9,0.5191
+16,Mushroom and Swiss Chicken,17016,360,2.3,19.8,6.9,0.49989999999999996
+17,Westrup Whole Wheat Bread,17017,92,4.3,2.4,0.4,0.1958
+18,My Navy Bean Soup,17018,448,5.1,25.5,6.5,0.9959
+19,Chocolate Chip Peppermint Cookies,17019,117,8.8,6.6,4.0,0.0979
+20,Japanese Fruit Pie,17020,404,33.5,23.1,9.5,0.24309999999999998
+21,Easy Coq Au Vin,17021,344,1.0,17.9,4.7,0.49760000000000004
+22,Chicken Pot Pie IV,17022,595,3.1,35.3,11.6,1.0355
+23,White Chili with Ground Turkey,17023,396,2.1,17.3,7.6,1.366
+24,Slow Cooker Dump and Go Cheesy Chicken,17024,321,2.5,12.4,7.3,1.0344
+25,Slow Cooker Sweet and Tangy Chicken,17025,349,41.4,2.8,0.7,1.4614
+26,Stuffed Cabbage/Golabki,17026,455,13.8,22.8,12.0,0.1976
+27,Salt and Pepper Chicken,17027,195,2.9,6.2,1.6,1.8465
+28,Salsa Biscuit Chicken,17028,827,13.0,43.0,20.6,2.1726
+29,Pineapple Puffs,17029,226,19.4,8.3,5.0,0.2509
+30,Sweet and Sour Veggies,17030,178,36.8,0.7,0.1,0.0104
+31,Old-Fashioned Southern Bread Pudding,17031,356,48.3,5.8,2.4,0.32180000000000003
+32,Easy Vegetable Soup II,17032,512,8.2,20.2,8.0,0.8456
+33,Simple Texas Salsa,17033,22,2.7,0.2,0.0,0.1462
+34,Spicy Salsa,17034,10,1.2,0.1,0.0,0.0043
+35,Tater Crisp Chicken,17035,509,0.3,38.7,17.4,0.2727
+36,Pumpkin Pancakes,17036,278,11.0,7.2,1.8,0.6081
+37,Chewy Oatmeal Cookies I,17037,124,8.8,5.1,2.3,0.1238
+38,Spicy Cheese Ball,17038,724,1.1,73.7,43.6,0.6684
+39,Chicken Riggies I,17039,978,16.7,54.2,17.0,3.0479000000000003
+40,Kelsey's Cheesy Bacon Breasts,17040,417,4.4,24.0,12.8,0.6899
+41,Creamy Chicken Stuff,17041,629,0.7,40.6,11.5,0.8923
+42,Cilantro Chutney Chicken,17042,997,0.8,77.5,29.2,0.2702
+43,Slow Cooker Baked Beans with Ham Hock,17043,363,19.8,8.6,2.9,0.36760000000000004
+44,Nineteen Sixty-Five Mystery Pie,17044,341,30.5,20.8,8.0,0.11370000000000001
+45,Crab Snacks,17045,139,1.7,7.0,3.9,0.4383
+46,Unbaked Meringue,17046,57,9.0,0.0,0.0,0.020399999999999998
+47,Garlic Shrimp Linguine,17048,287,2.0,4.9,1.7,0.1263
+48,Taco Dip II,17049,394,0.8,29.6,14.7,0.5525
+49,Hawaiian Banana Nut Bread,17050,234,17.4,11.3,2.0,0.1148
+50,Cranberry Macadamia Nut Bark,17051,139,13.0,9.2,4.2,0.0172
+51,Quick and Easy Dip,17052,147,0.7,9.8,6.7,0.347
+52,Navajo Fry Bread II,17053,281,3.3,6.8,1.6,1.9149
+53,Sweet and Gooey Chicken Wings,17054,464,14.0,28.9,7.9,1.9321
+54,Pickled Eggs I,17055,107,0.8,5.0,1.6,0.2601
+55,Coffee Praline Muffins,17056,253,7.7,15.3,6.7,0.2412
+56,Date Oat Muffins,17057,165,11.4,6.1,3.6,0.287
+57,Rapid Mix Sweet Dough,17058,203,5.7,6.0,1.1,0.2707
+58,Overnight Chinese Daikon Radish Pickles,17059,22,2.2,0.7,0.1,0.8904
+59,Ship Island Shrimp Dip,17060,122,0.6,10.7,6.6,0.21580000000000002
+60,Deep Fried Camembert with Raspberry Sauce,17061,352,11.2,25.8,5.9,0.2434
+61,The Best and Cheesiest Artichoke Dip,17062,443,0.8,36.2,10.4,1.2779
+62,Overnight Apple Cinnamon French Toast,17063,375,23.3,12.9,7.0,0.37039999999999995
+63,Johnny's Biscuits,17064,235,3.8,8.0,3.8,0.6319
+64,Marinara Sauce I,17065,252,14.7,14.3,2.0,1.7724000000000002
+65,Janet's Rich Banana Bread,17066,218,15.5,11.1,5.4,0.2189
+66,Eve's Bread Pudding,17067,543,44.8,8.3,2.2,0.6479
+67,Banana Oat Bread Pudding,17068,132,11.8,4.3,2.4,0.0713
+68,Taco Dip I,17069,78,2.0,4.9,3.0,0.2039
+69,Cheese and Bacon Filling,17070,173,4.4,11.7,6.7,0.4757
+70,White Bean and Artichoke Salad,17071,213,0.8,10.0,1.4,0.1502
+71,Thirty Minute Meal,17072,314,9.2,21.0,8.4,0.361
+72,Sex in a Pan I,17073,329,21.7,21.1,11.7,0.30960000000000004
+73,Easy Mexi-Cheese Dip,17074,219,4.5,15.4,8.8,1.1915
+74,Ranch Dipping Sauce,17075,59,1.1,5.1,0.9,0.2089
+75,King Crab Appetizers,17076,299,4.3,18.0,7.5,0.7212000000000001
+76,Shrimp Spread II,17077,161,0.3,13.5,7.0,0.2199
+77,Potato Soup IX,17078,225,6.2,5.8,3.6,0.3015
+78,Spinach with Chickpeas and Fresh Dill,17079,142,3.0,6.0,0.8,0.1631
+79,Taco Lasagna with Noodles,17080,709,7.7,45.4,25.7,1.3045
+80,Lemon Freeze Pie,17081,570,65.5,23.2,13.5,0.2878
+81,Buttery Crunch Crust,17082,223,4.7,16.6,7.7,0.0833
+82,Graham Cracker Crust II,17083,110,4.4,7.2,3.9,0.1256
+83,Graham Cracker Crust III,17084,159,9.6,9.8,5.3,0.15080000000000002
+84,Healthier Graham Cracker Crust,17085,84,8.6,1.7,0.3,0.1008
+85,Healthier Pie Crust,17086,143,1.0,8.1,1.6,0.0074
+86,Date Cookies,17087,156,11.5,7.8,3.6,0.0775
+87,Chili Cheese Dip III,17088,379,1.6,27.8,14.2,0.5463
+88,Nacho Dip II,17089,796,2.3,50.7,21.6,1.1518
+89,My Dad's BBQ Sauce,17090,341,37.2,0.4,0.0,2.2746999999999997
+90,Leek and Meat Fritters,17091,385,2.1,28.5,8.0,0.061200000000000004
+91,Chicken Lo Mein,17092,599,9.8,14.7,2.5,1.877
+92,Salsa I,17093,24,2.6,0.0,0.0,0.1628
+93,Sloppy Joe Spaghetti,17094,878,10.4,28.4,11.5,0.9721000000000001
+94,Chocolate Oatmeal Cake,17095,240,26.9,9.1,5.3,0.31710000000000005
+95,Blue Cheese Dip I,17096,332,0.2,32.4,17.1,0.45530000000000004
+96,English Saffron Bread,17097,368,14.7,14.0,8.4,0.4185
+97,Baked Ziti III,17098,761,19.4,34.4,17.3,1.2584000000000002
+98,Egg Salad II,17099,813,7.7,63.4,14.5,1.1035

@@ -9,6 +9,7 @@ import pandas as pd
 import pprint
 import re
 import time
+import csv
 
 ################################## Scraping functions ###################################
 
@@ -16,8 +17,6 @@ import time
 # Returns a dictionnary or a pandas database (request with parameter) of the scraping
 # The counter starts from the adress
 def recipeCollector(startCounter, counter, research, toCSV=False, filepath="data/default_file.csv") :
-    # 
-    
     # We create the dictionnary and root adress
     nutr = []
     root = "https://www.allrecipes.com/recipe/"
@@ -85,3 +84,33 @@ def recipeCollector(startCounter, counter, research, toCSV=False, filepath="data
     # We return the collected data
     print("Number of recipes collected :", len(nutr))
     return nutr
+
+
+# File check and recipe counter
+# Function checks if a specific collection of recipes has been collected
+# We give the counterStart, the counterRange and the counterEnd
+def checkAndCount(cStart, cRange, cEnd) :
+    # We create the file counter and the line counter
+    c = cStart
+    l = 0
+
+    # We iterate on the files
+    while (c < cEnd) :
+        # We show the state of c
+        print(c, "/", cEnd, end="\r")
+        # We create the file name to read
+        fn = "data/recipedata_" + str(c) + "_" + str(c + cRange - 1) + ".csv"
+        # We try to read the data file and read its number of lines
+        try :
+            f = open(fn)
+            r = csv.reader(f)
+            l += len(list(r))
+        # If it doesn't exist, we print a message with the ID of the missing data file
+        except :
+            print("Missing or corrupted file :", fn, end="\n")
+
+        # We add the range to the counter
+        c += cRange
+
+    # We print the number of lines
+    print("Number of recipes collected between ID [", cStart, ",", cEnd,"] =", l)

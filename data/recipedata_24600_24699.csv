@@ -1,0 +1,101 @@
+,name,id,calories,sugars,fat,saturated fat,sodium
+0,Sausage Cheese Dip,24600,85,1.1,7.2,3.6,0.24630000000000002
+1,Holiday Cranberry Salad,24601,498,69.3,20.7,7.8,0.0288
+2,Hot Bacon Dressing,24602,278,37.5,12.6,4.2,0.3787
+3,Curry Party Mix,24603,232,4.0,10.8,1.6,0.5134
+4,Corn Chip Salad,24604,521,6.6,31.8,9.6,0.7587
+5,Jodi's Deep-Fried Stuffed Jalapenos,24605,865,1.3,87.3,17.8,1.1761
+6,Mama's Ambrosia,24606,290,26.2,16.6,7.6,0.0735
+7,Kalamata Caviar,24607,257,1.8,23.7,7.4,0.8766
+8,Mustard Oil Dressing,24608,126,0.0,13.6,2.0,0.1714
+9,Mustard Vinaigrette,24609,168,1.4,18.2,2.8,0.421
+10,Onion Rings,24610,330,1.6,22.6,2.8,0.48510000000000003
+11,Sweet and Spicy Ginger Dressing,24611,159,5.8,15.1,2.3,0.0007
+12,Mozzarella Sticks II,24612,590,0.4,59.1,6.3,0.31
+13,Pink Fluff,24613,338,26.6,9.7,8.4,0.36410000000000003
+14,Coleslaw Dressing,24614,95,6.3,7.0,4.1,0.066
+15,Pizza Balls,24615,389,2.5,25.1,10.7,1.0468
+16,Salsa De Tomatillo,24616,10,1.1,0.2,0.0,0.0008
+17,Seafood Salad II,24617,489,1.3,39.0,7.1,0.6514
+18,Jalapeno Pie Mini Tarts,24618,53,0.1,4.1,2.2,0.0678
+19,Potatoless Salad,24619,332,5.4,11.6,1.9,1.2565
+20,Seafood Salad III,24620,254,8.6,19.8,3.0,0.9861
+21,Steak Salad,24621,496,4.2,36.4,11.8,0.8362
+22,Pina Colada Dip,24622,69,3.9,5.0,3.2,0.0418
+23,Potato Logs,24623,456,2.4,23.6,3.2,0.1181
+24,Basic Fondue,24624,49,0.4,3.7,2.3,0.0715
+25,Southern Made Cheese Ball,24625,69,0.2,6.3,3.8,0.1296
+26,Roasted Tomato Salsa I,24626,16,1.0,0.9,0.1,0.0264
+27,Beer Cheese Dip I,24627,67,0.0,5.6,3.5,0.1193
+28,Spicy Melted Cheese Dip,24628,98,0.0,7.8,4.1,0.2409
+29,Hummus IV,24629,34,0.0,0.9,0.1,0.06720000000000001
+30,Shrimp Toast II,24630,66,0.5,3.3,0.5,0.116
+31,Creamy Veggie Fondue,24631,83,0.2,7.0,4.4,0.1037
+32,Cheesy Chili Dip II,24632,75,0.3,5.4,3.3,0.1759
+33,Salmon Ball,24633,97,0.1,7.0,3.5,0.1817
+34,Artichoke Bruschetta,24634,278,1.9,11.1,2.6,0.5927
+35,Cheesy Zucchini Dip,24635,68,0.3,6.8,1.6,0.0692
+36,Fruit Salsa,24636,18,1.2,1.0,0.1,0.0017
+37,Chocolate Covered Cherries III,24637,656,64.7,35.0,19.3,0.12179999999999999
+38,Currant Jelly Wiener Sauce,24638,300,16.9,20.4,7.0,1.0317
+39,Onion Strips,24639,134,2.8,6.0,3.4,0.3432
+40,Italian Cucumber Sandwiches,24640,110,0.8,11.7,1.7,0.29610000000000003
+41,Allison's Cold Crab Dip,24641,61,0.2,5.0,3.1,0.08009999999999999
+42,Dog Food Dip,24642,88,0.2,6.6,3.1,0.1664
+43,Chicken Enchilada Dip,24643,128,0.3,11.5,4.2,0.1628
+44,Cheesy Beer and Spinach Dip,24644,39,0.1,2.9,1.8,0.0523
+45,Clemons Family Bean Dip,24645,46,0.1,3.2,1.6,0.1072
+46,Guilt-Free Snack Mix,24646,74,1.8,2.6,1.4,0.0621
+47,Hot Reuben Dip,24647,88,0.5,8.2,2.8,0.19
+48,Secret Shrimp Dip,24648,60,0.0,5.3,3.3,0.0419
+49,Chilled Crab Dip,24649,85,2.0,6.1,3.2,0.2536
+50,Emily's Famous Chili,24650,295,4.1,13.5,4.9,0.6491
+51,Coffee Flavored Fruit Dip,24651,84,6.0,5.7,4.0,0.027399999999999997
+52,DB's Seven Pepper Chili,24652,701,18.8,26.6,9.8,1.0553
+53,Roasted Red Pepper Dip I,24653,17,2.5,0.1,0.0,0.144
+54,Old-Fashioned Fruit Soup,24654,236,50.7,0.2,0.0,0.0027
+55,Fruit Soup (Fruchtsuppe),24655,300,40.6,9.6,5.8,0.0364
+56,Roasted Red Pepper Dip II,24656,32,0.1,3.0,1.9,0.2056
+57,Soy-Sesame Dipping Sauce,24657,71,0.3,7.1,1.1,0.8018
+58,Fast and Easy French Onion Dip,24658,30,2.4,0.0,0.0,0.2338
+59,Creamy Garlic Dip,24659,49,0.1,5.0,1.8,0.0255
+60,Dijon-Style Artichoke Dip,24660,71,0.0,6.7,3.4,0.1743
+61,Laura's Dip,24661,40,0.1,2.9,1.8,0.0995
+62,Mustard Dip,24662,90,0.2,9.0,3.8,0.07640000000000001
+63,Dipping Sauce for Seafood,24663,39,7.0,0.0,0.0,0.2013
+64,Dill Cucumber Dip,24664,101,0.1,10.6,3.1,0.08259999999999999
+65,Honey Mustard Dipping Sauce,24665,37,8.8,0.0,0.0,0.0632
+66,Hot Bruschetta Dip,24666,161,0.9,14.6,5.9,0.1799
+67,Dos Queso Dip,24667,62,0.3,5.4,3.2,0.1277
+68,Rumaki,24668,259,5.1,21.3,5.6,1.6332
+69,Roasted Tomato Salsa II,24669,3,0.4,0.0,0.0,0.0589
+70,Leek and Onion Vegetable Dip,24670,100,0.1,9.4,3.8,0.2347
+71,Vanilla Ice Cream VII,24671,314,17.6,25.1,14.9,0.0355
+72,Vanilla Ice Cream VIII,24672,80,15.4,1.2,0.8,0.025
+73,Terri's Veal Marsala,24673,495,2.5,29.5,11.5,0.2439
+74,German Zwiebelkuchen (Onion Pie),24674,441,12.0,26.4,10.3,0.4154
+75,Bierocks (German Meat Turnovers),24675,371,3.9,16.1,6.9,0.8825
+76,German Currywurst,24676,451,18.4,31.7,10.6,3.0187
+77,Muffuletta,24677,1016,5.4,63.2,20.2,3.6976999999999998
+78,Cherry Pork Chops,24678,327,0.0,5.6,1.9,0.0674
+79,Clayton's Pork Chops,24679,442,1.5,31.5,11.8,0.9941
+80,Oven BBQ Ribs,24680,858,17.8,59.1,20.7,2.1315999999999997
+81,Oven-Fried Pork Chops,24681,422,4.6,14.3,6.4,0.8972
+82,Pork Supreme,24682,353,11.6,21.4,9.5,0.9823999999999999
+83,Spicy Mexican Torte,24683,682,2.9,38.7,15.7,2.0741
+84,Cabbage Rolls III,24684,319,1.2,21.8,8.1,0.7052999999999999
+85,Blue Cheese Burgers,24685,348,3.1,20.5,7.9,0.7654
+86,Portuguese Lemon Bavarois,24686,261,15.3,20.3,12.2,0.0418
+87,Chocolate Orange Flavored Mousse,24687,350,28.2,23.3,10.7,0.0756
+88,Ice Cream Tiramisu Cake,24688,505,45.6,22.9,13.9,0.3251
+89,Honey and Nut Ice Cream,24689,311,20.1,22.9,11.7,0.0429
+90,Chocolate-Caramel Tortillas,24690,47,4.1,1.4,0.5,0.041299999999999996
+91,Basic Truffles,24691,62,4.4,4.1,2.5,0.0014
+92,Apple Fritters II,24692,266,18.2,12.8,3.9,0.0631
+93,Apple Strudel Dessert,24693,394,5.3,16.1,4.0,0.6303
+94,Baked Carrot Pudding,24694,174,29.1,1.9,0.6,0.13419999999999999
+95,Bertha's Blueberry Dumplings,24695,288,30.1,5.6,2.2,0.3345
+96,Famous Hot Fudge Topping,24696,204,27.8,7.5,3.6,0.0892
+97,Licorice Caramels,24697,84,11.0,3.4,2.2,0.0359
+98,Chocolate Covered Cherries,24698,68,4.5,3.6,2.1,0.0050999999999999995
+99,Rum Raisin Ice Cream,24699,279,20.3,15.9,9.7,0.2179

@@ -11,7 +11,9 @@ import pprint
 import re
 import time
 import csv
-import os
+import seaborn as sns
+import numpy as np
+import copy
 
 ################################## Scraping functions ###################################
 

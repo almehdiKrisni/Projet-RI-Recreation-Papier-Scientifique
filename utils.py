@@ -114,3 +114,8 @@ def checkAndCount(cStart, cRange, cEnd) :
 
     # We print the number of lines
     print("Number of recipes collected between ID [", cStart, ",", cEnd,"] =", l)
+
+
+# Function used to read all the data collected and create a global pandas DataFrame
+def pdCreator(cStart, cRange, cEnd) :
+    pass

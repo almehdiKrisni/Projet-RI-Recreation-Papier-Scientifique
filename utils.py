@@ -1,6 +1,7 @@
 #################################### Utilitaries #######################################
 
 ###################################### Imports #########################################
+from asyncore import close_all
 import requests as rq
 import lxml
 from bs4 import BeautifulSoup as bs
@@ -10,6 +11,7 @@ import pprint
 import re
 import time
 import csv
+import os
 
 ################################## Scraping functions ###################################
 
@@ -118,4 +120,43 @@ def checkAndCount(cStart, cRange, cEnd) :
 
 # Function used to read all the data collected and create a global pandas DataFrame
 def pdCreator(cStart, cRange, cEnd) :
-    pass
+    # We iterate on every data file to create a general pandas dataframe
+    c = cStart
+    # We create a list because it is faster to create a df from a list than to append to an
+    # existing df
+    # ( https://stackoverflow.com/questions/13784192/creating-an-empty-pandas-dataframe-then-filling-it )
+    df = []
+    col = []
+
+    while (c < cEnd) :
+        # We get the filename
+        fn = "data/recipedata_" + str(c) + "_" + str(c + cRange - 1) + ".csv"
+
+        # We try get the file and transform it into a list
+        try :
+            # We open the file
+            with open(fn) as f : 
+                reader = csv.reader(f) # We read the file
+                l = list(reader) # We transfrom the reader into a list
+
+                # We check if the file contains usable data or not
+                # Empty files only contains [""]
+                if (l != [[""]]) :
+                    df = df + l[1:]
+
+                    # We also initialize the columns if need
+                    if (col == []) :
+                        col = l[0][1:]
+        
+        # If we encounter an error, we skip the file
+        except :
+            pass
+
+        # We update the counter
+        c += cRange
+
+    # We return the global dataframe after a few modifications (first column, column name)
+    dff = pd.DataFrame(df)
+    dff = dff.iloc[:,1:]
+    dff.columns = col
+    return dff

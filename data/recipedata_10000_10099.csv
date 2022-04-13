@@ -8,91 +8,94 @@
 6,Starr's Soft Sugar Cookies,10006,237,22.4,8.8,3.7,0.1998
 7,Evelyn's Cornflake Cookies,10007,196,8.9,10.3,6.4,0.1986
 8,Praline Cookies,10008,260,12.4,14.8,5.6,0.1651
-9,Toasted Oats Cookies,10010,64,4.5,3.3,1.9,0.0608
-10,Butter Cookies II,10011,103,5.6,5.3,3.3,0.0546
-11,Kourabiedes I,10012,194,4.1,12.8,6.7,0.09340000000000001
-12,Cherry-Cornflake Cookies,10013,210,16.6,9.5,4.1,0.15330000000000002
-13,Hazelnut Biscotti,10014,259,15.5,12.2,4.7,0.1
-14,Drommar,10015,140,6.2,8.7,4.8,0.0727
-15,Whoopie Pies I,10016,873,74.9,46.2,12.1,0.5271
-16,Whoopie Pies II,10017,793,64.4,41.0,10.7,0.5562999999999999
-17,Whoopie Pies III,10018,373,29.2,18.7,11.6,0.4962
-18,Chocolate Peanut Butter Bars II,10019,588,52.6,37.8,14.4,0.25780000000000003
-19,Dawn's Sugar Cookies,10020,305,27.1,13.5,4.9,0.1432
-20,Lemon Squares II,10021,154,16.9,6.5,3.9,0.1166
-21,Pignoli Cookies I,10022,101,6.2,5.5,0.7,0.0073
-22,Eggless Ginger Cookies,10023,447,31.9,17.5,4.3,0.22080000000000002
-23,Cut-Out Butter Cookies,10024,314,16.9,16.8,10.1,0.2319
-24,White Chocolate Macadamia Nut Cookies III,10025,122,7.7,7.4,3.6,0.0851
-25,"One, Two, Three, Four Cookies",10026,294,23.1,11.2,2.1,0.2867
-26,Sugar Cookies II,10027,37,2.0,1.4,0.8,0.0197
-27,Jewel Swirls,10028,284,8.4,13.7,8.6,0.1435
-28,Mrs. Fields Cookie Recipe II,10029,148,0.0,8.0,3.8,0.07529999999999999
-29,Mom's Excellent Chocolate Chip Cookies,10030,358,25.1,24.5,10.0,0.21409999999999998
-30,Pumpkin Chocolate Chip Cookies I,10031,96,8.4,4.2,1.3,0.0991
-31,Allison's Supreme Chocolate Chip Cookies,10032,294,21.2,16.5,6.5,0.18669999999999998
-32,Iced Pumpkin Cookies,10033,122,15.2,3.2,1.9,0.1205
-33,Orange Drop Cookies I,10034,149,12.5,6.5,1.7,0.0496
-34,Pumpkin Cookies II,10035,255,20.6,10.8,2.1,0.171
-35,Pumpkin Pecan White Chocolate Cookies,10036,170,13.7,9.3,5.1,0.0495
-36,Huge Scary Spiders,10037,217,20.9,8.2,4.9,0.1731
-37,Melting Moments I,10038,141,6.6,9.0,5.6,0.0655
-38,Nutcracker Bars,10039,207,24.9,8.9,2.4,0.1
-39,Nanaimo Bars I,10040,389,35.5,22.6,12.1,0.199
-40,Drop Butter Cookies,10041,86,4.4,5.4,3.3,0.0404
-41,Lucky Cakes,10042,610,51.5,27.2,6.7,0.6597999999999999
-42,Persimmon Cookies I,10043,214,16.1,9.9,3.8,0.1762
-43,Belgian Christmas Cookies,10044,111,7.3,5.7,2.8,0.0997
-44,Urban Legend Cookies II,10045,312,24.8,17.1,7.9,0.1683
-45,Austrian Peach Cookie,10046,411,23.3,15.7,3.2,0.0634
-46,Hoot Owl Cookies,10047,199,12.7,10.8,5.6,0.1698
-47,Black Walnut Balls,10048,252,6.3,18.6,7.0,0.1379
-48,Butter Tarts,10049,641,50.2,31.5,9.6,0.2562
-49,Zippy Chocolate Chip Cookies,10050,315,26.9,17.7,9.0,0.102
-50,Cookie Pops on a Stick!!,10051,300,20.9,15.6,9.8,0.4591
-51,Owl Cookies,10052,151,12.3,7.2,2.3,0.1038
-52,Rumford Sugar Cookies,10053,207,16.8,9.4,2.4,0.0702
-53,Cathedral Window Holiday Bars,10054,686,61.6,37.9,19.5,0.312
-54,Chocolate Fruit Bar,10055,213,23.0,7.9,2.4,0.18209999999999998
-55,Spritz Cookies II,10056,144,5.6,8.4,5.1,0.055799999999999995
-56,Refrigerator Cookies II,10057,87,7.2,3.7,0.9,0.044899999999999995
-57,Butterscotch Potato Chip Cookies,10058,276,23.4,13.3,8.1,0.1585
-58,Scottish Shortbread III,10059,175,5.6,10.4,6.5,0.0017
-59,Homemade Peanut Butter Chews,10060,151,12.3,6.3,2.8,0.0634
-60,Venetians,10061,317,22.7,18.1,9.6,0.10859999999999999
-61,Aunt Zula's Christmas Cutouts,10062,309,10.1,18.3,4.6,0.2322
-62,Church Windows I,10063,183,18.1,10.7,7.4,0.0654
-63,Magic Peanut Butter Middles,10064,289,21.4,15.5,3.2,0.1986
-64,Roll About Sugar Cookies,10065,225,13.1,9.8,2.5,0.15730000000000002
-65,Muesli Bars I,10066,111,6.7,7.6,3.5,0.0058
-66,Oatmeal Gems,10067,146,10.9,6.0,1.3,0.1113
-67,Cinnamon Madeleines,10069,434,33.5,24.9,15.1,0.18719999999999998
-68,Christmas Cornflake Wreath Cookies,10070,118,9.3,5.2,3.3,0.0915
-69,Melt-Away Peppermint Wreaths,10071,197,5.2,13.0,8.1,0.0912
-70,Hungarian Kifli I,10073,121,0.2,9.7,3.8,0.065
-71,Crackle Top Molasses Cookies,10074,149,13.0,6.4,0.9,0.10940000000000001
-72,Grandma's Brown Sugar Drop Cookies,10075,241,17.9,12.4,3.1,0.2714
-73,Grandmother's Brown Sugar Cookies,10076,269,26.8,7.5,1.9,0.0593
-74,Kindness Cookies,10077,45,3.9,1.3,0.3,0.054799999999999995
-75,Ricotta Cookies I,10078,94,5.7,4.5,1.8,0.053899999999999997
-76,3-Ingredient Shortbread Cookies,10079,147,3.3,10.3,6.5,0.0729
-77,Mountain Cookies II,10080,219,14.9,13.1,7.4,0.1254
-78,Carrot Walnut Cookies,10081,144,12.0,5.8,2.7,0.1381
-79,Orange Cream Cheese Frosting,10082,45,6.0,2.2,0.8,0.008400000000000001
-80,Easy Pecan Pie Bars,10083,500,38.3,24.0,7.4,0.2321
-81,Vinegar Cookies,10084,214,11.3,14.6,6.9,0.1429
-82,Kourabiedes II,10085,206,1.4,12.5,7.8,0.0022
-83,Date Rolls,10086,198,22.3,6.3,1.6,0.1077
-84,Date Nut Pinwheel Cookies I,10087,231,21.2,8.5,4.0,0.173
-85,Date Nut Pinwheel Cookies II,10088,123,11.3,4.7,2.1,0.047799999999999995
-86,Poppy Seed Pinwheels,10089,280,15.1,16.8,7.9,0.1379
-87,Poppy Seed Cookies I,10090,143,7.1,8.6,5.1,0.0798
-88,Dora's Christmas Cookies,10091,214,13.8,7.6,2.0,0.1443
-89,Christmas Rocks,10092,101,6.5,5.6,1.6,0.0305
-90,Brown-Eyed Susans I,10093,108,5.6,6.3,3.9,0.08259999999999999
-91,Chocolate Macadamia Nut and White Chocolate Chip Cookies,10094,194,13.4,11.2,5.4,0.0679
-92,Candy Cane Cookies I,10095,287,10.4,16.9,7.2,0.2548
-93,Cooked Whipped Cream Frosting,10096,84,6.6,6.2,2.7,0.023600000000000003
-94,Chocolate Refrigerator Cookies,10097,140,9.1,7.1,1.9,0.0544
-95,Chocolate Biscotti,10098,161,17.0,3.8,0.7,0.1168
-96,Sun Up Cookies,10099,243,23.8,9.6,6.2,0.2025
+9,Brown Sugar Frosting,10009,59,14.4,0.0,0.0,0.0028
+10,Toasted Oats Cookies,10010,64,4.5,3.3,1.9,0.0608
+11,Butter Cookies II,10011,103,5.6,5.3,3.3,0.0546
+12,Kourabiedes I,10012,194,4.1,12.8,6.7,0.09340000000000001
+13,Cherry-Cornflake Cookies,10013,210,16.6,9.5,4.1,0.15330000000000002
+14,Hazelnut Biscotti,10014,259,15.5,12.2,4.7,0.1
+15,Drommar,10015,140,6.2,8.7,4.8,0.0727
+16,Whoopie Pies I,10016,873,74.9,46.2,12.1,0.5271
+17,Whoopie Pies II,10017,793,64.4,41.0,10.7,0.5562999999999999
+18,Whoopie Pies III,10018,373,29.2,18.7,11.6,0.4962
+19,Chocolate Peanut Butter Bars II,10019,588,52.6,37.8,14.4,0.25780000000000003
+20,Dawn's Sugar Cookies,10020,305,27.1,13.5,4.9,0.1432
+21,Lemon Squares II,10021,154,16.9,6.5,3.9,0.1166
+22,Pignoli Cookies I,10022,101,6.2,5.5,0.7,0.0073
+23,Eggless Ginger Cookies,10023,447,31.9,17.5,4.3,0.22080000000000002
+24,Cut-Out Butter Cookies,10024,314,16.9,16.8,10.1,0.2319
+25,White Chocolate Macadamia Nut Cookies III,10025,122,7.7,7.4,3.6,0.0851
+26,"One, Two, Three, Four Cookies",10026,294,23.1,11.2,2.1,0.2867
+27,Sugar Cookies II,10027,37,2.0,1.4,0.8,0.0197
+28,Jewel Swirls,10028,284,8.4,13.7,8.6,0.1435
+29,Mrs. Fields Cookie Recipe II,10029,148,0.0,8.0,3.8,0.07529999999999999
+30,Mom's Excellent Chocolate Chip Cookies,10030,358,25.1,24.5,10.0,0.21409999999999998
+31,Pumpkin Chocolate Chip Cookies I,10031,96,8.4,4.2,1.3,0.0991
+32,Allison's Supreme Chocolate Chip Cookies,10032,294,21.2,16.5,6.5,0.18669999999999998
+33,Iced Pumpkin Cookies,10033,122,15.2,3.2,1.9,0.1205
+34,Orange Drop Cookies I,10034,149,12.5,6.5,1.7,0.0496
+35,Pumpkin Cookies II,10035,255,20.6,10.8,2.1,0.171
+36,Pumpkin Pecan White Chocolate Cookies,10036,170,13.7,9.3,5.1,0.0495
+37,Huge Scary Spiders,10037,217,20.9,8.2,4.9,0.1731
+38,Melting Moments I,10038,141,6.6,9.0,5.6,0.0655
+39,Nutcracker Bars,10039,207,24.9,8.9,2.4,0.1
+40,Nanaimo Bars I,10040,389,35.5,22.6,12.1,0.199
+41,Drop Butter Cookies,10041,86,4.4,5.4,3.3,0.0404
+42,Lucky Cakes,10042,610,51.5,27.2,6.7,0.6597999999999999
+43,Persimmon Cookies I,10043,214,16.1,9.9,3.8,0.1762
+44,Belgian Christmas Cookies,10044,111,7.3,5.7,2.8,0.0997
+45,Urban Legend Cookies II,10045,312,24.8,17.1,7.9,0.1683
+46,Austrian Peach Cookie,10046,411,23.3,15.7,3.2,0.0634
+47,Hoot Owl Cookies,10047,199,12.7,10.8,5.6,0.1698
+48,Black Walnut Balls,10048,252,6.3,18.6,7.0,0.1379
+49,Butter Tarts,10049,641,50.2,31.5,9.6,0.2562
+50,Zippy Chocolate Chip Cookies,10050,315,26.9,17.7,9.0,0.102
+51,Cookie Pops on a Stick!!,10051,300,20.9,15.6,9.8,0.4591
+52,Owl Cookies,10052,151,12.3,7.2,2.3,0.1038
+53,Rumford Sugar Cookies,10053,207,16.8,9.4,2.4,0.0702
+54,Cathedral Window Holiday Bars,10054,686,61.6,37.9,19.5,0.312
+55,Chocolate Fruit Bar,10055,213,23.0,7.9,2.4,0.18209999999999998
+56,Spritz Cookies II,10056,144,5.6,8.4,5.1,0.055799999999999995
+57,Refrigerator Cookies II,10057,87,7.2,3.7,0.9,0.044899999999999995
+58,Butterscotch Potato Chip Cookies,10058,276,23.4,13.3,8.1,0.1585
+59,Scottish Shortbread III,10059,175,5.6,10.4,6.5,0.0017
+60,Homemade Peanut Butter Chews,10060,151,12.3,6.3,2.8,0.0634
+61,Venetians,10061,317,22.7,18.1,9.6,0.10859999999999999
+62,Aunt Zula's Christmas Cutouts,10062,309,10.1,18.3,4.6,0.2322
+63,Church Windows I,10063,183,18.1,10.7,7.4,0.0654
+64,Magic Peanut Butter Middles,10064,289,21.4,15.5,3.2,0.1986
+65,Roll About Sugar Cookies,10065,225,13.1,9.8,2.5,0.15730000000000002
+66,Muesli Bars I,10066,111,6.7,7.6,3.5,0.0058
+67,Oatmeal Gems,10067,146,10.9,6.0,1.3,0.1113
+68,Lady Locks,10068,360,11.2,25.0,9.0,0.2731
+69,Cinnamon Madeleines,10069,434,33.5,24.9,15.1,0.18719999999999998
+70,Christmas Cornflake Wreath Cookies,10070,118,9.3,5.2,3.3,0.0915
+71,Melt-Away Peppermint Wreaths,10071,197,5.2,13.0,8.1,0.0912
+72,Vanilla Kifli,10072,220,8.6,11.2,6.7,0.0027
+73,Hungarian Kifli I,10073,121,0.2,9.7,3.8,0.065
+74,Crackle Top Molasses Cookies,10074,149,13.0,6.4,0.9,0.10940000000000001
+75,Grandma's Brown Sugar Drop Cookies,10075,241,17.9,12.4,3.1,0.2714
+76,Grandmother's Brown Sugar Cookies,10076,269,26.8,7.5,1.9,0.0593
+77,Kindness Cookies,10077,45,3.9,1.3,0.3,0.054799999999999995
+78,Ricotta Cookies I,10078,94,5.7,4.5,1.8,0.053899999999999997
+79,3-Ingredient Shortbread Cookies,10079,147,3.3,10.3,6.5,0.0729
+80,Mountain Cookies II,10080,219,14.9,13.1,7.4,0.1254
+81,Carrot Walnut Cookies,10081,144,12.0,5.8,2.7,0.1381
+82,Orange Cream Cheese Frosting,10082,45,6.0,2.2,0.8,0.008400000000000001
+83,Easy Pecan Pie Bars,10083,500,38.3,24.0,7.4,0.2321
+84,Vinegar Cookies,10084,214,11.3,14.6,6.9,0.1429
+85,Kourabiedes II,10085,206,1.4,12.5,7.8,0.0022
+86,Date Rolls,10086,198,22.3,6.3,1.6,0.1077
+87,Date Nut Pinwheel Cookies I,10087,231,21.2,8.5,4.0,0.173
+88,Date Nut Pinwheel Cookies II,10088,123,11.3,4.7,2.1,0.047799999999999995
+89,Poppy Seed Pinwheels,10089,280,15.1,16.8,7.9,0.1379
+90,Poppy Seed Cookies I,10090,143,7.1,8.6,5.1,0.0798
+91,Dora's Christmas Cookies,10091,214,13.8,7.6,2.0,0.1443
+92,Christmas Rocks,10092,101,6.5,5.6,1.6,0.0305
+93,Brown-Eyed Susans I,10093,108,5.6,6.3,3.9,0.08259999999999999
+94,Chocolate Macadamia Nut and White Chocolate Chip Cookies,10094,194,13.4,11.2,5.4,0.0679
+95,Candy Cane Cookies I,10095,287,10.4,16.9,7.2,0.2548
+96,Cooked Whipped Cream Frosting,10096,84,6.6,6.2,2.7,0.023600000000000003
+97,Chocolate Refrigerator Cookies,10097,140,9.1,7.1,1.9,0.0544
+98,Chocolate Biscotti,10098,161,17.0,3.8,0.7,0.1168
+99,Sun Up Cookies,10099,243,23.8,9.6,6.2,0.2025

@@ -1,0 +1,101 @@
+,name,id,calories,sugars,fat,saturated fat,sodium
+0,Prune and Olive Chicken,8900,402,13.1,22.4,5.5,0.3078
+1,Chicken Piccata III,8901,444,1.1,17.9,2.9,0.786
+2,BBQ Chicken,8902,602,0.4,44.7,10.6,1.9077
+3,BBQ Sauce for Chicken,8903,67,10.3,1.9,0.2,0.22419999999999998
+4,Bunjal Chicken,8904,290,1.0,18.9,4.6,0.44260000000000005
+5,Golden Vegetable Chicken,8905,971,8.2,56.9,14.4,0.3561
+6,Oven Barbecued Chicken,8906,376,0.2,24.7,15.0,1.985
+7,Best Chicken Ever,8907,431,1.1,30.5,18.1,0.2484
+8,White Wine Broccoli Casserole,8908,826,3.5,60.5,18.8,1.2811
+9,Chicken and Rice,8909,205,0.3,5.3,1.4,0.4561
+10,Sherry Sour Cream Chicken,8910,372,0.2,25.1,15.2,0.2792
+11,True Love Chicken,8911,413,5.0,8.3,3.0,0.3463
+12,Chicken Soup,8912,150,5.1,4.6,1.3,0.2885
+13,Easy Flake Chicken,8913,392,3.6,29.3,4.8,0.13369999999999999
+14,Chinese Chicken Salad,8914,517,13.9,31.6,5.2,0.7567999999999999
+15,Chicken Angelo,8915,616,2.8,33.9,18.6,1.5235
+16,Chicken Hekka,8916,399,29.8,5.0,0.9,1.4828
+17,Easy Deviled Chicken,8917,473,4.8,17.3,4.3,1.1094000000000002
+18,Easy Garlic Chicken,8918,509,3.4,16.5,8.5,0.5885
+19,Grilled Asian Chicken,8919,217,8.9,7.6,1.5,0.9612999999999999
+20,Chicken Francese,8920,1711,2.4,150.6,91.3,0.9177000000000001
+21,"Creamy Chicken with Corn, Tarragon and Tomatoes",8921,505,2.4,23.7,13.6,0.3678
+22,Chicken Dijon,8922,268,0.1,13.6,8.0,0.338
+23,Mushroom Chicken Dijon,8923,1527,3.6,140.0,86.4,0.6431
+24,Rollatini with Pork and Rosemary Filling,8924,348,0.8,20.3,5.8,0.10959999999999999
+25,Golden Lasagna,8925,545,3.4,24.7,13.6,0.928
+26,Green Olive Chicken I,8926,949,6.6,45.5,11.3,1.3099
+27,Skillet Balsamic Chicken,8927,261,7.7,8.6,1.4,0.0895
+28,Orange Sauce Chicken,8928,413,20.8,9.3,2.6,0.2256
+29,Kobete Chicken,8929,735,0.9,28.0,8.5,0.6849
+30,Cocoa Fried Chicken,8930,487,1.9,17.8,3.3,0.606
+31,Garlic Caesar Chicken Tenders,8931,550,3.8,24.9,4.7,1.2763
+32,Fruity Curry Chicken Salad,8932,229,8.5,14.0,2.0,0.188
+33,Feta Chicken,8933,224,1.4,7.8,4.7,0.481
+34,Garlic Chicken Stir Fry,8934,337,12.2,8.6,1.6,1.3638
+35,Easy Garlic Ginger Chicken,8935,197,1.3,5.2,1.0,0.0798
+36,Easy Cheesy Skillet Chicken,8936,351,8.4,15.9,8.6,0.938
+37,Busy Day Chicken Rice Casserole,8937,291,1.7,5.7,1.4,0.988
+38,Cornish Game Hens with Garlic and Rosemary,8938,814,0.4,57.5,14.6,1.3825999999999998
+39,Pepper Chicken Piccata,8939,420,9.2,18.6,5.6,0.1626
+40,Lighter Chicken and Dumplings,8940,393,4.2,14.7,3.1,1.2759
+41,Slow Cooker Chicken and Dumplings,8941,385,6.2,18.0,5.8,1.2446
+42,Gourmet Cucumber Chicken Salad,8942,334,14.5,19.4,3.7,0.9921
+43,Country Chicken Supper,8943,330,5.0,8.8,2.9,0.6647000000000001
+44,Easy Shake and Bake Chicken,8944,460,0.1,32.6,14.5,0.5901000000000001
+45,Chicken Enchilada Casserole II,8945,537,3.4,28.1,14.8,1.1305
+46,Monster Sour Cream Enchiladas,8946,975,5.1,63.6,31.4,1.6240999999999999
+47,Buffalo Chicken Wings I,8947,256,0.1,23.9,7.1,0.302
+48,Italian Chicken Marinade,8948,455,9.4,34.2,5.7,2.4692
+49,Chicken Spaghetti Casserole I,8949,466,3.0,18.6,9.5,0.6182000000000001
+50,Luau Chicken,8950,283,11.9,8.3,2.3,0.3563
+51,Orange Honey Garlic Chicken,8951,324,8.1,17.2,4.8,0.6352000000000001
+52,Marinated Rosemary Lemon Chicken,8952,209,0.7,9.9,1.9,0.0606
+53,Easy Mexican Fried Chicken,8953,548,14.9,14.2,3.2,1.6287
+54,Spicy Chicken Curry,8954,266,4.2,13.8,2.0,0.30369999999999997
+55,Pakistani Potato Chicken,8955,675,2.3,41.6,10.5,0.2326
+56,Ritzy Chicken Livers,8956,260,1.1,17.7,8.0,0.274
+57,Hunter Style Chicken,8957,1142,6.2,84.0,22.9,1.1823
+58,Quick Chicken and Noodles,8958,307,1.1,3.4,0.9,0.0693
+59,Ziti Chicken and Broccoli,8959,820,2.5,41.6,20.1,1.0769000000000002
+60,Vinegar Chicken,8960,385,6.8,22.1,5.6,0.7926
+61,Easy Pasta Chicken,8961,368,2.0,7.2,1.7,0.6233
+62,Chicken Stroganoff I,8962,704,1.9,30.5,16.5,1.2815
+63,Oven Fried Chicken III,8963,690,2.0,53.2,10.3,0.9668
+64,Chicken a la Charlie,8964,286,1.8,12.0,5.3,0.5898
+65,Broccoli Chicken Casserole,8965,427,4.7,19.0,7.9,1.031
+66,Gerry's Chicken Enchiladas,8966,718,9.8,46.8,25.7,1.4082000000000001
+67,Paprika Chicken,8967,134,0.1,1.6,0.4,0.07709999999999999
+68,Chicken Gravy Enchilada Casserole,8968,426,2.1,18.8,7.8,1.3075999999999999
+69,Easy Enchilada Casserole,8969,576,3.6,28.5,14.9,1.5083
+70,Millie Pasquinelli's Fried Chicken,8970,622,0.7,37.9,9.7,1.3039
+71,Granny's Smothered Chicken,8971,681,2.6,30.6,6.7,0.1226
+72,Forty Garlic Chicken,8972,1017,17.1,43.3,12.3,0.44730000000000003
+73,Al's Rum Chicken,8973,685,20.2,22.6,6.3,0.39080000000000004
+74,Easier Chicken Marsala,8974,286,2.7,10.1,3.3,0.31339999999999996
+75,Chicken Parmigiana,8975,528,17.2,18.3,7.6,1.3095
+76,Chicken Spaghetti II,8976,283,5.2,8.2,4.3,1.1739000000000002
+77,Keligun Chicken,8977,378,2.3,27.4,13.8,2.5311999999999997
+78,Garlic Wine Chicken,8978,1015,2.3,40.5,16.9,0.3792
+79,Easy Almond Chicken,8979,350,3.3,19.2,2.9,0.3453
+80,Coq au Vin alla Italiana,8980,617,4.0,36.9,10.9,0.5185
+81,Egg Chicken Casserole,8981,481,1.6,30.1,12.2,0.8795
+82,Shir-Will Chicken Delight,8982,563,5.1,39.5,16.1,0.436
+83,Uncle Bill's Chicken Strips,8983,311,2.0,12.5,6.5,0.43010000000000004
+84,Uncle Bill's Sweet and Sour Sauce,8984,153,36.3,0.1,0.0,0.5559
+85,Spanish Rice Chicken I,8985,162,3.0,2.6,1.3,1.1404
+86,Quick Rice Pilaf,8986,412,0.1,10.2,5.5,0.6293
+87,Cheesy Chicken and Potato Casserole,8987,330,1.0,12.6,6.6,0.5183
+88,Janet's Chicken Casserole,8988,804,9.1,46.7,14.2,1.923
+89,Picante Chicken,8989,175,4.9,1.8,0.4,1.0824
+90,Gourmet Chicken Pizza,8990,303,3.3,17.2,6.1,0.5732
+91,Curry Kabobs,8991,394,2.1,4.8,1.3,0.09570000000000001
+92,Hawaii Chicken,8992,640,9.3,45.3,11.2,1.2162
+93,Caper Chicken Cacciatore,8993,1248,6.2,90.7,24.9,1.9045
+94,Breaded Chicken Fingers,8994,346,2.5,15.7,2.8,0.7037
+95,Confetti Chicken,8995,396,3.3,20.6,10.6,1.1525999999999998
+96,Vegetable Swiss Chicken,8996,211,1.9,10.0,5.1,0.29560000000000003
+97,Honey Curried Chicken,8997,316,15.9,17.7,5.0,0.2105
+98,Darn Good Chicken,8998,609,28.1,35.3,9.9,0.44410000000000005
+99,Val's Hungarian Jewish Chopped Liver,8999,258,3.0,14.1,4.2,0.1161

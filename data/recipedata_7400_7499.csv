@@ -1,0 +1,101 @@
+,name,id,calories,sugars,fat,saturated fat,sodium
+0,Lite Carrot Cake,7400,131,13.8,3.9,0.7,0.0963
+1,Rich Dark Fruitcake,7401,451,39.7,14.5,6.7,0.1768
+2,Carrot Cake III,7402,575,49.9,34.8,9.1,0.3472
+3,Light Fruitcake,7403,315,19.4,13.3,6.4,0.1965
+4,Pumpkin Sheet Cake,7404,362,31.3,20.4,4.9,0.2829
+5,Tres Leches 'Three Milks',7405,435,66.8,9.4,5.0,0.31039999999999995
+6,Key Lime Cake II,7406,190,17.2,8.0,1.8,0.2206
+7,Cinnamon Coffee Cake I,7407,576,39.9,30.0,13.9,0.4576
+8,Marble Crumb Cake,7408,212,17.2,10.5,3.9,0.1819
+9,Strawberry Torte,7409,514,19.6,28.9,16.7,0.1748
+10,Wedding Cake Frosting,7410,370,49.4,19.6,8.5,0.0684
+11,Peach Cake I,7411,268,25.2,12.8,8.0,0.2572
+12,Pineapple Upside-Down Cake I,7412,211,26.3,7.3,3.9,0.0824
+13,Turtles® Cake I,7413,270,25.7,14.1,6.3,0.24630000000000002
+14,Chocolate Cherry Cake II,7414,288,27.4,11.2,4.9,0.2763
+15,Kitty Litter Cake,7415,351,52.8,7.5,1.6,0.5929
+16,Chocolate Mayo Cake,7416,208,12.7,11.2,1.8,0.2035
+17,Dump Cake II,7417,148,14.2,6.4,2.8,0.1695
+18,Turtles® Cake II,7418,325,33.1,16.3,7.7,0.2539
+19,Sugar Free Cake,7419,373,20.4,21.3,2.7,0.21919999999999998
+20,Dump Cake III,7420,286,26.7,12.6,6.1,0.183
+21,Better Than Sex Cake I,7421,315,38.4,11.5,7.1,0.2741
+22,Rhubarb Strawberry Cake,7422,284,36.5,8.3,5.0,0.062200000000000005
+23,Mayonnaise Cake I,7423,139,8.5,7.5,1.2,0.17980000000000002
+24,Lemon Poppy Seed Loaf,7424,203,17.8,7.9,4.1,0.2073
+25,Red Velvet Cake I,7425,513,43.8,25.7,12.6,0.5025
+26,Pina Colada Cake I,7426,415,40.2,18.2,7.3,0.32180000000000003
+27,Pina Colada Cake II,7427,299,37.7,12.0,7.9,0.2424
+28,Seven-Up™ Sheet Cake,7428,421,40.4,21.3,7.3,0.3496
+29,Caramel Pound Cake,7429,743,80.4,35.7,16.0,0.21409999999999998
+30,Pumpkin Roll with Ginger and Pecans,7430,279,28.1,14.6,6.0,0.2166
+31,Easy Moravian Cake,7431,422,44.1,18.6,9.4,0.2065
+32,Coconut Cake II,7432,627,54.4,32.9,12.8,0.1809
+33,BaumKuchen,7433,462,33.5,25.6,13.0,0.032600000000000004
+34,Electric Frosting,7434,176,12.3,14.1,8.9,0.061200000000000004
+35,Donna's Famous Cheesecake,7435,220,11.3,15.4,9.1,0.1678
+36,Dried Cherry Cake,7436,266,23.3,11.6,1.6,0.1541
+37,Apple Dapple Cake,7437,612,42.0,37.3,12.7,0.30310000000000004
+38,Chocolate Peanut Butter Wacky Cake,7438,314,34.6,11.3,6.3,0.3547
+39,Swiss Chocolate Cake,7439,318,27.8,13.7,8.2,0.3971
+40,Chocolate Torte Frosting,7440,285,20.3,21.2,12.4,0.1421
+41,Key Lime Cheesecake I,7441,382,20.4,27.8,16.7,0.2901
+42,Mayonnaise Cake II,7442,262,16.9,13.6,3.2,0.2854
+43,Rick's Special Buttercream Frosting,7443,684,78.4,41.6,13.1,0.10529999999999999
+44,Chocolate Mayonnaise Cake I,7444,260,21.9,12.7,2.8,0.1581
+45,Sour Cream Coffee Cake I,7445,353,38.7,13.0,7.7,0.228
+46,Peach Upside Down Cake I,7446,318,27.0,16.4,10.1,0.3658
+47,Peach Upside Down Cake II,7447,279,26.2,12.2,4.8,0.2342
+48,Chocolate Sauerkraut Cake I,7448,311,25.4,13.4,3.6,0.2524
+49,Fluffy Creamy Frosting,7449,278,40.6,12.3,4.4,0.0685
+50,Texas Tornado Cake,7450,203,19.9,4.9,0.6,0.15059999999999998
+51,Caramel Nougat Cake,7451,696,64.5,34.6,20.2,0.37789999999999996
+52,Caramel Nougat Cake II,7452,244,23.0,10.2,3.6,0.0785
+53,Chocolate Caramel Nut Cake,7453,266,25.6,13.6,6.3,0.2464
+54,Caramel Nougat Cake III,7454,547,46.9,27.4,13.4,0.1071
+55,Chocolate Caramel Nut Cake II,7455,259,24.1,12.5,6.5,0.12830000000000003
+56,Peter's Cheesecake,7456,280,20.6,17.0,10.2,0.22
+57,Sauerkraut Cake,7457,253,30.7,9.9,5.9,0.2366
+58,Sour Cream Chocolate Frosting,7458,172,26.0,7.6,4.6,0.062
+59,Gooey Butter Cake I,7459,245,19.2,14.3,7.6,0.2357
+60,Butter Cake,7460,210,17.5,9.0,5.3,0.2509
+61,Mary Oppenhiemer's Butter Cake,7461,619,71.2,25.5,15.6,0.19219999999999998
+62,Flourless Chocolate Roll,7462,201,20.3,10.7,5.0,0.053
+63,No-Bake Holiday Fruitcake,7463,570,71.3,19.3,5.0,0.336
+64,Gingerbread II,7464,230,25.4,6.5,3.9,0.1713
+65,Dump Cake IV,7465,400,23.7,20.4,10.5,0.4013
+66,Deep Chocolate Raspberry Cake,7466,629,52.8,40.2,23.6,0.15919999999999998
+67,Sponge Cake Tiramisu,7467,377,13.5,30.5,17.6,0.102
+68,Rhubarb Cake I,7468,245,29.4,8.2,5.0,0.1792
+69,Hot Milk Sponge Cake I,7469,271,30.8,10.0,5.1,0.12819999999999998
+70,Lady Baltimore Frosting,7470,115,25.1,0.0,0.0,0.0322
+71,Lady Baltimore Cake,7471,440,37.0,18.5,10.2,0.36819999999999997
+72,Graham Cracker Cake I,7472,709,46.2,52.0,28.1,0.2555
+73,Orange Chiffon Cake,7473,271,22.8,9.7,1.6,0.3029
+74,Carrot Cheesecake with Crumb Crust,7474,348,19.6,24.9,11.9,0.2035
+75,Crazy Cake,7475,250,22.4,9.7,1.4,0.2707
+76,Grandma's Chocolate Marvel Cake,7476,120,17.6,0.6,0.3,0.1643
+77,Party Frosting,7477,83,20.1,0.0,0.0,0.016399999999999998
+78,Cinnamon Swirl Bundt Coffee Cake,7478,403,29.5,20.2,10.5,0.2556
+79,Kentucky Butter Cake,7479,508,47.1,22.6,13.6,0.4674
+80,Chocolate Rum Cake,7480,520,39.6,28.6,8.3,0.564
+81,Miami Beach Cake,7481,512,38.6,30.6,17.5,0.455
+82,Rhubarb Stir Cake,7482,308,33.0,8.6,5.2,0.2549
+83,Rivel Kuchen,7483,199,12.5,5.1,1.9,0.1512
+84,Tunnel of Fudge Cake III,7484,692,48.0,45.2,18.7,0.2697
+85,Bee Sting Cake (Bienenstich) I,7485,281,17.0,14.5,8.1,0.0654
+86,Decorator Frosting I,7486,318,41.2,17.2,4.3,0.0025
+87,Honey Cake I,7487,164,18.0,4.0,0.7,0.15419999999999998
+88,White Cake Frosting I,7488,215,31.3,10.3,2.6,0.019899999999999998
+89,Harvey Wallbanger Cake,7489,390,37.2,15.9,2.5,0.42460000000000003
+90,Eggless Milkless Butterless Cake,7490,197,23.9,2.4,0.6,0.2442
+91,Fabulously Sweet Pear Cake,7491,451,35.8,22.4,2.8,0.2784
+92,Gooey Butter Cake II,7492,247,29.0,10.2,5.1,0.2053
+93,Buttermilk Pound Cake I,7493,365,29.6,16.5,4.2,0.1013
+94,Zucchini Cake I,7494,794,70.5,43.7,13.1,0.5288999999999999
+95,Peanut Butter Cake II,7495,696,63.1,38.7,16.1,0.5506
+96,Peanut Butter Frosting,7496,280,30.9,15.7,6.5,0.1171
+97,Sachertorte,7497,417,46.4,21.4,12.3,0.1182
+98,Chocolate Chip Date Nut Cake,7498,203,18.8,10.0,1.9,0.1066
+99,Zucchini Cake II,7499,211,12.9,13.1,1.7,0.2169

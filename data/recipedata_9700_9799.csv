@@ -1,0 +1,100 @@
+,name,id,calories,sugars,fat,saturated fat,sodium
+0,Scottish Shortbread I,9700,116,2.5,7.8,4.9,0.07890000000000001
+1,Better than Grandma's Brownies,9701,266,23.4,15.1,6.6,0.1031
+2,Orange Marmalade Bars,9702,238,24.4,9.1,2.3,0.15869999999999998
+3,Crispy Gingersnaps,9703,94,6.9,4.5,1.1,0.1052
+4,Noel Bars,9704,189,21.4,9.1,2.1,0.10540000000000001
+5,Sesame Wafers,9705,42,6.0,1.5,0.4,0.0062
+6,Carrot-Orange Bars,9706,152,13.1,6.6,4.2,0.1414
+7,Cranberry-Pumpkin Cookies,9707,90,6.0,3.9,1.8,0.1311
+8,Squash Cookies,9708,171,13.7,7.8,2.4,0.1505
+9,Chocolate Crisps,9709,53,7.5,1.6,1.0,0.0248
+10,Pistachio Thins,9710,49,4.4,1.6,0.7,0.045899999999999996
+11,Canadian Molasses Cookies,9712,45,5.7,0.1,0.0,0.0654
+12,Fudge Chunk Brownies,9713,319,21.9,22.2,9.0,0.014
+13,Turtles® Brownies,9714,583,47.8,36.5,12.8,0.0765
+14,White Chocolate-Macadamia Bars,9715,255,18.9,16.3,7.7,0.0603
+15,Almond Thins,9716,61,2.9,4.0,1.8,0.0337
+16,Hazelnut and Almond Cookies,9717,94,6.4,6.4,0.5,0.0075
+17,Pine Nut Macaroons,9718,103,4.5,6.7,0.9,0.0047
+18,Toasted Sesame Thins,9719,85,4.1,5.0,1.5,0.0251
+19,Greek Egg Biscuits,9720,75,2.1,4.4,2.5,0.062200000000000005
+20,Sicilian Fig Cookies,9721,107,9.8,5.0,1.9,0.0288
+21,Pecan Lace Cookies I,9722,88,5.1,4.5,2.1,0.0050999999999999995
+22,Chocolate Oatmeal Bars,9723,353,20.9,23.2,13.0,0.172
+23,Candy Bar Bars,9724,137,9.2,7.0,3.1,0.047700000000000006
+24,Chocolate Peanut Butter Date Bars,9725,227,13.4,15.3,6.2,0.095
+25,Buttermilk Coconut Bars,9726,190,23.4,6.3,3.1,0.1487
+26,Apricot Amaretto Chews,9727,213,22.5,8.5,4.5,0.1006
+27,Hazelnut Lace,9728,103,6.3,5.8,2.6,0.0315
+28,Pistachio Wreaths,9729,248,12.8,13.4,7.6,0.1574
+29,Poinsettia Balls,9730,161,7.9,9.9,3.7,0.09340000000000001
+30,Fudgies I,9731,203,17.9,13.3,5.7,0.0352
+31,Fruit and Spice Rounds,9732,217,25.8,8.5,4.5,0.1746
+32,Seattle Macadamia Cookies,9733,171,12.2,10.7,5.0,0.0619
+33,Better Than Fruitcake Cookies,9734,107,8.7,5.4,1.9,0.0144
+34,Lemon Squares I,9735,243,19.6,13.4,5.6,0.023399999999999997
+35,Currant Raisin Cookies,9736,107,11.6,3.4,1.4,0.0324
+36,Vanilla Crescent Cookies,9737,135,12.9,6.3,3.4,0.0009
+37,Ginger and Spice Cookies,9738,85,5.7,3.3,2.0,0.039200000000000006
+38,Icebox Cookies I,9739,77,2.1,5.3,3.3,0.0011
+39,Almond Rolls,9740,78,7.3,4.6,2.1,0.0479
+40,Nougat Cookies,9741,98,8.4,4.1,2.5,0.0303
+41,Old Fashioned Wreaths,9742,33,2.4,1.6,1.0,0.014199999999999999
+42,Dark Dreams,9743,55,2.3,3.4,2.0,0.030199999999999998
+43,Light Dreams,9744,43,1.9,2.6,1.6,0.025
+44,Rosenmunnar,9745,94,4.9,5.2,3.3,0.037899999999999996
+45,Cinnamon Cocoa Drops,9746,28,3.5,1.2,0.1,0.0038
+46,Almond Kisses,9747,214,19.0,12.0,0.9,0.0146
+47,Fork Cookies,9748,36,2.6,2.0,1.3,0.013800000000000002
+48,Spritsar,9749,23,0.7,1.4,0.8,0.0092
+49,Coconut Fingers,9750,35,3.2,1.7,0.9,0.0257
+50,Swedish Wafers,9751,40,2.5,2.4,1.5,0.0181
+51,Apricot Squares,9752,105,11.0,4.4,2.0,0.052899999999999996
+52,Cashew Caramel Bars,9753,80,8.9,3.0,1.0,0.0639
+53,Almond-Raspberry Meringue Bars,9754,144,10.4,7.1,3.7,0.047299999999999995
+54,Coconut Cake Bars,9755,123,10.6,6.0,2.2,0.0378
+55,Chocolate Peanut Butter Bars I,9756,444,28.6,29.5,12.1,0.2414
+56,Hermits I,9757,121,10.0,5.1,2.6,0.084
+57,Zucchini Nut Bars,9758,90,10.5,3.5,1.0,0.0303
+58,Cream Cheese Brownies II,9759,126,10.9,7.5,3.6,0.0715
+59,Mocha Java Bars,9760,349,37.8,18.5,9.9,0.1618
+60,Easy Carrot Cake Bars,9761,130,10.7,4.8,1.3,0.1441
+61,Oatmeal Cookie Bars,9762,103,12.5,3.4,0.8,0.026
+62,Chocolate Chip Cookie Bars,9763,200,12.9,12.6,6.3,0.0645
+63,Cheesecake Bars,9764,73,3.5,4.8,2.6,0.0337
+64,Macadamia Nut Lemon Drops,9765,122,12.3,6.8,1.1,0.0148
+65,Chunks,9766,132,9.2,7.7,4.0,0.0633
+66,Pistachio Crisps,9767,56,1.2,4.2,1.8,0.0367
+67,Glazed Apple Cookies,9768,289,32.0,11.4,2.5,0.1514
+68,Zucchini Oatmeal Cookies,9769,63,5.1,3.1,0.6,0.018
+69,Zaz's Oatmeal Shortbread,9770,73,4.4,4.0,2.1,0.043
+70,Coffee Cookies,9771,75,4.5,4.9,1.0,0.0025
+71,Chocolate Macaroons I,9772,83,9.8,4.5,2.6,0.0229
+72,Maple Cookies,9773,91,7.8,3.2,2.0,0.086
+73,Mint Cookie Cookies,9774,132,8.0,7.0,3.8,0.125
+74,Cinnamon Raisin Crescents,9775,82,3.8,4.1,2.5,0.0305
+75,Easy Butter Cookies I,9776,82,2.8,5.2,3.2,0.001
+76,No Bake Rum Balls,9777,102,3.8,4.6,0.8,0.041
+77,Baked Date Balls,9778,69,9.4,3.0,0.9,0.013099999999999999
+78,Chocolate-coconut Pinwheels,9779,236,15.5,13.1,6.3,0.1437
+79,Marbled Tarts,9780,180,10.7,11.4,6.9,0.09340000000000001
+80,Pecan and Sour Cream Sandies,9781,115,8.1,6.4,2.3,0.0412
+81,Chocolate Dipped Mocha Rounds,9782,178,11.5,11.5,5.3,0.0461
+82,Coconut Rolled Sugar Cookies,9783,112,7.5,5.9,3.3,0.039
+83,Orange Sugar Bells,9784,98,5.1,4.6,1.9,0.0417
+84,Apricot Twists,9785,108,4.3,5.9,3.7,0.09609999999999999
+85,Sour Cream Figure-Eights,9786,109,7.6,4.2,2.5,0.0668
+86,Pastel Wafers,9787,171,15.8,7.9,4.9,0.0503
+87,Chocolate-Almond Macaroons,9788,266,23.1,16.2,3.1,0.0361
+88,Anginetti,9789,312,39.4,8.2,4.7,0.1474
+89,Orange-Walnut Butter Cookies,9790,201,13.2,10.4,5.1,0.2531
+90,Chocolate-Chunk and Pecan Cookies,9791,432,27.8,28.5,12.5,0.2102
+91,Lemon-Marmalade Cookie Sandwiches,9792,350,16.9,22.4,10.3,0.21209999999999998
+92,Anise Biscotti,9793,111,6.8,4.7,2.2,0.0883
+93,Sesame-Almond Macaroons,9794,106,5.6,5.8,0.8,0.009300000000000001
+94,Digestive Biscuits,9795,90,4.7,4.1,2.5,0.0514
+95,Melting Biscuits,9796,73,3.2,4.1,2.5,0.1181
+96,Madeira Fingers,9797,61,4.1,2.7,1.7,0.020300000000000002
+97,Cinnamon Biscuits,9798,92,4.2,4.1,2.5,0.0788
+98,Fruit Preserve Sandwich Cookies,9799,223,24.4,5.9,3.1,0.0501

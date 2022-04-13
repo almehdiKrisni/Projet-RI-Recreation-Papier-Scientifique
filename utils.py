@@ -14,6 +14,7 @@ import csv
 import seaborn as sns
 import numpy as np
 import copy
+import matplotlib.pyplot as plt
 
 ################################## Scraping functions ###################################
 
@@ -55,7 +56,12 @@ def recipeCollector(startCounter, counter, research, toCSV=False, filepath="data
             recipeInfo["name"] = recipeName.text
             recipeInfo["id"] = c
 
-            # We collect the calories per serving
+            # After a first try, we realized that the data shown on the website isn't per serving
+            # We need to divide the values by the number of servings shown in the recipe
+            # We collect the number of servings
+
+
+            # We collect the calories
             tmp1 = recipe.find("div", {"class" : "recipeNutritionSectionBlock"})
             tmp2 = tmp1.find("div", {"class" : "section-body"}).text.split(";")[0].split()[0]
             recipeInfo["calories"] = int(tmp2)

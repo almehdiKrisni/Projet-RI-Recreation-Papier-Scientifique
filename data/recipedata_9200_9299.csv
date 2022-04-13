@@ -1,0 +1,101 @@
+,name,id,calories,sugars,fat,saturated fat,sodium
+0,Rutabaga Casserole,9200,97,12.4,2.7,1.5,0.0653
+1,Sara's Pumpkin Pie,9201,310,30.9,12.8,4.7,0.3363
+2,Sausage Stuffing,9202,514,3.6,38.1,8.0,0.9893
+3,Savory Turkey Gravy,9203,13,0.0,0.1,0.0,0.2797
+4,Scalloped Corn,9204,263,6.7,14.9,8.1,0.6162000000000001
+5,Scalloped Oysters I,9205,397,3.2,28.9,16.4,0.4345
+6,Screaming Potatoes,9206,164,2.7,0.3,0.0,1.455
+7,Serious Herb Cheese Spread,9207,27,0.1,2.6,1.6,0.0322
+8,Smashed Sweet Potatoes,9208,425,44.6,6.0,3.7,0.1835
+9,Southern Candied Sweet Potatoes,9209,397,43.0,7.9,5.0,0.1795
+10,Spicy Persimmon Chutney,9210,45,8.4,0.1,0.0,0.0016
+11,Squash Casserole I,9211,266,1.7,19.4,10.8,0.4771
+12,Squash-Carrot Casserole,9212,297,5.2,21.7,11.6,0.6528999999999999
+13,Savory Stuffed Celery Bites,9213,121,1.0,11.4,5.6,0.29869999999999997
+14,Cranberry Stuffed Turkey Breasts,9214,369,3.5,18.4,2.5,0.8575
+15,Stuffed Turkey Legs,9215,581,4.3,24.3,6.6,4.307300000000001
+16,Sugarless Pumpkin Pie,9216,217,5.9,9.0,2.4,0.3788
+17,Super Moist Pumpkin Bread,9217,360,29.4,17.7,4.2,0.25739999999999996
+18,Sweet Potato Balls Appetizer,9218,286,27.4,5.5,3.3,0.19569999999999999
+19,Sweet Potato Casserole I,9219,602,59.9,26.9,11.1,0.2127
+20,Sweet Potato Casserole II,9220,292,38.3,5.7,1.0,0.1437
+21,Sweet Potato Casserole III,9221,657,72.8,25.3,11.8,0.3024
+22,Sweet Potato Casserole IV,9222,679,66.6,35.7,15.9,0.2283
+23,Sweet Potato Casserole V,9223,238,28.2,6.5,2.8,0.2499
+24,Sweet Potato Fluff,9224,490,48.5,26.4,12.7,0.1719
+25,Sweet Potato Souffle,9225,516,49.2,26.5,12.8,0.1767
+26,Tarragon Stuffing,9226,303,3.1,13.9,7.8,0.6466000000000001
+27,Thanksgiving Meatloaf,9227,222,1.1,9.5,2.6,0.4283
+28,Old-Fashioned Three Bean Salad,9228,112,10.6,4.7,0.6,0.29860000000000003
+29,Three Cranberry Relish,9229,222,48.3,0.1,0.0,0.0027
+30,Turkey Pot Pie,9230,481,2.7,27.3,9.2,0.6688999999999999
+31,Turkey Tenderloins,9231,154,0.2,3.1,0.9,0.8249
+32,Twice Baked Potatoes I,9232,186,1.8,4.4,2.7,0.056600000000000004
+33,Vegetarian Stuffing,9233,316,8.8,8.9,1.6,0.945
+34,Pumpkin Pie with Walnut Streusel Topping,9234,441,44.4,21.6,6.8,0.3896
+35,Whipped Carrots And Parsnips,9235,222,9.5,12.1,7.4,0.15180000000000002
+36,Wild Mushroom Stuffing for Turkey,9236,971,9.9,40.8,13.1,1.1158
+37,Winter Fruit Salad with Lemon Poppyseed Dressing,9237,277,14.2,20.6,4.4,0.2013
+38,Yeast Hot Rolls,9238,118,3.1,3.4,0.6,0.0664
+39,Yorkshire Pudding,9239,157,1.3,3.3,1.2,0.26130000000000003
+40,Roast Goose with Port Gravy,9240,676,3.4,41.7,13.0,0.44430000000000003
+41,Roast Goose with Stuffing,9241,1169,28.7,67.9,23.2,0.8805
+42,Roast Pork with Cranberry Glaze,9242,370,41.3,6.1,2.0,0.11
+43,Hot Buttered Rum Mix,9243,411,66.1,16.2,10.2,0.0386
+44,Winter Wonder Bars,9244,362,25.0,22.8,11.6,0.0709
+45,Grandma Weld's Cookies,9245,122,5.4,8.0,4.9,0.011300000000000001
+46,Gingerbread Cupcakes with Cream Cheese Frosting,9246,241,23.3,9.6,5.8,0.1845
+47,Christmas Breakfast Sausage Casserole,9247,377,4.0,26.0,11.9,1.0154
+48,Sunday School Fudge,9248,71,6.6,3.8,2.0,0.0152
+49,Holiday Hot Spinach Dip,9249,35,0.2,2.5,1.5,0.0839
+50,Baked Cream Cheese Appetizer,9250,160,1.1,13.3,7.1,0.194
+51,Pork Pie,9251,712,0.8,51.1,17.6,0.4624
+52,Roast Pork,9252,387,13.5,18.4,6.9,1.355
+53,Roast Pork with Maple and Mustard Glaze,9253,290,23.5,8.2,3.0,0.5217999999999999
+54,Kriss Kringle Cookies,9254,337,27.8,19.8,4.9,0.1196
+55,Coconut Coquito,9255,350,9.5,28.6,25.4,0.0182
+56,Scandinavian Glogg,9256,181,1.6,3.6,0.3,0.0058
+57,Tom and Jerry,9257,215,17.6,4.8,3.1,0.1003
+58,Candy Cane Cocoa,9258,486,58.3,14.9,8.9,0.1408
+59,Wassail I,9259,89,7.4,0.2,0.1,0.1931
+60,Sparkling Punch,9260,73,15.9,0.1,0.0,0.0107
+61,Holiday Red Punch,9261,55,13.0,0.1,0.0,0.0158
+62,Apricot Fruitcake,9262,296,26.2,10.0,4.2,0.1452
+63,Boiled Fruitcake,9263,558,39.8,19.6,9.8,0.6247
+64,Carrot Fruit Ring,9264,497,43.6,20.1,2.7,0.329
+65,Christmas Cake,9265,645,73.6,17.8,8.2,0.2559
+66,Christmas Cherry Cake,9266,205,22.3,8.3,5.0,0.09409999999999999
+67,Christmas Fruitcake,9267,202,13.7,9.9,5.2,0.1351
+68,Crushed Pineapple Fruitcake,9268,355,36.4,9.6,5.7,0.2835
+69,Easy Light Fruitcake,9269,385,32.8,13.5,7.0,0.1555
+70,Elegant Light Fruit Cake,9270,430,44.6,11.1,2.2,0.055
+71,Festive Fruitcake I,9271,467,45.6,15.6,5.9,0.174
+72,French Fruitcake,9272,309,19.6,12.1,5.6,0.09079999999999999
+73,Fruitcake,9273,639,36.0,27.0,12.9,0.3778
+74,Easy Fruitcake Without Citron,9274,689,55.2,37.5,3.9,0.204
+75,Light Fruitcake,9275,262,16.2,11.1,5.3,0.1638
+76,Mincemeat Cake,9276,226,24.7,6.8,3.9,0.2289
+77,Mom's Brazil Nut Fruitcake,9277,468,37.3,25.3,10.0,0.1376
+78,Mom's Fruitcake,9278,393,45.9,12.3,5.6,0.1191
+79,No Bake Fruitcake,9279,238,15.9,14.4,4.4,0.058
+80,No-Bake Holiday Fruitcake,9280,570,71.3,19.3,5.0,0.336
+81,Rich Dark Fruitcake,9281,459,41.3,14.5,6.7,0.18630000000000002
+82,Sugarless Fruitcake,9282,260,15.1,12.0,3.2,0.2243
+83,Unbaked Fruit Cake,9283,350,40.5,12.9,1.2,0.1757
+84,Cherry Almond Cake,9284,318,23.6,14.7,7.9,0.2489
+85,Chocolate Plum Pudding Cake,9285,351,34.2,16.6,8.2,0.3603
+86,Chocolate Rum Cake,9286,450,34.0,24.6,7.3,0.4835
+87,Christmas Wreath Cake,9287,413,38.1,17.3,8.7,0.2214
+88,Cocoa Apple Cake,9288,331,26.8,14.9,9.0,0.24719999999999998
+89,Favorite Old Fashioned Gingerbread,9289,211,17.7,6.3,3.8,0.2445
+90,German Christmas Gingerbread,9290,453,46.3,19.3,9.8,0.2355
+91,Icelandic Christmas Cake,9291,225,15.8,9.7,5.8,0.1366
+92,Mafioso Chocolate Cake,9292,340,40.2,12.7,7.9,0.119
+93,Minnehaha Cake,9293,419,39.9,20.6,4.8,0.14809999999999998
+94,Plum Bread,9294,385,34.8,19.9,2.9,0.1277
+95,Red Velvet Cake,9295,513,43.8,25.7,12.6,0.5025
+96,Pumpkin Cheesecake I,9296,581,27.7,39.1,18.7,0.7306
+97,Pumpkin Cheesecake II,9297,305,19.1,22.0,12.2,0.2403
+98,Eggnog Cheesecake I,9298,550,28.3,36.3,19.4,0.32489999999999997
+99,Holiday Refrigerator Cake,9299,330,35.0,15.8,5.9,0.09190000000000001

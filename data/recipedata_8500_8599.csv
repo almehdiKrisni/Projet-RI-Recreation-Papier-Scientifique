@@ -1,0 +1,101 @@
+,name,id,calories,sugars,fat,saturated fat,sodium
+0,Mary's Pecan Crusted Chicken,8500,507,2.4,33.1,4.7,0.2501
+1,Buffalo Chicken Fingers,8501,125,0.8,2.0,0.5,0.26280000000000003
+2,Cranberry Chicken I,8502,481,35.5,22.3,3.9,1.0874000000000001
+3,Hawaiian Chicken I,8503,548,56.1,18.2,10.5,5.8309
+4,Quick Chicken Enchiladas,8504,343,2.3,9.0,3.0,0.845
+5,Cashew Chicken I,8505,425,2.3,27.4,14.7,0.3113
+6,Florentine Curried Chicken,8506,487,3.5,27.6,12.9,1.0806
+7,Chicken In a Tarragon Sauce,8507,1013,3.2,59.0,16.0,0.2475
+8,Parmesan Chicken I,8508,491,4.7,21.5,10.5,1.3035
+9,Crispy Herb Baked Chicken,8509,557,0.3,31.5,14.8,0.837
+10,Hot Chicken Salad I,8510,636,3.1,50.6,13.1,0.5738
+11,Jazzy New Orleans Chicken,8511,610,3.9,39.9,11.4,0.5657000000000001
+12,Ginger Chicken,8512,1234,8.4,79.6,11.5,0.25939999999999996
+13,Gypsy Chicken Stew,8513,588,9.5,27.1,7.6,1.0016
+14,Sesame Wings,8514,514,23.5,31.3,7.7,0.4289
+15,Chicken Curry I,8515,343,3.2,24.3,5.3,0.0829
+16,Pineapple Chicken,8516,245,16.0,5.8,1.3,0.8015
+17,Super Sunday Chicken,8517,859,8.9,26.0,12.6,2.1007
+18,Chicken Spaghetti I,8518,639,8.7,34.9,9.9,1.9125999999999999
+19,Chicken In Sour Cream,8519,636,1.6,48.8,17.2,1.8657000000000001
+20,Hawaiian Chicken II,8520,540,70.5,14.4,8.1,0.5478999999999999
+21,Mexicali,8521,401,3.2,18.6,8.7,1.0032
+22,Oh-So-Good Chicken,8522,357,3.4,18.7,8.6,0.7175
+23,Chicken and Summer Squash,8523,221,2.3,8.2,2.7,0.3996
+24,Chicken Breasts with Herb Basting Sauce,8524,392,0.1,21.9,4.7,0.4003
+25,Chicken Costa Brava,8525,239,10.9,6.1,1.0,0.4945
+26,Party Chicken I,8526,493,1.3,31.1,13.6,1.6211
+27,Garlic Chicken And Grapes,8527,373,14.8,11.1,2.3,0.7533
+28,Lemon Mustard Chicken,8528,390,1.8,27.3,11.6,0.6938
+29,My Mom's Parmesan Chicken,8529,836,1.3,57.9,21.4,1.1157000000000001
+30,Quick Sherry Chicken,8530,537,4.7,36.2,9.5,0.5237999999999999
+31,Chicken Cream,8531,1246,21.2,102.8,57.3,0.7383
+32,Easy Cheesy Chicken I,8532,364,1.7,19.6,9.5,1.1462
+33,Quick Chicken Divan,8533,323,1.9,24.4,7.8,0.7434
+34,Bou's Chicken,8534,858,26.6,52.1,14.7,1.986
+35,Breakfast Casserole,8535,448,1.0,36.0,18.3,0.6692
+36,Sweet and Sour Chicken I,8536,639,23.6,18.4,2.9,0.7586
+37,Chicken Chow Mein,8537,200,4.4,8.8,4.8,0.2756
+38,Golden Chili Chicken,8538,571,4.5,40.1,10.6,0.6429
+39,Chicken A La Orange,8539,301,26.0,5.2,0.9,0.0795
+40,Puff Pastry Roll,8540,591,14.5,27.9,7.5,0.8249
+41,Carol's Arroz Con Pollo,8541,471,6.4,14.0,2.3,1.0154
+42,Chicken Tortilla Casserole,8542,365,4.9,20.2,9.0,1.0828
+43,Chicken Something,8543,724,1.7,33.6,17.3,1.3913
+44,Alice's Sour Cream Chicken Breasts,8544,351,0.4,20.8,12.4,0.25689999999999996
+45,Quick and Easy Chicken,8545,255,13.4,8.3,1.3,0.6545
+46,Apple Stuffed Chicken Breast,8546,139,1.9,5.1,2.9,0.1196
+47,Chicken In Basil Cream,8547,496,2.1,35.7,21.6,0.3733
+48,Lemon Chicken I,8548,782,2.3,51.5,14.7,0.244
+49,Honey Mustard Chicken,8549,617,12.5,39.1,11.2,0.3453
+50,Sweet And Sour Chicken Meatballs,8550,754,54.3,11.9,1.6,1.7784
+51,Spinach Stuffed Chicken Breasts,8551,449,1.5,32.8,8.1,0.6846
+52,Roasted Rosemary Chicken And Vegetables,8552,381,11.0,21.6,3.4,0.1017
+53,Marinated Chicken Salad,8553,391,18.4,17.6,3.4,0.9662999999999999
+54,Chicken with Red Grapes And Mushrooms,8554,402,5.9,26.4,14.7,0.581
+55,Gourmet Chicken Salad,8555,330,12.7,18.9,3.6,0.9911
+56,Pollo Bella,8556,755,3.1,38.5,18.6,0.6287999999999999
+57,Chicken Delight,8557,342,2.1,17.8,8.7,0.32830000000000004
+58,Wings In Cola,8558,315,15.8,18.1,5.1,0.3137
+59,Apricot Chicken I,8559,456,44.4,13.8,2.3,1.1342999999999999
+60,Champagne Chicken,8560,692,1.4,52.5,28.8,0.7091000000000001
+61,Deviled Chicken Breasts,8561,217,2.4,5.4,1.0,0.4542
+62,Chicken Noodle Soup,8562,227,0.9,8.1,3.8,1.1239000000000001
+63,Mom's Texas Chicken,8563,238,0.6,13.7,2.4,0.6748
+64,Chicken a la King I,8564,305,3.8,19.2,10.4,0.7339
+65,Becky's Chicken Salad,8565,274,3.2,23.6,4.6,0.388
+66,Lemon Cilantro Chicken,8566,487,3.8,9.3,1.6,0.3697
+67,Crispy Sesame Fried Chicken,8567,1039,1.1,76.3,14.0,0.9823999999999999
+68,Chicken Salad Al La Barbara,8568,342,19.6,14.1,2.3,0.22790000000000002
+69,Fragrant Lemon Chicken,8569,309,3.3,17.2,4.8,0.1013
+70,Grilled Chicken Breast with Cucumber and Pepper Relish,8570,205,0.7,9.8,1.8,0.0621
+71,Blackened Chicken,8571,135,0.1,3.0,0.8,0.2047
+72,Grilled Chicken with Salsa Barbecue Sauce,8572,888,18.0,56.8,14.1,0.6354
+73,Olive Chicken I,8573,665,2.2,51.4,11.8,2.3406
+74,Leah's Chicken with Chickpeas,8574,694,1.0,44.5,12.3,0.36010000000000003
+75,Chili And Cheese Stuffed Chicken Breasts,8575,298,1.8,8.9,4.7,0.2429
+76,Montana Grilled Chicken,8576,420,0.9,29.1,8.2,0.2693
+77,Pecan Breaded Chicken Breasts,8577,447,7.1,30.3,6.2,0.7
+78,Merwin's Chicken Marsala,8578,547,4.5,21.4,10.0,0.32889999999999997
+79,Gkai Kamin,8579,407,0.1,21.7,6.0,3.608
+80,Pollo Fajitas,8580,210,2.0,8.3,1.8,0.3436
+81,Sarah's Chicken Lasagna,8581,464,6.2,24.0,12.4,1.3505999999999998
+82,San Antonio Chicken Roll Ups,8582,489,1.0,35.4,15.7,1.2661
+83,Sticky Chicken,8583,810,15.0,56.3,14.4,0.997
+84,Holiday Chicken Salad,8584,315,10.7,23.1,3.3,0.21309999999999998
+85,Marinated Chicken Barbecue,8585,284,7.3,15.3,2.2,0.4228
+86,Elegant Chicken Athena,8586,597,3.5,37.4,15.1,0.394
+87,Yammy Chicken,8587,398,8.8,12.3,2.1,0.6252000000000001
+88,Mango Chicken,8588,312,24.6,5.4,0.9,0.0813
+89,Wild Rice And Chicken Soup,8589,639,1.6,48.5,29.0,1.3948
+90,Tasty Chicken,8590,240,5.1,8.5,1.4,1.0036
+91,Peachy Chicken,8591,729,8.5,22.8,6.0,1.0945
+92,Parmesan and Basil Chicken Salad,8592,592,1.2,49.1,9.3,0.6176
+93,Chicken Scampi I,8593,179,1.4,4.5,1.5,0.32439999999999997
+94,Easy Chicken Casserole,8594,466,3.0,23.9,11.1,0.7972
+95,Easy Creamy Peppercorn Chicken,8595,244,3.1,8.4,2.0,0.91
+96,Mediterranean Lemon Chicken,8596,241,0.0,11.8,2.9,0.1996
+97,Quick and Easy Mexican Chicken,8597,264,2.1,11.1,6.4,0.6413
+98,Chicken Scarpariello,8598,580,1.0,21.4,5.4,1.0857999999999999
+99,"Chicken, Cheese, and Biscuits",8599,448,10.4,20.2,7.4,1.4569

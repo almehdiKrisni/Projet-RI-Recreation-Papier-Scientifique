@@ -1,0 +1,101 @@
+,name,id,calories,sugars,fat,saturated fat,sodium
+0,Hummingbird Cake IV,8200,551,38.1,31.0,3.9,0.3172
+1,Strawberry Shortcake,8201,430,23.3,21.4,9.5,0.347
+2,Hungarian Chestnut Cake,8202,530,30.9,34.1,20.3,0.0983
+3,Chocolate Italian Cream Cake,8203,1018,94.3,58.1,23.9,0.4091
+4,Baked Apple-Pecan Maple Pancakes,8204,332,14.1,15.8,5.2,0.5559
+5,Soda Pop Strawberry Angel Food Cake,8205,265,47.9,3.3,2.1,0.344
+6,Peppermint Chiffon Cake,8206,330,25.3,12.3,2.1,0.35760000000000003
+7,Sugar Free Applesauce Cake,8207,402,17.3,23.5,6.0,0.375
+8,Polish Rice Cake,8208,229,5.2,12.9,7.9,0.285
+9,Banana Split Cake II,8209,644,40.3,37.6,14.9,0.3531
+10,Spiced Yogurt Pound Cake,8210,192,17.5,8.6,5.2,0.1454
+11,Apple Cake III,8211,191,16.2,6.8,1.2,0.1666
+12,Fresh Pear Cake,8212,455,39.3,19.5,1.6,0.371
+13,Italian Cheesecake,8213,179,20.1,5.8,3.2,0.0888
+14,Depression Cake I,8214,234,23.9,8.8,2.2,0.0549
+15,Festive Prune Cake,8215,171,13.3,8.0,1.5,0.15630000000000002
+16,Burnt Sugar Cake II,8216,185,15.0,6.7,3.9,0.16219999999999998
+17,Dreamy White Chip Cup Cakes,8217,176,20.1,7.6,3.5,0.15719999999999998
+18,Snowball Cake I,8218,344,43.1,12.2,10.8,0.24919999999999998
+19,Lemon Custard Pudding Cake,8219,293,45.0,9.7,5.5,0.0923
+20,Aunt Irene's Frosting,8220,188,18.7,10.3,6.1,0.0498
+21,Black Bottom Cupcakes I,8221,171,15.1,8.9,3.9,0.145
+22,Phila Butter Cake,8222,288,24.3,10.6,5.6,0.1017
+23,Almond Rhubarb Coffee Cake,8223,197,16.8,8.6,1.4,0.1643
+24,Raspberry Almond Cake,8224,403,19.2,23.2,12.5,0.2464
+25,Root Beer Cake I,8225,283,26.7,13.1,8.0,0.3514
+26,Butterscotch Spice Cake,8226,317,25.0,16.1,3.7,0.43710000000000004
+27,Sour Milk Spice Cake,8227,278,17.9,14.3,1.8,0.224
+28,Basque Cake,8228,205,31.1,2.6,1.0,0.0592
+29,New York Cheesecake III,8229,493,26.4,34.4,20.9,0.2798
+30,Chocolate Cheesecake II,8230,540,36.6,37.9,22.5,0.29869999999999997
+31,Traditional Coffee Cake,8231,418,26.2,17.4,10.4,0.2333
+32,Chocolate Pudding Cake I,8232,102,7.8,3.1,2.4,0.207
+33,Angel Cake Surprise,8233,166,28.3,2.5,2.1,0.2303
+34,One-Bowl Cheesecake,8234,339,19.0,25.6,15.4,0.2535
+35,Coconut Cake III,8235,346,34.3,17.5,7.8,0.2887
+36,Satiny Chocolate Glaze,8236,243,18.6,18.1,11.1,0.068
+37,Golden Sponge Cake,8237,209,18.2,10.8,4.0,0.2214
+38,Grandmother's Pound Cake I,8238,181,12.5,10.2,1.5,0.21209999999999998
+39,Good For You Cheesecake,8239,236,17.4,14.8,8.8,0.24680000000000002
+40,Carrot Cake VI,8240,275,30.3,7.5,1.1,0.2253
+41,Strawberry Refrigerator Cake,8241,373,42.7,13.9,5.8,0.4144
+42,Heavenly Hash Cake,8242,493,63.8,19.3,9.4,0.26680000000000004
+43,Gooey Chocolate Icing,8243,129,17.8,5.3,3.3,0.0669
+44,Semolina Turmeric Cake (Sfoof),8244,188,19.7,10.0,1.5,0.0695
+45,Kentucky Bourbon Cake,8245,1077,86.2,45.6,15.4,0.2341
+46,Chocolate Cake in a Jar I,8246,1052,102.4,44.7,22.0,0.604
+47,Caramel Apple Cake,8247,344,26.5,18.2,7.9,0.38439999999999996
+48,Sour Cream Chocolate Chip Cake I,8248,414,32.6,22.5,13.5,0.32539999999999997
+49,Peach Cake II,8249,203,15.4,11.5,1.5,0.15869999999999998
+50,Mock Lemon Chiffon Cake,8250,327,34.4,12.8,7.9,0.4462
+51,Whoopie Pies,8251,214,18.2,11.7,3.4,0.1626
+52,Chocolate Angel Food Cake I,8252,179,28.7,0.3,0.1,0.1
+53,Cajun Cake,8253,492,49.8,19.0,5.3,0.4016
+54,Fresh Coconut Cake,8254,675,52.9,37.7,22.2,0.393
+55,Snickerdoodle Cake I,8255,167,18.8,5.0,1.3,0.0994
+56,Orange Cream Cake IV,8256,238,23.9,11.4,7.1,0.15990000000000001
+57,German Sweet Chocolate Cake I,8257,430,37.5,25.4,13.7,0.2393
+58,Banana Cake V,8258,253,23.3,9.7,5.8,0.1741
+59,Cream Cheese Cupcakes,8259,183,8.5,10.8,6.5,0.1139
+60,Chocolate Cake in a Jar II,8260,699,81.8,21.3,12.4,0.3857
+61,Little Mickey's Favorite Cheesecake,8261,700,37.2,53.4,27.6,0.4029
+62,Lori's White Bread Cake,8262,502,51.2,20.1,5.2,0.0833
+63,Best White Icing Ever,8263,184,23.5,10.3,2.6,0.0003
+64,Rocky Road Turtles® Cake,8264,506,57.3,21.3,4.6,0.4784
+65,Funnel Cakes IV,8265,263,7.5,9.8,1.9,0.21309999999999998
+66,Bible Cake,8266,322,35.3,7.9,0.8,0.1615
+67,Amish Cake,8267,208,24.1,5.6,0.7,0.0705
+68,Whipping Cream Pound Cake,8268,487,43.7,21.8,12.9,0.1305
+69,Raw Apple Cake,8269,268,30.6,10.7,3.1,0.2361
+70,Sam's Famous Carrot Cake,8270,374,31.4,18.8,3.6,0.25939999999999996
+71,Raspberry White Chocolate Mousse,8271,180,12.1,13.4,8.2,0.0214
+72,Peach Angel Food Cake,8272,146,24.6,0.0,0.0,0.3195
+73,Pat Maharaj Spice Cake,8273,142,8.7,9.2,5.4,0.07490000000000001
+74,Frost Me Nots,8274,263,23.2,15.4,9.2,0.1066
+75,No Bake Cheesecake II,8275,372,26.4,20.6,11.8,0.2354
+76,Nana V's Company Cake,8276,170,12.6,9.3,5.5,0.1727
+77,MMMmmm Chocolate Cake,8277,328,36.8,16.0,6.5,0.2509
+78,Champagne Cake With Buttercream Icing,8278,469,48.1,21.3,7.6,0.2196
+79,Mountain Dew™ Cake,8279,285,26.7,15.4,4.4,0.2476
+80,Sand Cups,8280,291,14.8,13.2,7.2,0.2696
+81,Pineapple Angel Food Cake I,8281,127,17.9,3.6,3.1,0.1658
+82,Red Velvet Cake IV,8282,916,67.3,56.8,34.7,0.6175
+83,One - Two - Three - Four Cake II,8283,429,34.5,17.5,10.5,0.2204
+84,Pineapple Lemon Cake,8284,181,19.7,7.3,5.0,0.2318
+85,Mayonnaise Cake III,8285,276,17.0,14.9,2.3,0.2097
+86,Peach Upside-Down Cake III,8286,137,15.7,3.7,1.5,0.16119999999999998
+87,Applesauce Cake III,8287,236,24.7,7.6,1.9,0.1764
+88,Chocolate Chip Coffee Cake,8288,381,32.8,17.0,10.1,0.2442
+89,Poor Mans Cake III,8289,186,16.1,6.7,1.7,0.2063
+90,Fresh Fig Cake,8290,370,45.6,6.9,4.0,0.35710000000000003
+91,Carrot Cake VII,8291,339,29.3,17.3,1.6,0.15
+92,Whipped Cream Icing II,8292,96,2.9,8.8,5.5,0.041100000000000005
+93,Hamburger Cake,8293,579,78.3,16.1,3.4,0.6906
+94,Dirt Cake II,8294,289,27.6,13.9,7.6,0.30060000000000003
+95,Earthquake Cake II,8295,274,31.3,12.5,6.1,0.2223
+96,Caramel Nut Cake in a Jar,8296,1097,95.9,48.0,22.1,1.1865999999999999
+97,Punch Bowl Cake II,8297,596,60.4,18.0,11.3,0.5841000000000001
+98,Pecan Pie Cake I,8298,405,38.0,20.1,7.6,0.2522
+99,Better Than...Cake,8299,243,21.6,12.9,5.1,0.2092

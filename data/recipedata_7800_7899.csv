@@ -1,0 +1,101 @@
+,name,id,calories,sugars,fat,saturated fat,sodium
+0,Cream Cake,7800,249,16.9,11.1,6.5,0.39280000000000004
+1,Banana Split Cake I,7801,421,32.9,27.6,15.9,0.1807
+2,Peach Filled Cake,7802,218,19.0,10.0,5.9,0.17859999999999998
+3,Peach Graham Upside Down Torte,7803,223,20.8,11.6,6.3,0.2363
+4,Neiman Marcus Cake I,7804,533,54.6,28.1,11.9,0.4155
+5,Orange Glaze I,7805,83,20.7,0.0,0.0,0.0003
+6,Orange Oatmeal Cake,7806,162,9.2,9.7,5.1,0.1037
+7,German Marble Cake,7807,346,22.4,15.4,9.2,0.24669999999999997
+8,Chocolate Orange Marble Cake,7808,299,19.9,17.0,10.3,0.253
+9,Birthday Party Cake,7809,100,13.8,0.9,0.3,0.0841
+10,Baked Alaska Dessert,7810,207,22.7,9.6,5.6,0.1812
+11,Easy Light Fruitcake,7811,618,57.3,20.8,10.5,0.24080000000000001
+12,Orange Party Cake with Chocolate Coating,7812,578,39.6,33.5,16.1,0.4022
+13,Lemon Cheese Cake,7813,572,51.4,30.4,12.7,0.5398999999999999
+14,Mam's Black Cake,7814,163,17.3,3.5,2.1,0.124
+15,Caramel Cake I,7815,236,27.1,10.4,5.9,0.1411
+16,Better Than Sex Cake III,7816,348,27.1,20.7,6.6,0.21669999999999998
+17,White Cake with Lemon Filling,7817,346,40.1,10.8,3.3,0.3773
+18,Lemon Filling,7818,78,13.9,1.6,0.8,0.0125
+19,Apricot Brandy Pound Cake II,7819,547,50.3,22.2,13.0,0.278
+20,White Texas Sheet Cake,7820,344,39.1,16.7,8.4,0.1928
+21,Chocolate Custard Cake,7821,294,24.4,12.8,7.7,0.3245
+22,Molasses Sponge Cake,7822,114,13.8,1.7,0.6,0.1102
+23,Lemon Pecan Pound Cake,7823,317,26.0,17.2,8.9,0.109
+24,Williamsburg Orange Cake,7824,284,23.3,11.3,4.6,0.2728
+25,Williamsburg Butter Frosting,7825,197,34.7,5.8,3.7,0.0415
+26,Raspberry Nut Butter Cake,7826,379,32.9,21.4,9.5,0.1586
+27,Poke Cake I,7827,336,30.8,15.4,6.8,0.3862
+28,Diane's German Chocolate Cake,7828,676,60.7,36.4,13.6,0.6384
+29,Poke Cake II,7829,651,57.5,23.9,9.6,0.5261
+30,Gramma's Party Cake,7830,159,18.6,2.6,0.5,0.2179
+31,Amish Friendship Cake,7831,256,10.8,10.8,1.7,0.1406
+32,Creamy Cheesecake,7832,281,19.4,18.4,9.5,0.2235
+33,Homemade Chocolate Babka,7833,433,28.5,27.3,13.6,0.217
+34,Hot Fudge Pudding Cake II,7834,310,43.4,8.7,5.4,0.2362
+35,Pumpkin Cheesecake I,7835,218,10.4,14.6,7.0,0.274
+36,Lite Coconut Cake,7836,289,40.6,7.7,4.2,0.3009
+37,Chocolate Peanut Butter Marble Cake,7837,328,36.0,12.7,7.2,0.3148
+38,Ice Box Cake II,7838,305,40.8,6.9,2.7,0.1195
+39,Baby Food Cake I,7839,449,28.6,28.2,3.9,0.3078
+40,Apricot Nectar Cake II,7840,445,46.8,20.4,3.1,0.3455
+41,Pudding Icing,7841,140,25.1,3.3,2.0,0.0317
+42,Lemon Apricot Cake,7842,441,47.0,20.8,4.1,0.3325
+43,Pink Princess Cake,7843,335,33.8,15.5,2.4,0.335
+44,Lemon Coconut Apricot Cake,7844,419,36.8,22.6,5.1,0.3424
+45,Raspberry Icebox Cake,7845,295,34.4,10.1,5.2,0.2352
+46,Cake and Ice Cream Cake,7846,146,7.0,3.5,2.0,0.2328
+47,Lemonade Cake II,7847,372,39.1,17.6,3.5,0.318
+48,Double Chocolate Marble Cake,7848,419,37.0,19.6,11.6,0.2695
+49,Chocolate Banana Cake,7849,276,21.1,13.4,3.5,0.3345
+50,Lemonade Cake III,7850,363,30.4,17.7,3.5,0.37810000000000005
+51,Apricot Fruitcake,7851,307,30.9,8.9,3.6,0.1295
+52,Easter Cake,7852,257,25.4,5.2,1.6,0.2647
+53,Simnel Cake,7853,314,24.9,11.6,6.8,0.29419999999999996
+54,Nutty Graham Cake,7854,511,49.7,23.9,10.8,0.5194
+55,Toffee Cake,7855,266,18.1,13.6,9.8,0.2785
+56,Cream of Coconut Cake,7856,254,31.5,10.7,4.3,0.185
+57,Mom's Date Pudding Cake,7857,188,30.3,4.2,1.7,0.1035
+58,Ruthie Cheese Cake,7858,237,17.9,15.2,9.1,0.1437
+59,Momma's Wine Cake,7859,384,32.3,20.2,3.1,0.475
+60,Pumpkin Cake I,7860,517,43.4,26.6,3.5,0.2577
+61,Icelandic Christmas Cake,7861,240,16.9,10.3,6.2,0.1457
+62,Chocolate Angel Torte,7862,128,19.0,1.5,0.6,0.1454
+63,Almond Filling,7863,63,7.6,1.5,0.6,0.0825
+64,Lemon Chiffon Cake,7864,460,48.2,19.4,6.4,0.3438
+65,Fluffy Two Step Cheesecake I,7865,279,19.9,18.7,10.9,0.1918
+66,Pumpkin Cheesecake II,7866,407,25.5,29.3,16.3,0.32039999999999996
+67,Mom's Chocolate Cake,7867,159,17.3,5.4,1.6,0.1464
+68,Mock Angel Food Cake,7868,575,80.6,0.6,0.1,0.8495
+69,Neiman Marcus Cake II,7869,428,49.7,18.0,8.8,0.35760000000000003
+70,Best Boiled Fruitcake,7870,588,38.4,19.4,9.8,0.6211
+71,Incredibly Delicious Italian Cream Cake,7871,767,78.5,39.7,20.4,0.3972
+72,Wacky Cake IV,7872,413,55.4,12.1,3.1,0.2862
+73,Millionaire's Cake,7873,241,20.1,12.9,6.0,0.2402
+74,Matrimonial Bliss,7874,217,20.0,9.2,5.9,0.15480000000000002
+75,Pudding Poke Cake,7875,287,38.2,6.0,1.6,0.4942
+76,Cherry Almond Coffeecake,7876,185,19.1,5.5,1.9,0.1603
+77,Yellow Angel Food Cake,7877,171,25.2,2.6,0.8,0.0353
+78,Blueberry Coffee Cake I,7878,401,38.8,16.3,10.0,0.303
+79,Pineapple Upside-Down Cake II,7879,486,41.9,25.0,15.3,0.2731
+80,Funnel Cakes III,7880,147,5.3,8.2,1.3,0.0906
+81,Raw Apple Pound Cake,7881,613,37.3,38.9,4.8,0.4147
+82,Light Cheesecake,7882,250,26.8,11.2,6.7,0.1355
+83,Banana Pudding Cake,7883,404,46.6,14.6,2.2,0.4303
+84,Two Part Angel Cake,7884,155,21.6,2.0,0.7,0.1367
+85,Birthday Cake,7885,647,29.8,32.1,19.2,0.5172
+86,Decorator Frosting II,7886,244,39.3,7.8,4.9,0.055
+87,Christmas Cake,7887,860,98.1,23.8,11.0,0.3411
+88,Elegant Light Fruit Cake,7888,430,44.6,11.1,2.2,0.055
+89,Gold and Silver Cake,7889,451,34.9,17.5,10.5,0.301
+90,Three Layer Coconut Cake,7890,625,86.7,16.2,5.0,0.4054
+91,Marble Cake I,7891,281,21.3,11.1,6.6,0.3039
+92,Chiffon Cake,7892,264,21.7,10.2,1.8,0.30319999999999997
+93,Dundee Cake,7893,456,34.8,21.5,10.6,0.1787
+94,Genoese Sponge,7894,317,25.2,15.2,9.0,0.2215
+95,Pear Cake,7895,325,24.9,12.1,6.8,0.2891
+96,Scottish Gingerbread,7896,298,15.8,12.5,6.8,0.1574
+97,Chocolate Plum Pudding Cake,7897,301,29.3,14.2,7.1,0.30889999999999995
+98,Applesauce Oatmeal Cake,7898,418,33.8,20.6,7.8,0.2449
+99,Banana Oatmeal Crumb Cake,7899,274,20.4,12.3,6.6,0.2395

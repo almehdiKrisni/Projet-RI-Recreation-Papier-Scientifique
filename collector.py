@@ -6,6 +6,7 @@
 # Necessary imports
 from sys import argv
 from utils import *
+from tqdm import tqdm
 
 ########################################### COLLECTOR ################################################
 
@@ -25,7 +26,7 @@ def main(argv) :
 
         # We collect the data and write it into a csv file
         for i in range(lp) :
-            fileP = "data/recipedata_" + str(cStart + i * cRange) + "_" + str(cStart + (i + 1) * cRange - 1) + ".csv"
+            fileP = "newdata/recipedata_" + str(cStart + i * cRange) + "_" + str(cStart + (i + 1) * cRange - 1) + ".csv"
             recipeCollector(cStart + i * cRange, cRange, request, toCSV=True, filepath=fileP)
 
 if __name__ == "__main__" :

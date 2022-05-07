@@ -1,10 +1,18 @@
 #################################### Utilitaries #######################################
 
 ###################################### Imports #########################################
-from asyncore import close_all
+
+# Needed for data collection
 import requests as rq
 import lxml
 from bs4 import BeautifulSoup as bs
+
+# Needed for picture collection
+import os
+from tqdm import tqdm
+from urllib.parse import urljoin, urlparse
+
+# Other usage
 import string
 import pandas as pd
 import pprint
@@ -17,13 +25,15 @@ import copy
 
 ################################## Scraping functions ###################################
 
+# Research parameters
+classicResearch = ["fat", "saturated fat", "sodium", "sugars"]
+
 # Function to scrape website data from "allrecipes.com"with a number of pages to visit and the researched values
 # Returns a dictionnary or a pandas database (request with parameter) of the scraping
 # The counter starts from the adress
 def recipeCollector(startCounter, counter, research, toCSV=False, filepath="data/default_file.csv") :
-    # We create the dictionnary and root adress
+    # We create the dictionnary
     nutr = []
-    root = "https://www.allrecipes.com/recipe/"
 
     # Note - It is possible some addresses won't return any recipe
     # The basic data scraped is 
@@ -34,50 +44,20 @@ def recipeCollector(startCounter, counter, research, toCSV=False, filepath="data
     }
 
     # Data extraction
-    for c in range(startCounter, startCounter + counter) :
-        # We print the progress
-        print(c - startCounter, "/", counter, end="\r")
+    for id in range(startCounter, startCounter + counter) :
+        # Status
+        print(id, end="\r")
 
-        # We get the website data then parse it
-        adr = root + str(c)
-        f = rq.get(adr)
-        recipe = bs(f.content, 'lxml')
+        # We try to collect the recipe
+        # There are some cases where there won't be a picture or a description, so we take out those
+        try :
+            # We collect the recipe data
+            data = recipeGrab(id, research)
 
-        # We save the recipe name
-        recipeName = recipe.find('h1', {"class" : "headline heading-content elementFont__display"})
-
-        # We check if the website contains a recipe or an error with the title
-        # If it contains a title, it means there is a recipe and values
-        if (recipeName != None) :
-            
-            # We create a sub-dictionnary that will contain the data and we save the recipe's ID
-            recipeInfo = dict()
-            recipeInfo["name"] = recipeName.text
-            recipeInfo["id"] = c
-
-            # We collect the calories per serving
-            tmp1 = recipe.find("div", {"class" : "recipeNutritionSectionBlock"})
-            tmp2 = tmp1.find("div", {"class" : "section-body"}).text.split(";")[0].split()[0]
-            recipeInfo["calories"] = int(tmp2)
-
-            # We collect the requested data
-            recipe_nutr_info = recipe.find_all('div', {"class" : "nutrition-row"})
-            for i in recipe_nutr_info :
-                res = i.find_all('span', {"class" : "nutrient-name"})
-
-                for j in res :
-                    d = j.find('span', {"class" : "elementFont__details--bold elementFont__transformCapitalize"}).text.strip()
-                    v = j.find('span', {"class" : "nutrient-value"}).text.strip()
-
-                    # Looking for the values asked for in the 'research' array
-                    if d in research :
-                        if "mg" in v :
-                            recipeInfo[d] = float(re.sub("[^0-9.]", "", v)) / 1000
-                        else :
-                            recipeInfo[d] = float(re.sub("[^0-9.]", "", v))
-
-            # We save the data
-            nutr.append(recipeInfo)
+            # We add the new recipe data to the dictionnary
+            nutr.append(data)
+        except Exception :
+            pass
 
     # We create a CSV file if asked
     if (toCSV) :
@@ -88,6 +68,86 @@ def recipeCollector(startCounter, counter, research, toCSV=False, filepath="data
     # We return the collected data
     print("Number of recipes collected :", len(nutr))
     return nutr
+
+# Recipe collector
+def recipeGrab(recipeID, research) :
+
+    # We get the website data then parse it
+    adr = "https://www.allrecipes.com/recipe/" + str(recipeID)
+    f = rq.get(adr)
+    recipe = bs(f.content, 'lxml')
+    data = dict()
+
+
+    # Recipe name
+    recipe_name = recipe.find('h1', {"class" : "headline heading-content elementFont__display"}).text
+    data["name"] = recipe_name
+    data["id"] = recipeID
+
+
+    # Recipe description
+    tmp = recipe.find('div', {"class" : "recipe-summary elementFont__dek--within"})
+    recipe_desc = tmp.find('p').text
+    data["description"] = recipe_desc
+
+
+    # Recipe picture
+    tmp1 = recipe.find('div', {"class" : "image-container"})
+    tmp2 = tmp1.find('div')
+    tmp3 = str(tmp2.find('noscript'))
+    recipe_picture_url = tmp3.split("src")[1].split('"')[1]
+    data["picture"] = recipe_picture_url
+
+
+    # Recipe servings
+    tmp1 = str(recipe.find('div', {"class" : "nutrition-top light-underline elementFont__subtitle"}))
+    recipe_servings = tmp1.split("Servings Per Recipe: ")[1].split("<")[0]
+    data["servings"] = recipe_servings
+
+
+    # Recipe number of reviews
+    data["reviews"] = recipe.find('span', {"class" : "feedback__total"}).text
+
+
+    # Recipe mean rating
+    tmp1 = recipe.find_all('span', {"review-star-text visually-hidden"})
+    rating = 0.
+    nbRatings = 0.
+    # We iterate on the reviews
+    for r in tmp1 :
+        rating += int(r.text.split()[1])
+        nbRatings += 1
+    # If there's at least one review, we save the mean rating
+    if (nbRatings != 0) :
+        data["rating"] = rating / nbRatings
+
+
+    # Nutrition info
+    recipe_nutr_info = recipe.find_all('div', {"class" : "nutrition-row"})
+    for i in recipe_nutr_info :
+        res = i.find_all('span', {"class" : "nutrient-name"})
+        for j in res :
+            d = j.find('span', {"class" : "elementFont__details--bold elementFont__transformCapitalize"}).text.strip()
+            v = j.find('span', {"class" : "nutrient-value"}).text.strip()
+
+            # Looking for the values asked for in the 'research' array
+            if d in research :
+                if "mg" in v :
+                    data[d] = float(re.sub("[^0-9.]", "", v)) / 1000
+                else :
+                    data[d] = float(re.sub("[^0-9.]", "", v))
+
+
+    # We collect all the recipe's ingredients
+    tmp = recipe.find_all('span', {"class" : "ingredients-item-name elementFont__body"})
+    recipe_ingredients = []
+    for i in tmp :
+        recipe_ingredients.append(i.text)
+    data["ingredients"] = "#".join(recipe_ingredients)
+
+
+    # We return the result of the research
+    return data
 
 
 # File check and recipe counter
@@ -162,3 +222,6 @@ def pdCreator(cStart, cRange, cEnd) :
     dff = dff.iloc[:,1:]
     dff.columns = col
     return dff
+
+# Test
+recipeGrab(10000, classicResearch)

@@ -99,11 +99,16 @@ def recipeGrab(recipeID, research) :
     recipe_picture_url = tmp3.split("src")[1].split('"')[1]
     data["picture"] = recipe_picture_url
 
+    # Recipe calories
 
     # Recipe servings
-    tmp1 = str(recipe.find('div', {"class" : "nutrition-top light-underline elementFont__subtitle"}))
-    recipe_servings = tmp1.split("Servings Per Recipe: ")[1].split("<")[0]
+    tmp = str(recipe.find('div', {"class" : "nutrition-top light-underline elementFont__subtitle"}))
+    recipe_servings = tmp.split("Servings Per Recipe: ")[1].split("<")[0]
     data["servings"] = recipe_servings
+
+    tmp = str(recipe.find('div', {"class" : "nutrition-top light-underline elementFont__subtitle"}))
+    recipe_calories = tmp.split("Calories:</span> ")[1].split("<")[0]
+    data["calories"] = recipe_calories
 
 
     # Recipe number of reviews
@@ -120,7 +125,7 @@ def recipeGrab(recipeID, research) :
         nbRatings += 1
     # If there's at least one review, we save the mean rating
     if (nbRatings != 0) :
-        data["rating"] = rating / nbRatings
+        data["rating"] = round(rating / nbRatings, 1)
 
 
     # Nutrition info
@@ -148,6 +153,8 @@ def recipeGrab(recipeID, research) :
 
 
     # We return the result of the research
+    for k in data.keys() :
+        print(k, data[k])
     return data
 
 

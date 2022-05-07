@@ -22,6 +22,7 @@ import csv
 import seaborn as sns
 import numpy as np
 import copy
+import matplotlib.pyplot as plt
 
 ################################## Scraping functions ###################################
 

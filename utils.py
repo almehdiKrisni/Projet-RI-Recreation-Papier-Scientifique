@@ -99,13 +99,12 @@ def recipeGrab(recipeID, research) :
     recipe_picture_url = tmp3.split("src")[1].split('"')[1]
     data["picture"] = recipe_picture_url
 
-    # Recipe calories
-
     # Recipe servings
     tmp = str(recipe.find('div', {"class" : "nutrition-top light-underline elementFont__subtitle"}))
     recipe_servings = tmp.split("Servings Per Recipe: ")[1].split("<")[0]
     data["servings"] = recipe_servings
 
+    # Recipe calories
     tmp = str(recipe.find('div', {"class" : "nutrition-top light-underline elementFont__subtitle"}))
     recipe_calories = tmp.split("Calories:</span> ")[1].split("<")[0]
     data["calories"] = recipe_calories
@@ -115,7 +114,7 @@ def recipeGrab(recipeID, research) :
     data["reviews"] = recipe.find('span', {"class" : "feedback__total"}).text
 
 
-    # Recipe mean rating
+    # Recipe mean user rating
     tmp1 = recipe.find_all('span', {"review-star-text visually-hidden"})
     rating = 0.
     nbRatings = 0.

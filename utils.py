@@ -3,6 +3,7 @@
 ###################################### Imports #########################################
 
 # Needed for data collection
+from shutil import ExecError
 import requests as rq
 import lxml
 from bs4 import BeautifulSoup as bs
@@ -93,11 +94,15 @@ def recipeGrab(recipeID, research) :
 
 
     # Recipe picture
-    tmp1 = recipe.find('div', {"class" : "image-container"})
-    tmp2 = tmp1.find('div')
-    tmp3 = str(tmp2.find('noscript'))
-    recipe_picture_url = tmp3.split("src")[1].split('"')[1]
-    data["picture"] = recipe_picture_url
+    data["picture"] = 0
+    try :
+        tmp1 = recipe.find('div', {"class" : "image-container"})
+        tmp2 = tmp1.find('div')
+        tmp3 = str(tmp2.find('noscript'))
+        recipe_picture_url = tmp3.split("src")[1].split('"')[1]
+        data["picture"] = recipe_picture_url
+    except Exception :
+        pass
 
     # Recipe servings
     tmp = str(recipe.find('div', {"class" : "nutrition-top light-underline elementFont__subtitle"}))
@@ -120,7 +125,7 @@ def recipeGrab(recipeID, research) :
     nbRatings = 0.
     # We iterate on the reviews
     for r in tmp1 :
-        rating += int(r.text.split()[1])
+        rating += float(r.text.split()[1])
         nbRatings += 1
     # If there's at least one review, we save the mean rating
     if (nbRatings != 0) :
@@ -152,8 +157,6 @@ def recipeGrab(recipeID, research) :
 
 
     # We return the result of the research
-    for k in data.keys() :
-        print(k, data[k])
     return data
 
 
@@ -230,5 +233,4 @@ def pdCreator(cStart, cRange, cEnd) :
     dff.columns = col
     return dff
 
-# Test
-recipeGrab(10000, classicResearch)
+recipeGrab(10040, classicResearch)

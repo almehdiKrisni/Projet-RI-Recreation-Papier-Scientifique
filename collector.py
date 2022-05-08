@@ -6,7 +6,6 @@
 # Necessary imports
 from sys import argv
 from utils import *
-from tqdm import tqdm
 
 ########################################### COLLECTOR ################################################
 

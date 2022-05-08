@@ -3,7 +3,6 @@
 ###################################### Imports #########################################
 
 # Needed for data collection
-from shutil import ExecError
 import requests as rq
 import lxml
 from bs4 import BeautifulSoup as bs

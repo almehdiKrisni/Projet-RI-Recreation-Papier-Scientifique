@@ -10,6 +10,7 @@ from bs4 import BeautifulSoup as bs
 # Needed for picture collection
 import os
 import urllib
+from PIL import Image as im
 
 # Other usage
 import string
@@ -196,6 +197,31 @@ def download_pictures(startIndex, rangeIndex) :
             urllib.request.urlretrieve(adr, filename)
 
     print("Finished downloading the pictures.")
+
+# Function resizing all the pictures into a specific shape
+def reshape_pictures(startIndex, rangeIndex, shape) :
+
+    # We first check if the directory exists
+    dir_name = "pictures/recipes_" + str(startIndex) + "_" + str(startIndex + rangeIndex - 1) + "/"
+    if (os.path.isdir(dir_name)) :
+        # We create the panda database
+        df = pdCreator(startIndex, rangeIndex, startIndex + rangeIndex)
+
+        # We iterate on the "picture" and "id" values
+        for p in range(rangeIndex) :
+            rID = df["id"][p]
+            adr = str(df["picture"][p])
+
+            # If the recipe has a picture, we download it
+            if (adr != "0") :
+                filename = dir_name + "recipe_" + rID + ".png"
+                image = im.open(filename)
+                image = image.resize(shape, im.ANTIALIAS)
+                image.save(fp=filename)
+
+    else :
+        print("Directory creation error -", dir_name, "could not be found.")
+    
         
 
 ################################################# RECIPES UTILS FUNCTIONS ############################################
@@ -271,3 +297,5 @@ def pdCreator(cStart, cRange, cEnd) :
     dff = dff.iloc[:,1:]
     dff.columns = col
     return dff
+
+reshape_pictures(10100, 100, (300,300))

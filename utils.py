@@ -28,7 +28,7 @@ import matplotlib.pyplot as plt
 ################################## Scraping functions ###################################
 
 # Research parameters
-classicResearch = ["fat", "saturated fat", "sodium", "sugars"]
+classicResearch = ["fat", "saturated fat", "sodium", "sugars", "carbohydrates", "cholesterol", "calcium", "iron", "magnesium", "dietary fiber"]
 
 # Function to scrape website data from "allrecipes.com"with a number of pages to visit and the researched values
 # Returns a dictionnary or a pandas database (request with parameter) of the scraping
@@ -102,7 +102,15 @@ def recipeGrab(recipeID, research) :
         recipe_picture_url = tmp3.split("src")[1].split('"')[1]
         data["picture"] = recipe_picture_url
     except Exception :
-        pass
+        # Maybe the first picture is a video, we have to check the secondary pictures
+        try :
+            tmp1 = recipe.find('div', {"class" : "recipe-review-image-wrapper"})
+            tmp2 = tmp1.find('div')
+            recipe_picture_url = str(tmp2).split('data-src="')[1].split('"')[0]
+            data["picture"] = recipe_picture_url
+        except Exception :
+            # Nothing was found
+            print("No picture was found for recipe", recipeID)
 
     # Recipe servings
     tmp = str(recipe.find('div', {"class" : "nutrition-top light-underline elementFont__subtitle"}))
@@ -233,4 +241,4 @@ def pdCreator(cStart, cRange, cEnd) :
     dff.columns = col
     return dff
 
-recipeGrab(10040, classicResearch)
+recipeGrab(10033, classicResearch)

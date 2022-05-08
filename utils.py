@@ -168,6 +168,40 @@ def recipeGrab(recipeID, research) :
     # We return the result of the research
     return data
 
+# Function downloading all the pictures in a specific range (all ranges are equal to a 100)
+def download_pictures(startIndex, rangeIndex) :
+    # We only pass as parameter the starting index (10000 + (100 * index))
+
+    # We check if the directory already exists
+    dir_name = "pictures/recipes_" + str(startIndex) + "_" + str(startIndex + rangeIndex - 1) + "/"
+    if (os.path.isdir(dir_name)) :
+        pass
+    else :
+        try :
+            os.mkdir(dir_name)
+        except Exception as e:
+            print("Directory creation error -", dir_name, "could not be created.")
+            print(str(e))
+
+    # We create the panda database
+    df = pdCreator(startIndex, rangeIndex, startIndex + rangeIndex)
+
+    # We iterate on the "picture" and "id" values
+    for p in range(rangeIndex) :
+        rID = df["id"][p]
+        adr = str(df["picture"][p])
+
+        print("Downloading picture for recipe", rID, end="\r")
+
+        # If the recipe has a picture, we download it
+        if (adr != "0") :
+            filename = dir_name + "recipe_" + rID + ".png"
+            urllib.request.urlretrieve(adr, filename)
+
+    print("Finished downloading the pictures.")
+        
+
+################################################# RECIPES UTILS FUNCTIONS ############################################
 
 # File check and recipe counter
 # Function checks if a specific collection of recipes has been collected
@@ -230,8 +264,8 @@ def pdCreator(cStart, cRange, cEnd) :
                         col = l[0][1:]
         
         # If we encounter an error, we skip the file
-        except :
-            pass
+        except Exception as e:
+            print(str(e))
 
         # We update the counter
         c += cRange

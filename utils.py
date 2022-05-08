@@ -10,8 +10,6 @@ from bs4 import BeautifulSoup as bs
 
 # Needed for picture collection
 import os
-from tqdm import tqdm
-from urllib.parse import urljoin, urlparse
 import urllib
 
 # Other usage
@@ -246,11 +244,10 @@ def pdCreator(cStart, cRange, cEnd) :
     while (c < cEnd) :
         # We get the filename
         fn = "data/recipedata_" + str(c) + "_" + str(c + cRange - 1) + ".csv"
-
         # We try get the file and transform it into a list
         try :
             # We open the file
-            with open(fn) as f : 
+            with open(fn, encoding="utf8") as f : # Encoding in utf8 is crucial or a few files can't be used
                 reader = csv.reader(f) # We read the file
                 l = list(reader) # We transfrom the reader into a list
 
@@ -275,5 +272,3 @@ def pdCreator(cStart, cRange, cEnd) :
     dff = dff.iloc[:,1:]
     dff.columns = col
     return dff
-
-recipeGrab(10033, classicResearch)

@@ -28,7 +28,7 @@ import matplotlib.pyplot as plt
 ################################## Scraping functions ###################################
 
 # Research parameters
-classicResearch = ["fat", "saturated fat", "sodium", "sugars", "carbohydrates", "cholesterol", "calcium", "iron", "magnesium", "dietary fiber"]
+classicResearch = ["fat", "saturated fat", "sodium", "sugars", "carbohydrates", "cholesterol", "calcium", "iron", "magnesium", "potassium", "dietary fiber"]
 
 # Function to scrape website data from "allrecipes.com"with a number of pages to visit and the researched values
 # Returns a dictionnary or a pandas database (request with parameter) of the scraping

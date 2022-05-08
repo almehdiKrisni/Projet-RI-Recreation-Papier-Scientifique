@@ -11,6 +11,7 @@ from utils import *
 
 # Parameters
 request = ["fat", "saturated fat", "sodium", "sugars"]
+advRequest = ["fat", "saturated fat", "sodium", "sugars", "carbohydrates", "cholesterol", "calcium", "iron", "magnesium", "potassium", "dietary fiber"]
 
 def main(argv) :
     # We check if the number of parameters is correct
@@ -26,7 +27,7 @@ def main(argv) :
         # We collect the data and write it into a csv file
         for i in range(lp) :
             fileP = "data/recipedata_" + str(cStart + i * cRange) + "_" + str(cStart + (i + 1) * cRange - 1) + ".csv"
-            recipeCollector(cStart + i * cRange, cRange, request, toCSV=True, filepath=fileP)
+            recipeCollector(cStart + i * cRange, cRange, advRequest, toCSV=True, filepath=fileP)
 
 if __name__ == "__main__" :
     main(argv)

@@ -12,6 +12,7 @@ from bs4 import BeautifulSoup as bs
 import os
 from tqdm import tqdm
 from urllib.parse import urljoin, urlparse
+import urllib
 
 # Other usage
 import string

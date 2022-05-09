@@ -11,15 +11,13 @@ from bs4 import BeautifulSoup as bs
 # Needed for picture collection
 import os
 import urllib
-from PIL import Image as im
+from PIL import Image as im, ImageStat
 
 # Needed for cosine similarity
-from scipy import spatial
+from numpy.linalg import norm
 
 # Other usage
-import string
 import pandas as pd
-import pprint
 import re
 import time
 import csv
@@ -204,6 +202,36 @@ def download_pictures(startIndex, rangeIndex) :
 
     print("Finished downloading the pictures (" + str(startIndex) + "_" + str(startIndex + rangeIndex - 1) + str(")"))
 
+#################################################### PICTURE MANAGEMENT ###########################################################
+
+# Function computing the brightness, sharpness, entropy, colorfulness and contrast of a picture
+def picStats(id) :
+    # We first need to find the corresponding picture directory
+    dirid = int(id / 100)
+    dir_name = "pictures/recipes_" + str(dirid * 100) + "_" + str(dirid * 100 + 99) + "/"
+    
+    # We check if the directory exists
+    if (os.path.isdir(dir_name)) :
+        # We get the picture
+        filename = dir_name + "recipe_" + str(id) + ".png"
+
+        # We try to open the picture file
+        try :
+            pic = im.open(filename)
+
+            # We compute all the values
+            brightpic = pic.convert('L')
+            brightstat = ImageStat.Stat(brightpic).mean[0]
+            print(brightstat)
+
+        # In case there is a problem with the picture
+        except Exception as e :
+            print("Could not find the picture with id", id, ".")
+            print(str(e))
+
+    else :
+        print("Directory creation error -", dir_name, "could not be found.")
+
 # Function resizing all the pictures into a specific shape
 def reshape_pictures(startIndex, rangeIndex, shape) :
 
@@ -265,6 +293,53 @@ def checkAndCount(cStart, cRange, cEnd) :
 
     # We print the number of lines
     print("Number of recipes collected between ID [", cStart, ",", cEnd,"] =", l)
+
+
+# Get the list of ingredients (need a recipe dataframe and an ID)
+def getIngredientsList(df, id) :
+    # We retrieve the corresponding recipe
+    recipe = df.loc[df["id"] == id]
+
+    # We get the ingredients
+    ing = recipe["ingredients"]
+
+    # We transfrom the values and return the split
+    ing = ing.values[0].replace('\u2009', ' and ')
+    return ing.split('#')
+
+# Compute the cosine similarity for two recipes
+def cosineSimCalc(tdf, idA, idB) :
+    # We need to pass a transformed dataframe (the one without any 'object' values)
+    recipeA = tdf.loc[tdf["id"] == idA].drop(columns=['id']).values[0]
+    recipeB = tdf.loc[tdf["id"] == idB].drop(columns=['id']).values[0]
+
+    # We then compute the cosine similarity
+    return np.dot(recipeA,recipeB)/(norm(recipeA)*norm(recipeB))
+
+
+# Compute the cosine similarity between a specific recipe and the entier dataframe
+def allCosSim(tdf, id) :
+    # We iterate on all of the recipes except the studied recipe itself
+    return [(c, cosineSimCalc(tdf, id, c)) for c in tdf["id"] if c != id]
+
+
+# Get the statistics of cosine similarity for a specific recipe
+# We use the following reference values : [0.8, 0.6, 0.4, 0.2]
+def recipeSimStats(cossim) :
+    # Probability of finding a recipe with more than 0.2 cosine similarity in the database
+    odds_2 = sum([1 for v in cossim if v[1] >= 0.2]) / len(cossim)
+
+    # Probability of finding a recipe with more than 0.4 cosine similarity in the database
+    odds_4 = sum([1 for v in cossim if v[1] >= 0.4]) / len(cossim)
+
+    # Probability of finding a recipe with more than 0.6 cosine similarity in the database
+    odds_6 = sum([1 for v in cossim if v[1] >= 0.6]) / len(cossim)
+
+    # Probability of finding a recipe with more than 0.8 cosine similarity in the database
+    odds_8 = sum([1 for v in cossim if v[1] >= 0.8]) / len(cossim)
+
+    return odds_2, odds_4, odds_6, odds_8
+
 
 
 ############################################# DATAFRAME MANAGEMENT ####################################################

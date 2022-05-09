@@ -3,6 +3,9 @@
 ###################################### Imports #########################################
 
 # Needed for data collection
+from turtle import color
+from matplotlib import colors
+from matplotlib.style import use
 from pyrsistent import v
 import requests as rq
 import lxml
@@ -28,6 +31,7 @@ import seaborn as sns
 import numpy as np
 import copy
 import matplotlib.pyplot as plt
+import random
 
 ################################## Scraping functions ###################################
 
@@ -220,33 +224,33 @@ def picStats(id) :
         # We compute all the values
         # Brightness
         brightstat = ImageStat.Stat(pic).mean[0]
-        print(brightstat)
+        print("Brigtness :\t", brightstat)
 
         # Sharpness
         array = np.asarray(pic, dtype=np.int32)
         gy, gx = np.gradient(array)
         gnorm = np.sqrt(gx**2 + gy**2)
         sharpstat = np.average(gnorm)
-        print(sharpstat)
+        print("Sharpness :\t", sharpstat)
 
         # Entropy
         # print(image_entropy(filename))
 
         # Colorfulness
         colorstat = image_colorfulness(filename)
-        print(colorstat)
+        print("Colorfulness :\t", colorstat)
 
         # Contrast
         contrstat = image_contrast(filename)
-        print(contrstat)
+        print("Contrast :\t", contrstat)
+
+        # We return the values
+        return brightstat, sharpstat, colorstat, contrstat
 
     # In case there is a problem with the picture
     except Exception as e :
         print("Could not find the picture with id", id, ".")
         print(str(e))
-
-    else :
-        print("Directory error -", dir_name, "could not be found.")
 
 
 # Function returning a picture colorfulness with a filepath passed as a parameter
@@ -371,6 +375,7 @@ def getIngredientsList(df, id) :
     ing = ing.values[0].replace('\u2009', ' and ')
     return ing.split('#')
 
+
 # Compute the cosine similarity for two recipes
 def cosineSimCalc(tdf, idA, idB) :
     # We need to pass a transformed dataframe (the one without any 'object' values)
@@ -385,6 +390,11 @@ def cosineSimCalc(tdf, idA, idB) :
 def allCosSim(tdf, id) :
     # We iterate on all of the recipes except the studied recipe itself
     return [(c, cosineSimCalc(tdf, id, c)) for c in tdf["id"] if c != id]
+
+# Compute the list of recipe ids with a cosine similarity to the model repice greater than a specific value
+def findSimRecipes(tdf, id, val) :
+    # We return the list of ids
+    return [c for c in tdf["id"] if (c != id) and (cosineSimCalc(tdf, id, c) >= val)]
 
 
 # Get the statistics of cosine similarity for a specific recipe
@@ -412,7 +422,6 @@ def recipePicPath(id) :
     return dir_name + "recipe_" + str(id) + ".png"
 
 ############################################# DATAFRAME MANAGEMENT ####################################################
-
 
 # Function used to read all the data collected and create a global pandas DataFrame
 def pdCreator(cStart, cRange, cEnd) :
@@ -464,12 +473,15 @@ def removeNoPictures(df) :
 
 ############################################################ USER EXPERIENCE ##################################################
 
-# Function generating a user experience based on a dataframe and a number of choices
+# Function generating a user experience based on a dataframe, a number of choices, an experience id and a similarity value
 # User experiences are represented by a .csv file containing for each choice :
 # it's id, the recipe A id, the recipe B id, the recipe A picture path, the recipe B picture path, the correct answer (1 for A, 2 for B)
-def generate_user_experience(df, nbChoices, expId) :
+def generate_user_experience(df, nbQuestions, expId, simval) :
     # File header
     header = ["question_id", "recipe_A_id", "recipe_B_id", "recipe_A_picture", "recipe_B_picture", "correct_answer"]
+
+    # We use a list to save all the used ids in the created user experience
+    usedIds = []
 
     # We create the file
     filename = "userExperiencesModels/model_" + str(expId) + ".csv"
@@ -480,8 +492,54 @@ def generate_user_experience(df, nbChoices, expId) :
         # We write the header
         writer.writerow(header)
 
+        # We iterate on the number of questions
+        for i in range(nbQuestions) :
+
+            # Correct run variable and recipe ids variables
+            runAgain = True
+            recipeAindex = 0
+            recipeBindex = 0
+
+            while (runAgain) :
+                # We take a random id from the dataframe 
+                recipeAindex = random.choice(df["id"].tolist())
+
+                # We now generate the list of similar recipes and pick a random id
+                simRecipesId = findSimRecipes(df, recipeAindex, simval)
+
+                # We check if there are similar recipes
+                if (len(simRecipesId) > 0) :
+                    # We choose a random recipe B from the list
+                    recipeBindex = random.choice(simRecipesId)
+                    runAgain = False
+
+                    # We check if any of the collected ids are in the list in case of a correct run
+                    if ((recipeAindex in usedIds) or (recipeBindex in usedIds)) :
+                        runAgain = True
+
+            # We save the collected ids in the appropriate list
+            usedIds.append(recipeAindex)
+            usedIds.append(recipeBindex)
+
+            # We find the expected answer
+            expectedAns = 0
+            fatAvalue = df.loc[df["id"] == recipeAindex]["fat"].values[0]
+            fatBvalue = df.loc[df["id"] == recipeBindex]["fat"].values[0]
+
+            if (fatAvalue >= fatBvalue) :
+                expectedAns = 1
+            else :
+                expectedAns = 2
+
+            # We save the recipes pictures paths
+            picPathA = recipePicPath(recipeAindex)
+            picPathB = recipePicPath(recipeBindex)
+
+            # We save the data in the model file
+            writer.writerow([i + 1, recipeAindex, recipeBindex, picPathA, picPathB, expectedAns])
+
+    # Message to signal the user experience model has been creater
+    print("The experience user model id." + str(expId) + " has been created.")
 
 
 ########################################################### FSA SCORE CALCULATOR ##############################################
-
-generate_user_experience(None, None, 1)

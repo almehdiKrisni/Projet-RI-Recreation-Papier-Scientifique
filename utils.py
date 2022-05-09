@@ -197,7 +197,7 @@ def download_pictures(startIndex, rangeIndex) :
     for p in range(rangeIndex) :
         # There are cases where we don't have rangeIndex in the dataframe
         if (p < len(df)) :
-            rID = df["id"][p]
+            rID = str(df["id"][p])
             adr = str(df["picture"][p])
 
             print("Downloading picture for recipe", rID, end="\r")
@@ -313,7 +313,7 @@ def reshape_pictures(startIndex, rangeIndex, shape) :
         for p in range(rangeIndex) :
             # There are cases where we don't have rangeIndex in the dataframe
             if (p < len(df)) :
-                rID = df["id"][p]
+                rID = str(df["id"][p])
                 adr = str(df["picture"][p])
 
                 print("Resizing picture for recipe", rID, end="\r")

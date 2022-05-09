@@ -494,6 +494,8 @@ def generate_user_experience(df, nbQuestions, expId, simval) :
 
         # We iterate on the number of questions
         for i in range(nbQuestions) :
+            # Status print
+            print("Generating question " + str(i + 1) + " for user experience model n." + str(expId) + " ...", end="\r")
 
             # Correct run variable and recipe ids variables
             runAgain = True

@@ -1,0 +1,11 @@
+question_id,recipe_A_id,recipe_B_id,recipe_A_picture,recipe_B_picture,correct_answer
+1,13809,14665,pictures/recipes_13800_13899/recipe_13809.png,pictures/recipes_14600_14699/recipe_14665.png,2
+2,17311,14579,pictures/recipes_17300_17399/recipe_17311.png,pictures/recipes_14500_14599/recipe_14579.png,2
+3,17816,16532,pictures/recipes_17800_17899/recipe_17816.png,pictures/recipes_16500_16599/recipe_16532.png,2
+4,14671,11867,pictures/recipes_14600_14699/recipe_14671.png,pictures/recipes_11800_11899/recipe_11867.png,2
+5,10643,12756,pictures/recipes_10600_10699/recipe_10643.png,pictures/recipes_12700_12799/recipe_12756.png,2
+6,13300,16507,pictures/recipes_13300_13399/recipe_13300.png,pictures/recipes_16500_16599/recipe_16507.png,2
+7,16791,14379,pictures/recipes_16700_16799/recipe_16791.png,pictures/recipes_14300_14399/recipe_14379.png,2
+8,13615,12581,pictures/recipes_13600_13699/recipe_13615.png,pictures/recipes_12500_12599/recipe_12581.png,2
+9,13245,14435,pictures/recipes_13200_13299/recipe_13245.png,pictures/recipes_14400_14499/recipe_14435.png,1
+10,16419,17277,pictures/recipes_16400_16499/recipe_16419.png,pictures/recipes_17200_17299/recipe_17277.png,2

@@ -186,17 +186,19 @@ def download_pictures(startIndex, rangeIndex) :
 
     # We iterate on the "picture" and "id" values
     for p in range(rangeIndex) :
-        rID = df["id"][p]
-        adr = str(df["picture"][p])
+        # There are cases where we don't have rangeIndex in the dataframe
+        if (p < len(df)) :
+            rID = df["id"][p]
+            adr = str(df["picture"][p])
 
-        print("Downloading picture for recipe", rID, end="\r")
+            print("Downloading picture for recipe", rID, end="\r")
 
-        # If the recipe has a picture, we download it
-        if (adr != "0") :
-            filename = dir_name + "recipe_" + rID + ".png"
-            urllib.request.urlretrieve(adr, filename)
+            # If the recipe has a picture, we download it
+            if (len(adr) > 10) :
+                filename = dir_name + "recipe_" + rID + ".png"
+                urllib.request.urlretrieve(adr, filename)
 
-    print("Finished downloading the pictures.")
+    print("Finished downloading the pictures (" + str(startIndex) + "_" + str(startIndex + rangeIndex - 1) + str(")"))
 
 # Function resizing all the pictures into a specific shape
 def reshape_pictures(startIndex, rangeIndex, shape) :
@@ -209,19 +211,24 @@ def reshape_pictures(startIndex, rangeIndex, shape) :
 
         # We iterate on the "picture" and "id" values
         for p in range(rangeIndex) :
-            rID = df["id"][p]
-            adr = str(df["picture"][p])
+            # There are cases where we don't have rangeIndex in the dataframe
+            if (p < len(df)) :
+                rID = df["id"][p]
+                adr = str(df["picture"][p])
 
-            # If the recipe has a picture, we download it
-            if (adr != "0") :
-                filename = dir_name + "recipe_" + rID + ".png"
-                image = im.open(filename)
-                image = image.resize(shape, im.ANTIALIAS)
-                image.save(fp=filename)
+                print("Resizing picture for recipe", rID, end="\r")
+
+                # If the recipe has a picture, we download it
+                if (len(adr) > 10) :
+                    filename = dir_name + "recipe_" + rID + ".png"
+                    image = im.open(filename)
+                    image = image.resize(shape, im.ANTIALIAS)
+                    image.save(fp=filename)
 
     else :
         print("Directory creation error -", dir_name, "could not be found.")
     
+    print("Finished resizing the pictures (" + str(startIndex) + "_" + str(startIndex + rangeIndex - 1) + str(")"))
         
 
 ################################################# RECIPES UTILS FUNCTIONS ############################################
@@ -297,5 +304,3 @@ def pdCreator(cStart, cRange, cEnd) :
     dff = dff.iloc[:,1:]
     dff.columns = col
     return dff
-
-reshape_pictures(10100, 100, (300,300))

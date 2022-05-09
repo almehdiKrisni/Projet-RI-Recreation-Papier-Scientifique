@@ -3,6 +3,7 @@
 ########################################### IMPORTS ##############################################
 
 # Necessary imports
+from ctypes import resize
 from sys import argv
 from utils import *
 
@@ -26,6 +27,8 @@ def main(argv) :
         # We collect the data and write it into a csv file
         for i in range(lp) :
             download_pictures(cStart + i * cRange, cRange)
+            reshape_pictures(cStart + i * cRange, cRange, (300,300))
+        
 
 if __name__ == "__main__" :
     main(argv)

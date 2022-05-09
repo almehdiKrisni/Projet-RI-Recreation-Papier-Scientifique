@@ -3,6 +3,7 @@
 ###################################### Imports #########################################
 
 # Needed for data collection
+from pyrsistent import v
 import requests as rq
 import lxml
 from bs4 import BeautifulSoup as bs
@@ -11,6 +12,9 @@ from bs4 import BeautifulSoup as bs
 import os
 import urllib
 from PIL import Image as im
+
+# Needed for cosine similarity
+from scipy import spatial
 
 # Other usage
 import string
@@ -263,34 +267,36 @@ def checkAndCount(cStart, cRange, cEnd) :
     print("Number of recipes collected between ID [", cStart, ",", cEnd,"] =", l)
 
 
+############################################# DATAFRAME MANAGEMENT ####################################################
+
+
 # Function used to read all the data collected and create a global pandas DataFrame
 def pdCreator(cStart, cRange, cEnd) :
+    # We get the right columns order. The right order is the one of the first .csv file (recipedata_10000_10099.csv)
+    tmp = pd.read_csv("data/recipedata_10000_10099.csv")
+    tmp = tmp.loc[:, ~tmp.columns.str.contains('^Unnamed')]
+    colMod = tmp.columns.tolist()
+
+    v = 0
+
     # We iterate on every data file to create a general pandas dataframe
     c = cStart
     # We create a list because it is faster to create a df from a list than to append to an
     # existing df
     # ( https://stackoverflow.com/questions/13784192/creating-an-empty-pandas-dataframe-then-filling-it )
-    df = []
-    col = []
+    valueslist = []
 
     while (c < cEnd) :
         # We get the filename
         fn = "data/recipedata_" + str(c) + "_" + str(c + cRange - 1) + ".csv"
         # We try get the file and transform it into a list
         try :
-            # We open the file
-            with open(fn, encoding="utf8") as f : # Encoding in utf8 is crucial or a few files can't be used
-                reader = csv.reader(f) # We read the file
-                l = list(reader) # We transfrom the reader into a list
-
-                # We check if the file contains usable data or not
-                # Empty files only contains [""]
-                if (l != [[""]]) :
-                    df = df + l[1:]
-
-                    # We also initialize the columns if need
-                    if (col == []) :
-                        col = l[0][1:]
+            # We create a dataframe containing all the data
+            tmp = pd.read_csv(fn)
+            tmp = tmp.loc[:, ~tmp.columns.str.contains('^Unnamed')]
+            tmp = tmp[colMod]
+            valueslist = valueslist + tmp.values.tolist()
+            v += (len(tmp.values.tolist()))
         
         # If we encounter an error, we skip the file
         except Exception as e:
@@ -300,7 +306,17 @@ def pdCreator(cStart, cRange, cEnd) :
         c += cRange
 
     # We return the global dataframe after a few modifications (first column, column name)
-    dff = pd.DataFrame(df)
-    dff = dff.iloc[:,1:]
-    dff.columns = col
-    return dff
+    df = pd.DataFrame(data=valueslist, columns=colMod)
+    df = df.dropna()
+    return df
+
+# Function removing all the exemples without a picture
+def removeNoPictures(df) :
+    # We return a new df
+    newdf = copy.deepcopy(df)
+
+    # We remove all the exemples without a picture
+    # Condition - Length of address
+    newdf.drop(newdf[newdf["picture"] == "0"].index, inplace=True)
+    newdf.drop(newdf[newdf["picture"] == ""].index, inplace=True)
+    return newdf

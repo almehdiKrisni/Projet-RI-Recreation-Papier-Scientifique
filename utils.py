@@ -12,6 +12,9 @@ from bs4 import BeautifulSoup as bs
 import os
 import urllib
 from PIL import Image as im, ImageStat
+import argparse
+import imutils
+import cv2
 
 # Needed for cosine similarity
 from numpy.linalg import norm
@@ -206,31 +209,92 @@ def download_pictures(startIndex, rangeIndex) :
 
 # Function computing the brightness, sharpness, entropy, colorfulness and contrast of a picture
 def picStats(id) :
-    # We first need to find the corresponding picture directory
-    dirid = int(id / 100)
-    dir_name = "pictures/recipes_" + str(dirid * 100) + "_" + str(dirid * 100 + 99) + "/"
-    
-    # We check if the directory exists
-    if (os.path.isdir(dir_name)) :
-        # We get the picture
-        filename = dir_name + "recipe_" + str(id) + ".png"
+    # We get the picture
+    filename = recipePicPath(id)
 
-        # We try to open the picture file
-        try :
-            pic = im.open(filename)
+    # We try to open the picture file
+    try :
+        # We convert the picture to grayscale
+        pic = im.open(filename).convert('L')
 
-            # We compute all the values
-            brightpic = pic.convert('L')
-            brightstat = ImageStat.Stat(brightpic).mean[0]
-            print(brightstat)
+        # We compute all the values
+        # Brightness
+        brightstat = ImageStat.Stat(pic).mean[0]
+        print(brightstat)
 
-        # In case there is a problem with the picture
-        except Exception as e :
-            print("Could not find the picture with id", id, ".")
-            print(str(e))
+        # Sharpness
+        array = np.asarray(pic, dtype=np.int32)
+        gy, gx = np.gradient(array)
+        gnorm = np.sqrt(gx**2 + gy**2)
+        sharpstat = np.average(gnorm)
+        print(sharpstat)
+
+        # Entropy
+        # print(image_entropy(filename))
+
+        # Colorfulness
+        colorstat = image_colorfulness(filename)
+        print(colorstat)
+
+        # Contrast
+        contrstat = image_contrast(filename)
+        print(contrstat)
+
+    # In case there is a problem with the picture
+    except Exception as e :
+        print("Could not find the picture with id", id, ".")
+        print(str(e))
 
     else :
-        print("Directory creation error -", dir_name, "could not be found.")
+        print("Directory error -", dir_name, "could not be found.")
+
+
+# Function returning a picture colorfulness with a filepath passed as a parameter
+# (https://pyimagesearch.com/2017/06/05/computing-image-colorfulness-with-opencv-and-python/)
+def image_colorfulness(filepath):
+    # We get the image
+    image = cv2.imread(filepath)
+
+	# split the image into its respective RGB components
+    (B, G, R) = cv2.split(image.astype("float"))
+
+    # compute rg = R - G
+    rg = np.absolute(R - G)
+
+	# compute yb = 0.5 * (R + G) - B
+    yb = np.absolute(0.5 * (R + G) - B)
+
+	# compute the mean and standard deviation of both `rg` and `yb`
+    (rbMean, rbStd) = (np.mean(rg), np.std(rg))
+    (ybMean, ybStd) = (np.mean(yb), np.std(yb))
+
+	# combine the mean and standard deviations
+    stdRoot = np.sqrt((rbStd ** 2) + (ybStd ** 2))
+    meanRoot = np.sqrt((rbMean ** 2) + (ybMean ** 2))
+
+	# derive the "colorfulness" metric and return it
+    return stdRoot + (0.3 * meanRoot)
+
+# Function returning the contrast of a picture with a filepath passed as a parameter (Michelson contrast)
+# (https://stackoverflow.com/questions/58821130/how-to-calculate-the-contrast-of-an-image)
+def image_contrast(filepath) :
+    # We get the image
+    img = cv2.imread(filepath)
+    Y = cv2.cvtColor(img, cv2.COLOR_BGR2YUV)[:,:,0]
+
+    # compute min and max of Y
+    min = np.min(Y)
+    max = np.max(Y)
+
+    # compute contrast
+    contrast = (max-min)/(max+min)
+    return contrast
+
+# Function returning the shannon entropy of a picture with a filepath passed as a parameter
+# (https://stackoverflow.com/questions/50313114/what-is-the-entropy-of-an-image-and-how-is-it-calculated)
+# def image_entropy(filepath) :
+#     img = cv2.imread(filepath)
+#     return shannon_entropy(img[:,:,0])
 
 # Function resizing all the pictures into a specific shape
 def reshape_pictures(startIndex, rangeIndex, shape) :
@@ -341,6 +405,11 @@ def recipeSimStats(cossim) :
     return odds_2, odds_4, odds_6, odds_8
 
 
+# Function returning the path to a recipe picture based on the id of the recipe
+def recipePicPath(id) :
+    dirid = int(id / 100)
+    dir_name = "pictures/recipes_" + str(dirid * 100) + "_" + str(dirid * 100 + 99) + "/"
+    return dir_name + "recipe_" + str(id) + ".png"
 
 ############################################# DATAFRAME MANAGEMENT ####################################################
 
@@ -351,8 +420,6 @@ def pdCreator(cStart, cRange, cEnd) :
     tmp = pd.read_csv("data/recipedata_10000_10099.csv")
     tmp = tmp.loc[:, ~tmp.columns.str.contains('^Unnamed')]
     colMod = tmp.columns.tolist()
-
-    v = 0
 
     # We iterate on every data file to create a general pandas dataframe
     c = cStart
@@ -371,7 +438,6 @@ def pdCreator(cStart, cRange, cEnd) :
             tmp = tmp.loc[:, ~tmp.columns.str.contains('^Unnamed')]
             tmp = tmp[colMod]
             valueslist = valueslist + tmp.values.tolist()
-            v += (len(tmp.values.tolist()))
         
         # If we encounter an error, we skip the file
         except Exception as e:
@@ -395,3 +461,27 @@ def removeNoPictures(df) :
     newdf.drop(newdf[newdf["picture"] == "0"].index, inplace=True)
     newdf.drop(newdf[newdf["picture"] == ""].index, inplace=True)
     return newdf
+
+############################################################ USER EXPERIENCE ##################################################
+
+# Function generating a user experience based on a dataframe and a number of choices
+# User experiences are represented by a .csv file containing for each choice :
+# it's id, the recipe A id, the recipe B id, the recipe A picture path, the recipe B picture path, the correct answer (1 for A, 2 for B)
+def generate_user_experience(df, nbChoices, expId) :
+    # File header
+    header = ["question_id", "recipe_A_id", "recipe_B_id", "recipe_A_picture", "recipe_B_picture", "correct_answer"]
+
+    # We create the file
+    filename = "userExperiencesModels/model_" + str(expId) + ".csv"
+    with open(filename, 'w', encoding='utf8') as f :
+        # We create a writer
+        writer = csv.writer(f)
+
+        # We write the header
+        writer.writerow(header)
+
+
+
+########################################################### FSA SCORE CALCULATOR ##############################################
+
+generate_user_experience(None, None, 1)

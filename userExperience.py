@@ -128,7 +128,7 @@ def questionSequence(questionID) :
 
     # Question title
     Label(window, text="Choice " + str(currentQuestion), justify=CENTER).pack(side=TOP)
-    Label(window, text="In your opinion, which recipe contains the most fat ?", justify=CENTER).pack(side=TOP)
+    Label(window, text="In your opinion, which recipe contains the most fat per serving?", justify=CENTER).pack(side=TOP)
 
     # We show the recipes' pictures
     Label(window, image=recipeA_picture_list[questionID]).place(x=100, y=200)

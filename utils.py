@@ -334,36 +334,6 @@ def reshape_pictures(startIndex, rangeIndex, shape) :
 
 ################################################# RECIPES UTILS FUNCTIONS ############################################
 
-# File check and recipe counter
-# Function checks if a specific collection of recipes has been collected
-# We give the counterStart, the counterRange and the counterEnd
-def checkAndCount(cStart, cRange, cEnd) :
-    # We create the file counter and the line counter
-    c = cStart
-    l = 0
-
-    # We iterate on the files
-    while (c < cEnd) :
-        # We show the state of c
-        print(c, "/", cEnd, end="\r")
-        # We create the file name to read
-        fn = "data/recipedata_" + str(c) + "_" + str(c + cRange - 1) + ".csv"
-        # We try to read the data file and read its number of lines
-        try :
-            f = open(fn)
-            r = csv.reader(f)
-            l += len(list(r))
-        # If it doesn't exist, we print a message with the ID of the missing data file
-        except :
-            print("Missing or corrupted file :", fn, end="\n")
-
-        # We add the range to the counter
-        c += cRange
-
-    # We print the number of lines
-    print("Number of recipes collected between ID [", cStart, ",", cEnd,"] =", l)
-
-
 # Get the list of ingredients (need a recipe dataframe and an ID)
 def getIngredientsList(df, id) :
     # We retrieve the corresponding recipe
@@ -377,26 +347,39 @@ def getIngredientsList(df, id) :
     return ing.split('#')
 
 
-# Compute the cosine similarity for two recipes
-def cosineSimCalc(tdf, idA, idB) :
-    # We need to pass a transformed dataframe (the one without any 'object' values)
-    recipeA = tdf.loc[tdf["id"] == idA].drop(columns=['id']).values[0]
-    recipeB = tdf.loc[tdf["id"] == idB].drop(columns=['id']).values[0]
+# Compute the cosine similarity for two recipes without using the recipes names
+def cosSimCalc(df, idA, idB, mode=1, coefVal=0.5, coefName=0.5) :
+    if (mode == 1) :
+        # We need to use a transformed dataframe (the one without any 'object' values)
+        tdf = df.select_dtypes(exclude=['object'])
+        recipeA = tdf.loc[tdf["id"] == idA].drop(columns=['id']).values[0]
+        recipeB = tdf.loc[tdf["id"] == idB].drop(columns=['id']).values[0]
 
-    # We then compute the cosine similarity
-    return np.dot(recipeA,recipeB)/(norm(recipeA)*norm(recipeB))
+        # We then compute the cosine similarity
+        return np.dot(recipeA,recipeB)/(norm(recipeA)*norm(recipeB))
 
+    elif (mode == 2) :
+        # We have to save the names of the recipes in order their cosine similarity
+        nameA = df.loc[df["id"] == idA]["name"].values[0]
+        nameB = df.loc[df["id"] == idB]["name"].values[0]
 
+        # We need to use a transformed dataframe (the one without any 'object' values)
+        tdf = df.select_dtypes(exclude=['object'])
+        recipeA = tdf.loc[tdf["id"] == idA].drop(columns=['id']).values[0]
+        recipeB = tdf.loc[tdf["id"] == idB].drop(columns=['id']).values[0]
+
+        # We then compute the cosine similarity
+        return np.dot(recipeA,recipeB)/(norm(recipeA)*norm(recipeB)) * coefVal + stringCosSim(nameA, nameB) * coefName
+ 
 # Compute the cosine similarity between a specific recipe and the entier dataframe
 def allCosSim(tdf, id) :
     # We iterate on all of the recipes except the studied recipe itself
-    return [(c, cosineSimCalc(tdf, id, c)) for c in tdf["id"] if c != id]
+    return [(c, cosSimCalc(tdf, id, c)) for c in tdf["id"] if c != id]
 
 # Compute the list of recipe ids with a cosine similarity to the model repice greater than a specific value
 def findSimRecipes(tdf, id, val) :
     # We return the list of ids
-    return [c for c in tdf["id"] if (c != id) and (cosineSimCalc(tdf, id, c) >= val)]
-
+    return [c for c in tdf["id"] if (c != id) and (cosSimCalc(tdf, id, c) >= val)]
 
 # Get the statistics of cosine similarity for a specific recipe
 # We use the following reference values : [0.8, 0.6, 0.4, 0.2]
@@ -423,7 +406,7 @@ def recipePicPath(id) :
     return dir_name + "recipe_" + str(id) + ".png"
 
 # (https://towardsdatascience.com/calculating-string-similarity-in-python-276e18a7d33a)
-# Function returning a clean string (punctuation removed, lowercase string, removed stopwords)
+# Functions returning a clean string (punctuation removed, lowercase string, removed stopwords)
 def clean_string(text) :
     text = ''.join([word for word in text if word not in string.punctuation])
     text = text.lower()
@@ -435,7 +418,6 @@ def cosine_sim_vectors(vec1, vec2) :
     vec1 = vec1.reshape(1, -1)
     vec2 = vec2.reshape(1, -1)
     return cosine_similarity(vec1, vec2)[0][0]
-
 
 def stringCosSim(string1, string2) :
     # We clean the strings
@@ -487,6 +469,35 @@ def pdCreator(cStart, cRange, cEnd) :
     df = pd.DataFrame(data=valueslist, columns=colMod)
     df = df.dropna()
     return df
+
+# File check and recipe counter
+# Function checks if a specific collection of recipes has been collected
+# We give the counterStart, the counterRange and the counterEnd
+def checkAndCount(cStart, cRange, cEnd) :
+    # We create the file counter and the line counter
+    c = cStart
+    l = 0
+
+    # We iterate on the files
+    while (c < cEnd) :
+        # We show the state of c
+        print(c, "/", cEnd, end="\r")
+        # We create the file name to read
+        fn = "data/recipedata_" + str(c) + "_" + str(c + cRange - 1) + ".csv"
+        # We try to read the data file and read its number of lines
+        try :
+            f = open(fn)
+            r = csv.reader(f)
+            l += len(list(r))
+        # If it doesn't exist, we print a message with the ID of the missing data file
+        except :
+            print("Missing or corrupted file :", fn, end="\n")
+
+        # We add the range to the counter
+        c += cRange
+
+    # We print the number of lines
+    print("Number of recipes collected between ID [", cStart, ",", cEnd,"] =", l)
 
 # Function removing all the exemples without a picture
 def removeNoPictures(df) :

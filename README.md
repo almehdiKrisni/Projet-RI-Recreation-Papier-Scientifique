@@ -24,3 +24,10 @@ We only consider recipes with nutritional contents available. <br/>We only colle
 - list of ingredients
 
 Research the FSA (**Food Standards Agency**) and the procedure to obtain the nutritional content per portion.
+
+### User Experience Models - How to use them
+
+First, you have to use the following command :
+> pip install -r requirements.txt
+
+It will allow you to install all the libraries used in the project. The file was generated thanks to the **pipreqs** library.

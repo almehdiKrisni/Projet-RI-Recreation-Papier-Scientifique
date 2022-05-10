@@ -1,0 +1,5 @@
+question_id,recipe_A_id,recipe_A_name,recipe_A_picture,recipe_B_id,recipe_B_name,recipe_B_picture,correct_answer
+1,17351,Blooming Onion and Dipping Sauce,pictures/recipes_17300_17399/recipe_17351.png,17200,Bloomin' Onion Dipping Sauce,pictures/recipes_17200_17299/recipe_17200.png,1
+2,12002,Conrad's Spaghetti and Meat Sauce,pictures/recipes_12000_12099/recipe_12002.png,11944,Marica's Spaghetti Meat Sauce,pictures/recipes_11900_11999/recipe_11944.png,2
+3,14072,Indian Spiced Rice,pictures/recipes_14000_14099/recipe_14072.png,18307,Indonesian Spiced Rice,pictures/recipes_18300_18399/recipe_18307.png,1
+4,19013,Chocolate Mousse I,pictures/recipes_19000_19099/recipe_19013.png,19012,Chocolate Mousse II,pictures/recipes_19000_19099/recipe_19012.png,1

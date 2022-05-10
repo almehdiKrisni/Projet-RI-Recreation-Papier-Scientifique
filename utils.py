@@ -171,7 +171,6 @@ def recipeGrab(recipeID, research) :
         recipe_ingredients.append(i.text)
     data["ingredients"] = "#".join(recipe_ingredients)
 
-
     # We return the result of the research
     return data
 
@@ -475,10 +474,11 @@ def removeNoPictures(df) :
 
 # Function generating a user experience based on a dataframe, a number of choices, an experience id and a similarity value
 # User experiences are represented by a .csv file containing for each choice :
-# it's id, the recipe A id, the recipe B id, the recipe A picture path, the recipe B picture path, the correct answer (1 for A, 2 for B)
-def generate_user_experience(df, nbQuestions, expId, simval) :
+# it's id, the recipe A id, the recipe A name, the recipe A picture path, the recipe B id, the recipe B name, 
+# the recipe B picture path, the correct answer (1 for A, 2 for B)
+def generate_user_experience(tdf, df, nbQuestions, expId, simval) :
     # File header
-    header = ["question_id", "recipe_A_id", "recipe_B_id", "recipe_A_picture", "recipe_B_picture", "correct_answer"]
+    header = ["question_id", "recipe_A_id", "recipe_A_name", "recipe_A_picture", "recipe_B_id", "recipe_B_name", "recipe_B_picture", "correct_answer"]
 
     # We use a list to save all the used ids in the created user experience
     usedIds = []
@@ -504,10 +504,10 @@ def generate_user_experience(df, nbQuestions, expId, simval) :
 
             while (runAgain) :
                 # We take a random id from the dataframe 
-                recipeAindex = random.choice(df["id"].tolist())
+                recipeAindex = random.choice(tdf["id"].tolist())
 
                 # We now generate the list of similar recipes and pick a random id
-                simRecipesId = findSimRecipes(df, recipeAindex, simval)
+                simRecipesId = findSimRecipes(tdf, recipeAindex, simval)
 
                 # We check if there are similar recipes
                 if (len(simRecipesId) > 0) :
@@ -523,10 +523,14 @@ def generate_user_experience(df, nbQuestions, expId, simval) :
             usedIds.append(recipeAindex)
             usedIds.append(recipeBindex)
 
+            # We find the names of the recipes
+            recipeAname = df.loc[df["id"] == recipeAindex]["name"].values[0]
+            recipeBname = df.loc[df["id"] == recipeBindex]["name"].values[0]
+
             # We find the expected answer
             expectedAns = 0
-            fatAvalue = df.loc[df["id"] == recipeAindex]["fat"].values[0]
-            fatBvalue = df.loc[df["id"] == recipeBindex]["fat"].values[0]
+            fatAvalue = tdf.loc[tdf["id"] == recipeAindex]["fat"].values[0]
+            fatBvalue = tdf.loc[tdf["id"] == recipeBindex]["fat"].values[0]
 
             if (fatAvalue >= fatBvalue) :
                 expectedAns = 1
@@ -538,7 +542,7 @@ def generate_user_experience(df, nbQuestions, expId, simval) :
             picPathB = recipePicPath(recipeBindex)
 
             # We save the data in the model file
-            writer.writerow([i + 1, recipeAindex, recipeBindex, picPathA, picPathB, expectedAns])
+            writer.writerow([i + 1, recipeAindex, recipeAname, picPathA, recipeBindex, recipeBname, picPathB, expectedAns])
 
     # Message to signal the user experience model has been creater
     print("The experience user model id." + str(expId) + " has been created.")

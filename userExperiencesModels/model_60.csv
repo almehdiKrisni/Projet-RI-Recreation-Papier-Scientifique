@@ -1,0 +1,11 @@
+question_id,recipe_A_id,recipe_A_name,recipe_A_picture,recipe_B_id,recipe_B_name,recipe_B_picture,correct_answer
+1,10541,Lemon Butter Cookies,pictures/recipes_10500_10599/recipe_10541.png,19690,Lemon Butter,pictures/recipes_19600_19699/recipe_19690.png,1
+2,13036,Creamy Pea Soup,pictures/recipes_13000_13099/recipe_13036.png,13217,Creamy Potato Soup,pictures/recipes_13200_13299/recipe_13217.png,2
+3,17347,Broccoli Salad V,pictures/recipes_17300_17399/recipe_17347.png,14283,Mardi's Broccoli Salad,pictures/recipes_14200_14299/recipe_14283.png,1
+4,13609,Squash Casserole I,pictures/recipes_13600_13699/recipe_13609.png,15681,Squash Casserole with Cream of Chicken Soup,pictures/recipes_15600_15699/recipe_15681.png,2
+5,14304,Black Bean Salad,pictures/recipes_14300_14399/recipe_14304.png,13933,Black Bean and Corn Salad,pictures/recipes_13900_13999/recipe_13933.png,2
+6,13336,Taco Soup IV,pictures/recipes_13300_13399/recipe_13336.png,13227,Taco Soup III,pictures/recipes_13200_13299/recipe_13227.png,1
+7,14323,Congealed Chicken Salad,pictures/recipes_14300_14399/recipe_14323.png,15712,Tropical Chicken Salad,pictures/recipes_15700_15799/recipe_15712.png,1
+8,11180,Ginger Cream Cookies,pictures/recipes_11100_11199/recipe_11180.png,12102,Cookies and Cream,pictures/recipes_12100_12199/recipe_12102.png,2
+9,19235,Grandma Orcutt's Date Cookies,pictures/recipes_19200_19299/recipe_19235.png,17087,Date Cookies,pictures/recipes_17000_17099/recipe_17087.png,2
+10,19090,Orange Fluff Cake,pictures/recipes_19000_19099/recipe_19090.png,17660,Orange Kiss-Me Cake,pictures/recipes_17600_17699/recipe_17660.png,1

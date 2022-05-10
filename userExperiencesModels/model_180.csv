@@ -1,0 +1,11 @@
+question_id,recipe_A_id,recipe_A_name,recipe_A_picture,recipe_B_id,recipe_B_name,recipe_B_picture,correct_answer
+1,19849,Baked Fruit Dumplings,pictures/recipes_19800_19899/recipe_19849.png,18358,Baked Apple Dumplings,pictures/recipes_18300_18399/recipe_18358.png,2
+2,11277,Walnut Lace Cookies,pictures/recipes_11200_11299/recipe_11277.png,13628,Mocha Walnut Cookies,pictures/recipes_13600_13699/recipe_13628.png,2
+3,16961,Filled Strawberry Bread,pictures/recipes_16900_16999/recipe_16961.png,16898,Strawberry Bread III,pictures/recipes_16800_16899/recipe_16898.png,1
+4,10767,Million Monster Cookies,pictures/recipes_10700_10799/recipe_10767.png,10795,Monster Cookies,pictures/recipes_10700_10799/recipe_10795.png,2
+5,15958,Scottish Shepherd's Pie,pictures/recipes_15900_15999/recipe_15958.png,12675,Shepherd's Pie II,pictures/recipes_12600_12699/recipe_12675.png,2
+6,16803,Nell's Cabbage Salad,pictures/recipes_16800_16899/recipe_16803.png,13722,Red Cabbage Salad,pictures/recipes_13700_13799/recipe_13722.png,1
+7,16468,Tuna Fish Salad,pictures/recipes_16400_16499/recipe_16468.png,16659,Mock Tuna Salad,pictures/recipes_16600_16699/recipe_16659.png,1
+8,13035,Cream of Spinach Soup,pictures/recipes_13000_13099/recipe_13035.png,13050,Cream Soup Base,pictures/recipes_13000_13099/recipe_13050.png,1
+9,15892,Banana Oatmeal Cookie,pictures/recipes_15800_15899/recipe_15892.png,15746,Banana Oatmeal Bread,pictures/recipes_15700_15799/recipe_15746.png,2
+10,13777,Grandma Reid's Stuffing,pictures/recipes_13700_13799/recipe_13777.png,13814,Grandma Ruth's Stuffing,pictures/recipes_13800_13899/recipe_13814.png,1

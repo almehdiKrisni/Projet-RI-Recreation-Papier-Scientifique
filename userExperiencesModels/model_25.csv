@@ -1,0 +1,6 @@
+question_id,recipe_A_id,recipe_A_name,recipe_A_picture,recipe_B_id,recipe_B_name,recipe_B_picture,correct_answer
+1,14627,Ugandan Kabobs,pictures/recipes_14600_14699/recipe_14627.png,14511,Mushroom Kabobs,pictures/recipes_14500_14599/recipe_14511.png,1
+2,10728,Brown Sugar Brownies,pictures/recipes_10700_10799/recipe_10728.png,14939,Brown Sugar Smokies,pictures/recipes_14900_14999/recipe_14939.png,2
+3,16660,Gravel Salad,pictures/recipes_16600_16699/recipe_16660.png,14445,Bermuda Spinach Salad,pictures/recipes_14400_14499/recipe_14445.png,2
+4,16613,Grammy's Amazing Cheese Ball,pictures/recipes_16600_16699/recipe_16613.png,18367,Blanca's Cherry Cheese Tarts,pictures/recipes_18300_18399/recipe_18367.png,1
+5,12974,Butternut Squash Soup with Cream Cheese,pictures/recipes_12900_12999/recipe_12974.png,17897,Hungarian Mushroom Soup,pictures/recipes_17800_17899/recipe_17897.png,1

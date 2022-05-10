@@ -1,0 +1,11 @@
+question_id,recipe_A_id,recipe_A_name,recipe_A_picture,recipe_B_id,recipe_B_name,recipe_B_picture,correct_answer
+1,15972,Vinegar Pie VII,pictures/recipes_15900_15999/recipe_15972.png,12273,Vinegar Pie IV,pictures/recipes_12200_12299/recipe_12273.png,2
+2,19036,Death By Chocolate Cake,pictures/recipes_19000_19099/recipe_19036.png,17849,Chocolate Cake III,pictures/recipes_17800_17899/recipe_17849.png,1
+3,17621,Champagne Cake III,pictures/recipes_17600_17699/recipe_17621.png,17579,Depression Cake III,pictures/recipes_17500_17599/recipe_17579.png,1
+4,16751,Cottage Cheese Potatoes,pictures/recipes_16700_16799/recipe_16751.png,13956,Cottage Cheese Loaf I,pictures/recipes_13900_13999/recipe_13956.png,1
+5,16454,Slow Cooker Beef Barley Soup,pictures/recipes_16400_16499/recipe_16454.png,13283,Beef and Barley Soup I,pictures/recipes_13200_13299/recipe_13283.png,1
+6,16834,Mincemeat II,pictures/recipes_16800_16899/recipe_16834.png,10390,Mincemeat Cookies II,pictures/recipes_10300_10399/recipe_10390.png,2
+7,14461,Yummy Couscous Salad,pictures/recipes_14400_14499/recipe_14461.png,16680,Chicken Salad with Couscous,pictures/recipes_16600_16699/recipe_16680.png,1
+8,13367,Chicken Tortilla Soup II,pictures/recipes_13300_13399/recipe_13367.png,15043,Chicken Tortilla Soup IV,pictures/recipes_15000_15099/recipe_15043.png,1
+9,16225,Cherry Chicken Salad,pictures/recipes_16200_16299/recipe_16225.png,14317,Chicken Salad in the Tropics,pictures/recipes_14300_14399/recipe_14317.png,2
+10,19425,Mexican Mac and Cheese,pictures/recipes_19400_19499/recipe_19425.png,16968,Mexican Cheese Dip,pictures/recipes_16900_16999/recipe_16968.png,2

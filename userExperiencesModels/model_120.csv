@@ -1,0 +1,11 @@
+question_id,recipe_A_id,recipe_A_name,recipe_A_picture,recipe_B_id,recipe_B_name,recipe_B_picture,correct_answer
+1,13997,Garbanzo Bean Patties,pictures/recipes_13900_13999/recipe_13997.png,14311,Garbanzo Bean Salad,pictures/recipes_14300_14399/recipe_14311.png,2
+2,17608,Restaurant-Style Cheesy Poblano Pepper Soup,pictures/recipes_17600_17699/recipe_17608.png,17544,Poblano Chile Pepper Soup,pictures/recipes_17500_17599/recipe_17544.png,1
+3,18499,Cheesy Asparagus Casserole,pictures/recipes_18400_18499/recipe_18499.png,18132,Asparagus Casserole,pictures/recipes_18100_18199/recipe_18132.png,1
+4,16983,Sauerkraut Onion Bread,pictures/recipes_16900_16999/recipe_16983.png,18087,Onion Bread II,pictures/recipes_18000_18099/recipe_18087.png,2
+5,15663,Vanilla Cream and Chocolate Wafer Pie,pictures/recipes_15600_15699/recipe_15663.png,12592,Chocolate Pie I,pictures/recipes_12500_12599/recipe_12592.png,1
+6,14239,Salad Nicoise,pictures/recipes_14200_14299/recipe_14239.png,19597,Pasta Salad Nicoise,pictures/recipes_19500_19599/recipe_19597.png,1
+7,11047,Cherry Yum Yum,pictures/recipes_11000_11099/recipe_11047.png,17953,Yum Yum Cake III,pictures/recipes_17900_17999/recipe_17953.png,2
+8,10473,Polish Poppy Seed Cookies,pictures/recipes_10400_10499/recipe_10473.png,10090,Poppy Seed Cookies I,pictures/recipes_10000_10099/recipe_10090.png,1
+9,17649,Pineapple Pound Cake,pictures/recipes_17600_17699/recipe_17649.png,19085,Raisin Pound Cake,pictures/recipes_19000_19099/recipe_19085.png,1
+10,13446,Ukrainian Sweet and Sour Cabbage Soup,pictures/recipes_13400_13499/recipe_13446.png,13233,Cabbage Soup I,pictures/recipes_13200_13299/recipe_13233.png,2

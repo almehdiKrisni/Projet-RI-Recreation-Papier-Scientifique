@@ -188,7 +188,7 @@ def main() :
                     questionSequence(questionID + 1)
 
         # Question title
-        Label(window, text="Choice " + str(currentQuestion), justify=CENTER).pack(side=TOP)
+        Label(window, text="Choice " + str(questionID + 1), justify=CENTER).pack(side=TOP)
         Label(window, text="In your opinion, which recipe contains the most fat per serving?", justify=CENTER).pack(side=TOP)
 
         # We show the recipes' pictures

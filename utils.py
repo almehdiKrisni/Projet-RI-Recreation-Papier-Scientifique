@@ -3,10 +3,7 @@
 ###################################### Imports #########################################
 
 # Needed for data collection
-from turtle import color
-from matplotlib import colors
-from matplotlib.style import use
-from pyrsistent import v
+from tracemalloc import stop
 import requests as rq
 import lxml
 from bs4 import BeautifulSoup as bs
@@ -21,6 +18,11 @@ import cv2
 
 # Needed for cosine similarity
 from numpy.linalg import norm
+import string
+from sklearn.metrics.pairwise import cosine_similarity
+from sklearn.feature_extraction.text import CountVectorizer
+from nltk.corpus import stopwords
+stopwords = stopwords.words('english')
 
 # Other usage
 import pandas as pd
@@ -420,6 +422,33 @@ def recipePicPath(id) :
     dir_name = "pictures/recipes_" + str(dirid * 100) + "_" + str(dirid * 100 + 99) + "/"
     return dir_name + "recipe_" + str(id) + ".png"
 
+# (https://towardsdatascience.com/calculating-string-similarity-in-python-276e18a7d33a)
+# Function returning a clean string (punctuation removed, lowercase string, removed stopwords)
+def clean_string(text) :
+    text = ''.join([word for word in text if word not in string.punctuation])
+    text = text.lower()
+    text = ' '.join([word for word in text.split() if word not in stopwords])
+    return text
+
+# Function returning the cosine similarity between two strings
+def cosine_sim_vectors(vec1, vec2) :
+    vec1 = vec1.reshape(1, -1)
+    vec2 = vec2.reshape(1, -1)
+    return cosine_similarity(vec1, vec2)[0][0]
+
+
+def stringCosSim(string1, string2) :
+    # We clean the strings
+    cleaned = list(map(clean_string, [string1, string2]))
+
+    # We vectorize the strings
+    vectorizer = CountVectorizer()
+    vectors = vectorizer.fit_transform(cleaned).toarray()
+
+    # We return the cosine similarity
+    return cosine_sim_vectors(vectors[0], vectors[1])
+
+
 ############################################# DATAFRAME MANAGEMENT ####################################################
 
 # Function used to read all the data collected and create a global pandas DataFrame
@@ -625,12 +654,27 @@ def computeFSAscore(df) :
     # We save the new FSA score column with the list
     df["FSA_score"] = scoreList
 
+#################################################### VALUES MANAGEMENT ###########################################
+
+# Function adding the number of ingredients to the recipe dataframe
+def computeNumberIngredients(df) :
+    # We need to pass as parameter an unchanged recipe database
+    # We split using the '#' value in order to get the number of ingredients
+
+    # We create the empty number of ingredients column
+    df["number_ingredients"] = np.nan
+
+    # We save the number of ingredients
+    df["number_ingredients"] = [len(df.iloc[i]["ingredients"].split('#')) for i in range(len(df))]
+
 ############################################### VIZUALISATION FUNCTIONS ##########################################
 
 # Function showing a bar plot (histogram) of the values of an array
 # The values should be continued for better usage
-def showBar(values) :
+def showBar(values, odds=False) :
     labels, counts = np.unique(values, return_counts=True)
+    if (odds) :
+        counts = counts / len(values)
     plt.bar(labels, counts, align='center')
     plt.gca().set_xticks(labels)
     plt.show()

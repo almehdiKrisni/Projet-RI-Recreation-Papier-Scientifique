@@ -1,0 +1,4 @@
+question_id,recipe_A_id,recipe_A_name,recipe_A_picture,recipe_B_id,recipe_B_name,recipe_B_picture,correct_answer
+1,12039,Johnny Marzetti III,pictures/recipes_12000_12099/recipe_12039.png,13109,Lobster Bisque I,pictures/recipes_13100_13199/recipe_13109.png,1
+2,17187,Cranberry Salad VI,pictures/recipes_17100_17199/recipe_17187.png,15827,Peanut Butter Pie XII,pictures/recipes_15800_15899/recipe_15827.png,2
+3,13679,Onion Bake,pictures/recipes_13600_13699/recipe_13679.png,13776,Creamed Corn,pictures/recipes_13700_13799/recipe_13776.png,2

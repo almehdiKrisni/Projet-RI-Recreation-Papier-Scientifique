@@ -92,6 +92,9 @@ def main() :
     for i in range(len(recipeB_picture_list)) :
         recipeB_picture_list[i] = ImageTk.PhotoImage(im.open(recipeB_picture_list[i]))
 
+    # We extract all the correct answers
+    expAnswers = uemdata["correct_answer"].tolist()
+
 ##################################################### UTILS FUNCTIONS ########################################
 
     # Function - Close window
@@ -174,8 +177,7 @@ def main() :
             if (validSelection()) :
                 # Saving the selection*
                 tmpC, tmpI = saveChoices()
-                answerList.append([questionID, tmpC, tmpI])
-                print(answerList[questionID])
+                answerList.append([questionID, tmpC, tmpI, expAnswers[questionID]])
 
                 # Ending the questionnary
                 if (questionID + 1 >= len(recipeA_names)) :
@@ -220,7 +222,7 @@ def main() :
             writer = csv.writer(f)
 
             # We write the header
-            writer.writerow(["question_id", "recipe_choice", "information_choice"])
+            writer.writerow(["question_id", "recipe_choice", "information_choice", "expected_answer"])
 
             # We write the result of the experience
             writer.writerows(answerList)

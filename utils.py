@@ -549,3 +549,88 @@ def generate_user_experience(tdf, df, nbQuestions, expId, simval) :
 
 
 ########################################################### FSA SCORE CALCULATOR ##############################################
+
+# Function returning the quantiles (1st and 3rd)
+def getQuantiles(dfS) :
+    # We need to pass as a parameter a pandas Series (a column for example)
+    [q1, q2] = dfS.quantile([0.25, 0.75]).values
+    return q1, q2
+
+# Function returning the score for a single recipe
+def getFSArecipe(rec, q1fat, q3fat, q1satfat, q3satfat, q1sod, q3sod, q1sug, q3sug) :
+    # Variable to save the score
+    score = 0
+
+    # Fat score
+    if (rec["fat"] <= q1fat) :
+        score += 1
+    else :
+        if (rec["fat"] <= q3fat) :
+            score += 2
+        else :
+            score += 3
+    
+    # Saturated fat score
+    if (rec["saturated fat"] <= q1satfat) :
+        score += 1
+    else :
+        if (rec["saturated fat"] <= q3satfat) :
+            score += 2
+        else :
+            score += 3
+
+    # Sodium score
+    if (rec["sodium"] <= q1sod) :
+        score += 1
+    else :
+        if (rec["sodium"] <= q3sod) :
+            score += 2
+        else :
+            score += 3
+
+    # Sugars score
+    if (rec["sugars"] <= q1sug) :
+        score += 1
+    else :
+        if (rec["sugars"] <= q3sug) :
+            score += 2
+        else :
+            score += 3
+
+    # We return the score
+    return score
+
+# Function adding a FSA Health score value to every example in the dataframe
+def computeFSAscore(df) :
+    # We need to pass as a parameter an unchanged recipe database (like the one created with pdCreator)
+    # The FSA score is calculated with the 'fat', 'saturated fat', 'sodium' and 'sugars'
+
+    # We create the empty FSA score column
+    df["FSA_score"] = np.nan
+
+    # We get the quantiles for the score calculation
+    q1fat, q3fat = getQuantiles(df["fat"])
+    q1satfat, q3satfat = getQuantiles(df["saturated fat"])
+    q1sod, q3sod = getQuantiles(df["sodium"])
+    q1sug, q3sug = getQuantiles(df["sugars"])
+
+    # We create an empty list to save the results
+    scoreList = []
+
+    # We iterate on the ids and calculate the scores
+    for i in range(len(df)) :
+        # We pass the recipe to the score calculator
+        scoreList.append(getFSArecipe(df.iloc[i], q1fat, q3fat, q1satfat, q3satfat, q1sod, q3sod, q1sug, q3sug))
+
+    # We save the new FSA score column with the list
+    df["FSA_score"] = scoreList
+
+############################################### VIZUALISATION FUNCTIONS ##########################################
+
+# Function showing a bar plot (histogram) of the values of an array
+# The values should be continued for better usage
+def showBar(values) :
+    labels, counts = np.unique(values, return_counts=True)
+    plt.bar(labels, counts, align='center')
+    plt.gca().set_xticks(labels)
+    plt.show()

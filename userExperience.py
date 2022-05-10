@@ -214,7 +214,7 @@ def main() :
         clearWindow()
 
         # Saving the results in the results file
-        resultsfn = "results_" + str(np.random.randint(0, 1000000)) + ".csv"
+        resultsfn = "results/results_" + str(np.random.randint(0, 1000000)) + ".csv"
 
         # We open the .csv file
         with open(resultsfn, 'w', encoding='utf8') as f :

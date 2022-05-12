@@ -29,6 +29,10 @@ def getUEMList() :
 # Main function
 def main() :
 
+    # We ask the user to choose a name for data collection purpose
+    
+
+
     # We ask the user to choose a user experience model
     models = getUEMList()
     print("Welcome to the user experience sequence.\nPlease select a model from the existing ones :")

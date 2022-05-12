@@ -527,8 +527,11 @@ def generate_user_experience(df, nbQuestions, expId, simval, mode=1, coefVal=0.5
     # We use a list to save all the used ids in the created user experience
     usedIds = []
 
+    # We have to make sure all the recipes in the dataframe have a picture
+    df = removeNoPictures(df)
+
     # We create the file
-    filename = "userExperiencesModels/model_" + str(expId) + ".csv"
+    filename = "userExperiencesModels/model_" + expId + ".csv"
     with open(filename, 'w', encoding='utf8') as f :
         # We create a writer
         writer = csv.writer(f)
@@ -539,7 +542,7 @@ def generate_user_experience(df, nbQuestions, expId, simval, mode=1, coefVal=0.5
         # We iterate on the number of questions
         for i in range(nbQuestions) :
             # Status print
-            print("Generating question " + str(i + 1) + " for user experience model n." + str(expId) + " ...", end="\r")
+            print("Generating question " + str(i + 1) + " for user experience model n." + expId + " ...", end="\r")
 
             # Correct run variable and recipe ids variables
             runAgain = True
@@ -551,7 +554,7 @@ def generate_user_experience(df, nbQuestions, expId, simval, mode=1, coefVal=0.5
                 recipeAindex = random.choice(df["id"].tolist())
 
                 # We now generate the list of similar recipes and pick a random id
-                simRecipesId = findSimRecipes(df, recipeAindex, simval, mode=2)
+                simRecipesId = findSimRecipes(df, recipeAindex, simval, mode=mode, coefVal=coefVal, coefName=coefName)
 
                 # We check if there are similar recipes
                 if (len(simRecipesId) > 0) :
@@ -589,7 +592,7 @@ def generate_user_experience(df, nbQuestions, expId, simval, mode=1, coefVal=0.5
             writer.writerow([i + 1, recipeAindex, recipeAname, picPathA, recipeBindex, recipeBname, picPathB, expectedAns])
 
     # Message to signal the user experience model has been creater
-    print("The experience user model id." + str(expId) + " has been created.")
+    print("The experience user model id." + expId + " has been created.")
 
 
 ########################################################### FSA SCORE CALCULATOR ##############################################

@@ -348,7 +348,7 @@ def getIngredientsList(df, id) :
 
 
 # Compute the cosine similarity for two recipes without using the recipes names
-def cosSimCalc(df, idA, idB, mode=1, coefVal=0.5, coefName=0.5) :
+def cosSimCalc(df, idA, idB, mode=1, coefVal=0.5, coefName=0.5, coefIng=1/3) :
     # We need to use a transformed dataframe (the one without any 'object' values)
     tdf = df.select_dtypes(exclude=['object'])
     recipeA = tdf.loc[tdf["id"] == idA].drop(columns=['id']).values[0]
@@ -361,28 +361,54 @@ def cosSimCalc(df, idA, idB, mode=1, coefVal=0.5, coefName=0.5) :
 
     # Mode 2 - We consider the values and the recipe names
     elif (mode == 2) :
+        # We check if the sum of the coef values is equal to 1
+        # If not, we return an error
+        if (sum([coefVal, coefName]) != 1.) :
+            print("The sum of the coef values should be equal to 1.")
+            return
+
         # We have to save the names of the recipes in order their cosine similarity
         nameA = df.loc[df["id"] == idA]["name"].values[0]
         nameB = df.loc[df["id"] == idB]["name"].values[0]
 
         # We then compute the cosine similarity
         return np.dot(recipeA,recipeB)/(norm(recipeA)*norm(recipeB)) * coefVal + stringCosSim(nameA, nameB) * coefName
+
+    # Mode 3 - We consider the values, the ingredients and the recipe names
+    elif (mode == 3) :
+        # We check if the sum of the coef values is equal to 1
+        # If not, we return an error
+        if (sum([coefVal, coefName, coefIng]) != 1.) :
+            print("The sum of the coef values should be equal to 1.")
+            return 
+
+        # We have to save the names of the recipes in order to compute their cosine similarity
+        nameA = df.loc[df["id"] == idA]["name"].values[0]
+        nameB = df.loc[df["id"] == idB]["name"].values[0]
+
+        # We save the ingredients of the recipes in order to compute their cosine similarity
+        ingsA = df.loc[df["id"] == idA]["ingredients"].values[0]
+        ingsB = df.loc[df["id"] == idB]["ingredients"].values[0]
+
+        # We then compute the cosine similarity
+        return np.dot(recipeA,recipeB)/(norm(recipeA)*norm(recipeB)) * coefVal + stringCosSim(nameA, nameB) * coefName + stringCosSim(ingsA, ingsB) * coefIng
+
  
 # Compute the cosine similarity between a specific recipe and the entier dataframe
-def allCosSim(df, id, mode=1, coefVal=0.5, coefName=0.5) :
+def allCosSim(df, id, mode=1, coefVal=0.5, coefName=0.5, coefIng=1/3) :
     # We iterate on all of the recipes except the studied recipe itself
-    return [(c, cosSimCalc(df, id, c, mode=mode, coefVal=coefVal, coefName=coefName)) for c in df["id"] if c != id]
+    return [(c, cosSimCalc(df, id, c, mode=mode, coefVal=coefVal, coefName=coefName, coefIng=coefIng)) for c in df["id"] if c != id]
 
 # Compute the list of recipe ids with a cosine similarity to the model repice greater than a specific value
-def findSimRecipes(df, id, val, mode=1, coefVal=0.5, coefName=0.5) :
+def findSimRecipes(df, id, val, mode=1, coefVal=0.5, coefName=0.5, coefIng=1/3) :
     # We return the list of ids
     return [c for c in df["id"] if (c != id) and (cosSimCalc(df, id, c, mode=mode, coefVal=coefVal, coefName=coefName) >= val)]
 
 # Get the statistics of cosine similarity for a specific recipe
 # We use the following reference values : [0.8, 0.6, 0.4, 0.2]
-def recipeSimStats(df, id, mode=1, coefVal=0.5, coefName=0.5) :
+def recipeSimStats(df, id, mode=1, coefVal=0.5, coefName=0.5, coefIng=1/3) :
     # We compute the cosine similiraties
-    cossim = allCosSim(df, id, mode=mode, coefVal=coefVal, coefName=coefName)
+    cossim = allCosSim(df, id, mode=mode, coefVal=coefVal, coefName=coefName, coefIng=coefIng)
 
     # Probability of finding a recipe with more than 0.2 cosine similarity in the database
     odds_2 = sum([1 for v in cossim if v[1] >= 0.2]) / len(cossim)
@@ -520,7 +546,7 @@ def removeNoPictures(df) :
 # User experiences are represented by a .csv file containing for each choice :
 # it's id, the recipe A id, the recipe A name, the recipe A picture path, the recipe B id, the recipe B name, 
 # the recipe B picture path, the correct answer (1 for A, 2 for B)
-def generate_user_experience(df, nbQuestions, expId, simval, mode=1, coefVal=0.5, coefName=0.5) :
+def generate_user_experience(df, nbQuestions, expId, simval, mode=1, coefVal=0.5, coefName=0.5, coefIng=1/3) :
     # File header
     header = ["question_id", "recipe_A_id", "recipe_A_name", "recipe_A_picture", "recipe_B_id", "recipe_B_name", "recipe_B_picture", "correct_answer"]
 
@@ -554,7 +580,7 @@ def generate_user_experience(df, nbQuestions, expId, simval, mode=1, coefVal=0.5
                 recipeAindex = random.choice(df["id"].tolist())
 
                 # We now generate the list of similar recipes and pick a random id
-                simRecipesId = findSimRecipes(df, recipeAindex, simval, mode=mode, coefVal=coefVal, coefName=coefName)
+                simRecipesId = findSimRecipes(df, recipeAindex, simval, mode=mode, coefVal=coefVal, coefName=coefName, coefIng=coefIng)
 
                 # We check if there are similar recipes
                 if (len(simRecipesId) > 0) :

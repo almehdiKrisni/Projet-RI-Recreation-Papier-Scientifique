@@ -3,6 +3,7 @@
 ################################################### IMPORTS ################################################
 
 from PIL import ImageTk, Image as im, ImageFile
+from cv2 import fastNlMeansDenoising
 ImageFile.LOAD_TRUNCATED_IMAGES = True
 from utils import *
 from tkinter import *
@@ -28,14 +29,45 @@ def getUEMList() :
 
 # Main function
 def main() :
+    # Welcome message
+    print("Welcome to the User Experience Sequence interface.\n")
 
     # We ask the user to choose a name for data collection purpose
-    
+    username = "Anonymous"
+
+    # Correct input variable
+    redoInput = True
+
+    # Selection loop
+    while (redoInput) :
+        # We ask the user to choose a model
+        print("Please select a username :\n(You may press Enter without giving a name in case you prefer to remain anonymous)")
+        sel = input()
+
+        # We check if the chosen ID is valid
+        if (sel == "") :
+            redoInput = False
+            username = sel
+        
+        # In case the name is too long, we ask the user to select a different name
+        elif (len(sel) > 16) :
+            print("\nPlease select a shorter username.")
+
+        else :
+            redoInput = False
+            username = sel
 
 
-    # We ask the user to choose a user experience model
+    # We collect all the models IDs
     models = getUEMList()
-    print("Welcome to the user experience sequence.\nPlease select a model from the existing ones :")
+
+    # We verify that at least one model exists
+    if (len(models) == 0) :
+        print("\nWe couldn't find any models in the corresponding folder ('userExperiencesModels').\nPlease check your files.\n")
+        print("Exiting the interface ...")
+
+    # We ask the user to select a model
+    print("\nPlease select a model from the existing ones :")
     for i in models :
         print("\t> " + i)
 
@@ -46,7 +78,7 @@ def main() :
     # Selection loop
     while (redoInput) :
         # We ask the user to choose a model
-        print("\nPlease enter a user experience model ID :")
+        print("\nPlease enter a model ID :")
         sel = input()
 
         # We check if the chosen ID is valid
@@ -75,7 +107,6 @@ def main() :
 ################################################### GLOBAL PARAMETERS ########################################
 
     # Questionnary values
-    currentQuestion = 1
     answerList = list()
 
     # We extract all the data from the user experience data file
@@ -218,7 +249,7 @@ def main() :
         clearWindow()
 
         # Saving the results in the results file
-        resultsfn = "results_" + str(np.random.randint(0, 1000000)) + ".csv"
+        resultsfn = "results_" + username + "_" + str(np.random.randint(0, 1000)) + ".csv"
 
         # We open the .csv file
         with open(resultsfn, 'w', encoding='utf8') as f :

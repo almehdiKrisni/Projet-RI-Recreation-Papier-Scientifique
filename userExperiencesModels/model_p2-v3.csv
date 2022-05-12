@@ -1,0 +1,11 @@
+question_id,recipe_A_id,recipe_A_name,recipe_A_picture,recipe_B_id,recipe_B_name,recipe_B_picture,correct_answer
+1,14672,Tongue and Mustard Sandwiches,pictures/recipes_14600_14699/recipe_14672.png,16612,Cheap Chicken Noodle Casserole,pictures/recipes_16600_16699/recipe_16612.png,1
+2,17358,Ham Stir Fry with Couscous,pictures/recipes_17300_17399/recipe_17358.png,17378,Very Easy Chocolate Cake,pictures/recipes_17300_17399/recipe_17378.png,2
+3,10380,Aunt Cora's World's Greatest Cookies,pictures/recipes_10300_10399/recipe_10380.png,18785,County Fair Corn Dogs,pictures/recipes_18700_18799/recipe_18785.png,2
+4,12945,Borscht with Meat,pictures/recipes_12900_12999/recipe_12945.png,16621,Nona's Famous Macaroni Salad,pictures/recipes_16600_16699/recipe_16621.png,1
+5,15088,Chocolate Lebkuchen,pictures/recipes_15000_15099/recipe_15088.png,12358,Zucchini Cream Pie,pictures/recipes_12300_12399/recipe_12358.png,2
+6,18518,No-Cook Never-Fail Fudge,pictures/recipes_18500_18599/recipe_18518.png,11326,Raspberry and Apricot Rugelach,pictures/recipes_11300_11399/recipe_11326.png,1
+7,15850,Chocolate Chip Pecan Pie,pictures/recipes_15800_15899/recipe_15850.png,11313,Cornmeal Cookies III,pictures/recipes_11300_11399/recipe_11313.png,1
+8,15019,Salsa Cheese Boule Dip,pictures/recipes_15000_15099/recipe_15019.png,18246,Baked Pineapple Casserole,pictures/recipes_18200_18299/recipe_18246.png,1
+9,16944,Rockin' Baby Back Ribs Sauce,pictures/recipes_16900_16999/recipe_16944.png,16455,Easy Scalloped Potatoes,pictures/recipes_16400_16499/recipe_16455.png,2
+10,13512,Insalata Cotta e Cruda,pictures/recipes_13500_13599/recipe_13512.png,14484,Heavenly Pink Salad,pictures/recipes_14400_14499/recipe_14484.png,1

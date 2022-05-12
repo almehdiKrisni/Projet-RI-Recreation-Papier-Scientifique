@@ -1,0 +1,11 @@
+question_id,recipe_A_id,recipe_A_name,recipe_A_picture,recipe_B_id,recipe_B_name,recipe_B_picture,correct_answer
+1,19964,Smoked Salmon Cheesecake,pictures/recipes_19900_19999/recipe_19964.png,11974,Smoked Salmon Ravioli,pictures/recipes_11900_11999/recipe_11974.png,2
+2,11706,Shiitake Angel Hair Pasta,pictures/recipes_11700_11799/recipe_11706.png,11719,Angel Hair Pasta with Pignoli,pictures/recipes_11700_11799/recipe_11719.png,2
+3,16744,Mimi's Eggplant Casserole,pictures/recipes_16700_16799/recipe_16744.png,13959,Eggplant and Zucchini Casserole,pictures/recipes_13900_13999/recipe_13959.png,2
+4,12928,Creamy Onion Soup,pictures/recipes_12900_12999/recipe_12928.png,13363,Old-Fashioned Onion Soup,pictures/recipes_13300_13399/recipe_13363.png,2
+5,15061,Spicy Red Bean Soup,pictures/recipes_15000_15099/recipe_15061.png,13048,Spicy Soup,pictures/recipes_13000_13099/recipe_13048.png,1
+6,19218,Coconut Gumdrop Cookies,pictures/recipes_19200_19299/recipe_19218.png,11088,Coconut Icebox Cookies,pictures/recipes_11000_11099/recipe_11088.png,1
+7,14669,Beef Pot Pie I,pictures/recipes_14600_14699/recipe_14669.png,16165,Beef Pot Pie II,pictures/recipes_16100_16199/recipe_16165.png,1
+8,10627,Chocolate Crispy Cookies,pictures/recipes_10600_10699/recipe_10627.png,10563,Crispy Butterscotch Cookies,pictures/recipes_10500_10599/recipe_10563.png,2
+9,11972,Laurel's Lasagna,pictures/recipes_11900_11999/recipe_11972.png,14054,Lasagna,pictures/recipes_14000_14099/recipe_14054.png,1
+10,10945,Chewy Peanut Butter Cookies,pictures/recipes_10900_10999/recipe_10945.png,11014,Peanut Butter Cookies with Chocolate Chunks,pictures/recipes_11000_11099/recipe_11014.png,2

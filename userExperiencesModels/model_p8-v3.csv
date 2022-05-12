@@ -1,0 +1,11 @@
+question_id,recipe_A_id,recipe_A_name,recipe_A_picture,recipe_B_id,recipe_B_name,recipe_B_picture,correct_answer
+1,18445,Chicken Cashew Salad,pictures/recipes_18400_18499/recipe_18445.png,14273,Teriyaki Chicken Salad,pictures/recipes_14200_14299/recipe_14273.png,2
+2,15712,Tropical Chicken Salad,pictures/recipes_15700_15799/recipe_15712.png,14220,Tarragon Chicken Salad,pictures/recipes_14200_14299/recipe_14220.png,2
+3,17726,Sour Cream Muffins,pictures/recipes_17700_17799/recipe_17726.png,10807,Sour Cream Pockets,pictures/recipes_10800_10899/recipe_10807.png,2
+4,17437,Tater Tot Casserole II,pictures/recipes_17400_17499/recipe_17437.png,14638,Savory Tater Tot Casserole,pictures/recipes_14600_14699/recipe_14638.png,1
+5,18089,Macaroni Salad,pictures/recipes_18000_18099/recipe_18089.png,12003,Chicken Macaroni Salad,pictures/recipes_12000_12099/recipe_12003.png,2
+6,10233,Butter Icing for Cookies,pictures/recipes_10200_10299/recipe_10233.png,11056,Butter Icing for Sugar Cookies,pictures/recipes_11000_11099/recipe_11056.png,2
+7,10627,Chocolate Crispy Cookies,pictures/recipes_10600_10699/recipe_10627.png,10587,Chocolate Wafer Cookies,pictures/recipes_10500_10599/recipe_10587.png,1
+8,12456,Peanut Butter Pie IX,pictures/recipes_12400_12499/recipe_12456.png,12607,Chocolate Peanut Butter Pie III,pictures/recipes_12600_12699/recipe_12607.png,1
+9,12454,Zucchini Pie I,pictures/recipes_12400_12499/recipe_12454.png,12356,Zucchini Apple Pie,pictures/recipes_12300_12399/recipe_12356.png,1
+10,14212,Tortellini Salad I,pictures/recipes_14200_14299/recipe_14212.png,14333,Tortellini Pasta Salad,pictures/recipes_14300_14399/recipe_14333.png,1

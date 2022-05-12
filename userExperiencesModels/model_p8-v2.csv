@@ -1,0 +1,11 @@
+question_id,recipe_A_id,recipe_A_name,recipe_A_picture,recipe_B_id,recipe_B_name,recipe_B_picture,correct_answer
+1,13973,Marinated Vegetable Salad,pictures/recipes_13900_13999/recipe_13973.png,14290,Raw Vegetable Salad,pictures/recipes_14200_14299/recipe_14290.png,2
+2,16483,Best Broccoli Salad,pictures/recipes_16400_16499/recipe_16483.png,14160,Broccoli Salad I,pictures/recipes_14100_14199/recipe_14160.png,2
+3,16816,Corn Dip,pictures/recipes_16800_16899/recipe_16816.png,14820,Spicy Corn Dip,pictures/recipes_14800_14899/recipe_14820.png,1
+4,12885,Yummy Beef or Venison Stew,pictures/recipes_12800_12899/recipe_12885.png,13027,Beef Stew I,pictures/recipes_13000_13099/recipe_13027.png,2
+5,12979,Apricot Lentil Soup,pictures/recipes_12900_12999/recipe_12979.png,16016,Hungarian Lentil Soup,pictures/recipes_16000_16099/recipe_16016.png,1
+6,10542,Mom's Raisin Oatmeal Cookies,pictures/recipes_10500_10599/recipe_10542.png,10611,Spicy Oatmeal Raisin Cookies,pictures/recipes_10600_10699/recipe_10611.png,2
+7,17546,Gravy Baked Pork Chops,pictures/recipes_17500_17599/recipe_17546.png,16348,Easy Baked Pork Chops,pictures/recipes_16300_16399/recipe_16348.png,2
+8,17234,Pig Picking Cake II,pictures/recipes_17200_17299/recipe_17234.png,17909,Pig Picking Cake III,pictures/recipes_17900_17999/recipe_17909.png,1
+9,15954,Bill Clinton's Lemon Chess Pie,pictures/recipes_15900_15999/recipe_15954.png,12240,Lemon Pie I,pictures/recipes_12200_12299/recipe_12240.png,1
+10,11680,Italian Spaghetti with Ham,pictures/recipes_11600_11699/recipe_11680.png,19292,Garlic and Ham Spaghetti,pictures/recipes_19200_19299/recipe_19292.png,1

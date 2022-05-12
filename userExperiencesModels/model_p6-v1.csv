@@ -1,0 +1,11 @@
+question_id,recipe_A_id,recipe_A_name,recipe_A_picture,recipe_B_id,recipe_B_name,recipe_B_picture,correct_answer
+1,19770,Gazpacho,pictures/recipes_19700_19799/recipe_19770.png,13110,Gazpacho I,pictures/recipes_13100_13199/recipe_13110.png,2
+2,15110,Lemon Bars II,pictures/recipes_15100_15199/recipe_15110.png,10824,Everything Cookies II,pictures/recipes_10800_10899/recipe_10824.png,2
+3,16116,Figs Stuffed with Almonds and Chips,pictures/recipes_16100_16199/recipe_16116.png,13868,Baked Stuffed Mushrooms,pictures/recipes_13800_13899/recipe_13868.png,1
+4,12323,Fresh Peach Angel Pie,pictures/recipes_12300_12399/recipe_12323.png,15638,Graham Cracker Cream Pie,pictures/recipes_15600_15699/recipe_15638.png,2
+5,10915,White Chocolate Pumpkin Cookies,pictures/recipes_10900_10999/recipe_10915.png,10363,Miami Chocolate Chip Cookies,pictures/recipes_10300_10399/recipe_10363.png,2
+6,11672,Linguine with Scampi,pictures/recipes_11600_11699/recipe_11672.png,19335,Peppered Bacon and Tomato Linguine,pictures/recipes_19300_19399/recipe_19335.png,1
+7,12553,Creamed Cottage Cheese Pie,pictures/recipes_12500_12599/recipe_12553.png,15573,Egg Custard Pie IV,pictures/recipes_15500_15599/recipe_15573.png,1
+8,13120,A-Maize-ing Corn Chowder,pictures/recipes_13100_13199/recipe_13120.png,13706,Cheese Corn Casserole,pictures/recipes_13700_13799/recipe_13706.png,2
+9,19418,Chicken and Cheese Stuffed Jumbo Shells,pictures/recipes_19400_19499/recipe_19418.png,11751,Simple Mac and Cheese,pictures/recipes_11700_11799/recipe_11751.png,1
+10,10784,Peanut Butter Cookies V,pictures/recipes_10700_10799/recipe_10784.png,10586,Easy Drop Cookies,pictures/recipes_10500_10599/recipe_10586.png,1

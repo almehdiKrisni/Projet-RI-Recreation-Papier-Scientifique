@@ -1,0 +1,11 @@
+question_id,recipe_A_id,recipe_A_name,recipe_A_picture,recipe_B_id,recipe_B_name,recipe_B_picture,correct_answer
+1,11203,Chocolate Chocolate Chip Cake Cookies,pictures/recipes_11200_11299/recipe_11203.png,17572,Easy Chocolate Chip Pound Cake,pictures/recipes_17500_17599/recipe_17572.png,2
+2,12272,Pineapple Pie I,pictures/recipes_12200_12299/recipe_12272.png,15881,Pineapple and Lemon Pie,pictures/recipes_15800_15899/recipe_15881.png,2
+3,10185,Moravian Spice Cookies,pictures/recipes_10100_10199/recipe_10185.png,10183,Moravian Ginger Cookies I,pictures/recipes_10100_10199/recipe_10183.png,1
+4,10555,Magic Cookie Bars II,pictures/recipes_10500_10599/recipe_10555.png,10213,Magic Cookie Bars I,pictures/recipes_10200_10299/recipe_10213.png,1
+5,16324,Barbeque Sauce I,pictures/recipes_16300_16399/recipe_16324.png,17822,Chicken Barbeque Sauce,pictures/recipes_17800_17899/recipe_17822.png,2
+6,13540,Scalloped Oysters,pictures/recipes_13500_13599/recipe_13540.png,16344,Scalloped Oysters II,pictures/recipes_16300_16399/recipe_16344.png,1
+7,10418,Black Walnut Cookies I,pictures/recipes_10400_10499/recipe_10418.png,10048,Black Walnut Balls,pictures/recipes_10000_10099/recipe_10048.png,2
+8,19538,Mashed Potato Casserole,pictures/recipes_19500_19599/recipe_19538.png,13898,Potato and Broccoli Casserole,pictures/recipes_13800_13899/recipe_13898.png,1
+9,15897,Old Fashioned Lemon Pie,pictures/recipes_15800_15899/recipe_15897.png,15947,Old Fashioned Paradise Pumpkin Pie,pictures/recipes_15900_15999/recipe_15947.png,2
+10,15727,Cornish Pasties III,pictures/recipes_15700_15799/recipe_15727.png,15731,Vegetable Cornish Pasties,pictures/recipes_15700_15799/recipe_15731.png,1

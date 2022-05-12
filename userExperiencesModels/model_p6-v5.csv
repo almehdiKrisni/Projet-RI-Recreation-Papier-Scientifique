@@ -1,0 +1,11 @@
+question_id,recipe_A_id,recipe_A_name,recipe_A_picture,recipe_B_id,recipe_B_name,recipe_B_picture,correct_answer
+1,12582,Chocolate Pecan Pie IV,pictures/recipes_12500_12599/recipe_12582.png,15739,Honey Crunch Pecan Pie,pictures/recipes_15700_15799/recipe_15739.png,2
+2,13831,Apple Dumpling Cake,pictures/recipes_13800_13899/recipe_13831.png,19544,Apple and Sausage Cornbread Stuffing,pictures/recipes_19500_19599/recipe_19544.png,1
+3,15439,Southern Style Banana Split Cake,pictures/recipes_15400_15499/recipe_15439.png,18356,Easy Bunny Cake,pictures/recipes_18300_18399/recipe_18356.png,1
+4,17344,Carrot Cake XI,pictures/recipes_17300_17399/recipe_17344.png,17539,Chocolate Mousse Cake IV,pictures/recipes_17500_17599/recipe_17539.png,1
+5,16829,Sherbet Shower Surprise,pictures/recipes_16800_16899/recipe_16829.png,19688,Rice Surprise,pictures/recipes_19600_19699/recipe_19688.png,2
+6,18994,Blender Chocolate Mousse,pictures/recipes_18900_18999/recipe_18994.png,10351,Chocolate Swirls,pictures/recipes_10300_10399/recipe_10351.png,1
+7,13490,Sweet Potato Souffle I,pictures/recipes_13400_13499/recipe_13490.png,16965,Lower Fat Potato Soup,pictures/recipes_16900_16999/recipe_16965.png,1
+8,10826,Lemon Glazed Date Sticks,pictures/recipes_10800_10899/recipe_10826.png,12642,Shaker Lemon Pie,pictures/recipes_12600_12699/recipe_12642.png,2
+9,15255,Christmas Orange Balls,pictures/recipes_15200_15299/recipe_15255.png,10144,No Bake Date Balls,pictures/recipes_10100_10199/recipe_10144.png,1
+10,12402,French Silk Chocolate Pie II,pictures/recipes_12400_12499/recipe_12402.png,13797,Squash Casserole II,pictures/recipes_13700_13799/recipe_13797.png,2

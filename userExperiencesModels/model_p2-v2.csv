@@ -1,0 +1,11 @@
+question_id,recipe_A_id,recipe_A_name,recipe_A_picture,recipe_B_id,recipe_B_name,recipe_B_picture,correct_answer
+1,13604,Baked Sweet Potato Balls,pictures/recipes_13600_13699/recipe_13604.png,15490,Honey Cranberry Oat Bread,pictures/recipes_15400_15499/recipe_15490.png,2
+2,14879,Original Buffalo Wings,pictures/recipes_14800_14899/recipe_14879.png,18888,Stewed Squash,pictures/recipes_18800_18899/recipe_18888.png,1
+3,19357,Cheesy Pea Pasta,pictures/recipes_19300_19399/recipe_19357.png,17280,Cranberry Gelatin Mold,pictures/recipes_17200_17299/recipe_17280.png,2
+4,15481,Turtles® Cookies II,pictures/recipes_15400_15499/recipe_15481.png,15215,Cheese Puff Appetizers,pictures/recipes_15200_15299/recipe_15215.png,1
+5,12239,Big Guy Strawberry Pie,pictures/recipes_12200_12299/recipe_12239.png,11409,Mommy's Loving Care Cookies,pictures/recipes_11400_11499/recipe_11409.png,1
+6,18231,Artichoke and Crab Spread,pictures/recipes_18200_18299/recipe_18231.png,16731,Cottage Cheese Chicken Enchiladas,pictures/recipes_16700_16799/recipe_16731.png,2
+7,17950,Cheesy Potato Soup II,pictures/recipes_17900_17999/recipe_17950.png,18289,Garlic Grits,pictures/recipes_18200_18299/recipe_18289.png,2
+8,12165,Kentucky Pecan Pie,pictures/recipes_12100_12199/recipe_12165.png,10066,Muesli Bars I,pictures/recipes_10000_10099/recipe_10066.png,1
+9,11419,Marshmallow Brownies,pictures/recipes_11400_11499/recipe_11419.png,14587,Ground Beef Mexican Style,pictures/recipes_14500_14599/recipe_14587.png,2
+10,11204,Soft Sugar Cookies III,pictures/recipes_11200_11299/recipe_11204.png,17257,Romano Cheese Easter Bread,pictures/recipes_17200_17299/recipe_17257.png,1

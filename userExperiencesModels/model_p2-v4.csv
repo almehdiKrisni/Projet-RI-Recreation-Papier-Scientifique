@@ -1,0 +1,11 @@
+question_id,recipe_A_id,recipe_A_name,recipe_A_picture,recipe_B_id,recipe_B_name,recipe_B_picture,correct_answer
+1,11780,Easy Chicken Tetrazzini,pictures/recipes_11700_11799/recipe_11780.png,15455,Pineapple Walnut Salad,pictures/recipes_15400_15499/recipe_15455.png,2
+2,17546,Gravy Baked Pork Chops,pictures/recipes_17500_17599/recipe_17546.png,18335,Sweet Vidalia Onion Pie,pictures/recipes_18300_18399/recipe_18335.png,2
+3,17674,Breakfast Bread,pictures/recipes_17600_17699/recipe_17674.png,12005,Bowtie Pasta,pictures/recipes_12000_12099/recipe_12005.png,2
+4,11143,Canadian Shortbread 'Eh',pictures/recipes_11100_11199/recipe_11143.png,11512,Sugar Free Sour Cream Linzer Cookies,pictures/recipes_11500_11599/recipe_11512.png,1
+5,13437,Maryland Crab Soup,pictures/recipes_13400_13499/recipe_13437.png,12577,Chocolate Pecan Pie III,pictures/recipes_12500_12599/recipe_12577.png,2
+6,16711,Baked Tilapia in Garlic and Olive Oil,pictures/recipes_16700_16799/recipe_16711.png,10811,Russian Tea Cakes III,pictures/recipes_10800_10899/recipe_10811.png,1
+7,13406,Cold Cherry Soup,pictures/recipes_13400_13499/recipe_13406.png,16326,Pumpkin Custard Pie II,pictures/recipes_16300_16399/recipe_16326.png,2
+8,10770,Jan Hagel Cookies,pictures/recipes_10700_10799/recipe_10770.png,15486,Mediterranean Chicken,pictures/recipes_15400_15499/recipe_15486.png,1
+9,13571,Slow Cooker Stuffing,pictures/recipes_13500_13599/recipe_13571.png,17047,Impossible Pumpkin Pie,pictures/recipes_17000_17099/recipe_17047.png,1
+10,13595,Lime Gelatin Salad I,pictures/recipes_13500_13599/recipe_13595.png,17208,Chicken Stroganoff II,pictures/recipes_17200_17299/recipe_17208.png,1

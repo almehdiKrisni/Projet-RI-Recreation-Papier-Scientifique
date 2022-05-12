@@ -1,0 +1,11 @@
+question_id,recipe_A_id,recipe_A_name,recipe_A_picture,recipe_B_id,recipe_B_name,recipe_B_picture,correct_answer
+1,18117,Pan Dulces,pictures/recipes_18100_18199/recipe_18117.png,18111,Sex in a Pan II,pictures/recipes_18100_18199/recipe_18111.png,2
+2,16274,Baked Clam Dip,pictures/recipes_16200_16299/recipe_16274.png,17074,Easy Mexi-Cheese Dip,pictures/recipes_17000_17099/recipe_17074.png,2
+3,10813,Best Chocolate Chip Cookies,pictures/recipes_10800_10899/recipe_10813.png,19211,No Bake Chocolate Oatmeal Cookies,pictures/recipes_19200_19299/recipe_19211.png,1
+4,14627,Ugandan Kabobs,pictures/recipes_14600_14699/recipe_14627.png,15627,Scallop and Shrimp Kabobs,pictures/recipes_15600_15699/recipe_15627.png,1
+5,18840,Kielbasa and Veggies,pictures/recipes_18800_18899/recipe_18840.png,15882,Sweet and Sour Tofu Veggies,pictures/recipes_15800_15899/recipe_15882.png,1
+6,18344,Cheese and Bacon Potato Rounds,pictures/recipes_18300_18399/recipe_18344.png,15077,Restaurant-Style Potato Skins,pictures/recipes_15000_15099/recipe_15077.png,1
+7,16629,Mrs Espy's Enchilada Sauce,pictures/recipes_16600_16699/recipe_16629.png,17200,Bloomin' Onion Dipping Sauce,pictures/recipes_17200_17299/recipe_17200.png,1
+8,13714,Cheese Fondue,pictures/recipes_13700_13799/recipe_13714.png,12016,Mac and Cheese II,pictures/recipes_12000_12099/recipe_12016.png,2
+9,14959,Clam Chowder Canadian Military Style,pictures/recipes_14900_14999/recipe_14959.png,14777,Canadian Bacon Breakfast Stack,pictures/recipes_14700_14799/recipe_14777.png,2
+10,13931,Vegetarian Shepherd's Pie I,pictures/recipes_13900_13999/recipe_13931.png,14092,Bramblewood Blackberry Pie,pictures/recipes_14000_14099/recipe_14092.png,2

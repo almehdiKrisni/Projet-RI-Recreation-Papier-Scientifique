@@ -3,7 +3,6 @@
 ################################################### IMPORTS ################################################
 
 from PIL import ImageTk, Image as im, ImageFile
-from cv2 import fastNlMeansDenoising
 ImageFile.LOAD_TRUNCATED_IMAGES = True
 from utils import *
 from tkinter import *

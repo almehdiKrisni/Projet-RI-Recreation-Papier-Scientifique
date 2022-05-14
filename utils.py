@@ -225,28 +225,24 @@ def picStats(id) :
         # We compute all the values
         # Brightness
         brightstat = ImageStat.Stat(pic).mean[0]
-        print("Brigtness :\t", brightstat)
 
         # Sharpness
         array = np.asarray(pic, dtype=np.int32)
         gy, gx = np.gradient(array)
         gnorm = np.sqrt(gx**2 + gy**2)
         sharpstat = np.average(gnorm)
-        print("Sharpness :\t", sharpstat)
 
         # Entropy
-        # print(image_entropy(filename))
+        entrostat = image_entropy(filename)
 
         # Colorfulness
         colorstat = image_colorfulness(filename)
-        print("Colorfulness :\t", colorstat)
 
         # Contrast
         contrstat = image_contrast(filename)
-        print("Contrast :\t", contrstat)
 
         # We return the values
-        return brightstat, sharpstat, colorstat, contrstat
+        return brightstat, sharpstat, entrostat, colorstat, contrstat
 
     # In case there is a problem with the picture
     except Exception as e :
@@ -295,11 +291,40 @@ def image_contrast(filepath) :
     contrast = (max-min)/(max+min)
     return contrast
 
-# Function returning the shannon entropy of a picture with a filepath passed as a parameter
-# (https://stackoverflow.com/questions/50313114/what-is-the-entropy-of-an-image-and-how-is-it-calculated)
-# def image_entropy(filepath) :
-#     img = cv2.imread(filepath)
-#     return shannon_entropy(img[:,:,0])
+# Function returning the entropy of a picture with a filepath passed as a parameter
+# (https://www.hdm-stuttgart.de/~maucher/Python/MMCodecs/html/basicFunctions.html#:~:text=The%20entropy%20of%20an%20image,%3D%20(10%2C10).)
+def entropy(signal) :
+    '''
+    function returns entropy of a signal
+    signal must be a 1-D numpy array
+    '''
+    lensig=signal.size
+    symset=list(set(signal))
+    propab=[np.size(signal[signal==i])/(1.0*lensig) for i in symset]
+    ent=np.sum([p*np.log2(1.0/p) for p in propab])
+    return ent
+
+# Function returning the entropy of an image
+def image_entropy(filepath) :
+    # We get the image and convert it to greyscale
+    colorIm=im.open(filepath)
+    greyIm=colorIm.convert('L')
+    colorIm=np.array(colorIm)
+    greyIm=np.array(greyIm)
+
+    # We compute and return the entropy
+    N=1
+    S=greyIm.shape
+    E=np.array(greyIm)
+    for row in range(S[0]):
+            for col in range(S[1]):
+                    Lx=np.max([0,col-N])
+                    Ux=np.min([S[1],col+N])
+                    Ly=np.max([0,row-N])
+                    Uy=np.min([S[0],row+N])
+                    region=greyIm[Ly:Uy,Lx:Ux].flatten()
+                    E[row,col]=entropy(region)
+    return np.mean(E)
 
 # Function resizing all the pictures into a specific shape
 def reshape_pictures(startIndex, rangeIndex, shape) :

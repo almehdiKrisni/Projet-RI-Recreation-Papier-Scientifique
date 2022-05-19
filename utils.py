@@ -210,7 +210,7 @@ def download_pictures(startIndex, rangeIndex) :
 
     print("Finished downloading the pictures (" + str(startIndex) + "_" + str(startIndex + rangeIndex - 1) + str(")"))
 
-#################################################### PICTURE MANAGEMENT ###########################################################
+#################################################### PICTURE FUNCTIONS ###########################################################
 
 # Function computing the brightness, sharpness, entropy, colorfulness and contrast of a picture
 def picStats(id) :
@@ -326,6 +326,12 @@ def image_entropy(filepath) :
                     E[row,col]=entropy(region)
     return np.mean(E)
 
+# Function returning the path to a recipe picture based on the id of the recipe
+def recipePicPath(id) :
+    dirid = int(id / 100)
+    dir_name = "pictures/recipes_" + str(dirid * 100) + "_" + str(dirid * 100 + 99) + "/"
+    return dir_name + "recipe_" + str(id) + ".png"
+
 # Function resizing all the pictures into a specific shape
 def reshape_pictures(startIndex, rangeIndex, shape) :
 
@@ -357,7 +363,7 @@ def reshape_pictures(startIndex, rangeIndex, shape) :
     print("Finished resizing the pictures (" + str(startIndex) + "_" + str(startIndex + rangeIndex - 1) + str(")"))
         
 
-################################################# RECIPES UTILS FUNCTIONS ############################################
+################################################# COSINE SIMILARITY FUNCTIONS ############################################
 
 # Compute the cosine similarity for two recipes without using the recipes names
 def cosSimCalc(df, idA, idB, mode=1, coefVal=0.5, coefName=0.5, coefIng=1/3) :
@@ -411,6 +417,23 @@ def allCosSim(df, id, mode=1, coefVal=0.5, coefName=0.5, coefIng=1/3) :
     # We iterate on all of the recipes except the studied recipe itself
     return [(c, cosSimCalc(df, id, c, mode=mode, coefVal=coefVal, coefName=coefName, coefIng=coefIng)) for c in df["id"] if c != id]
 
+# Function returning the cosine similarity between two strings
+def cosine_sim_vectors(vec1, vec2) :
+    vec1 = vec1.reshape(1, -1)
+    vec2 = vec2.reshape(1, -1)
+    return cosine_similarity(vec1, vec2)[0][0]
+
+def stringCosSim(string1, string2) :
+    # We clean the strings
+    cleaned = list(map(clean_string, [string1, string2]))
+
+    # We vectorize the strings
+    vectorizer = CountVectorizer()
+    vectors = vectorizer.fit_transform(cleaned).toarray()
+
+    # We return the cosine similarity
+    return cosine_sim_vectors(vectors[0], vectors[1])
+
 # Compute the list of recipe ids with a cosine similarity to the model repice greater than a specific value
 def findSimRecipes(df, id, val, mode=1, coefVal=0.5, coefName=0.5, coefIng=1/3) :
     # We return the list of ids
@@ -437,37 +460,6 @@ def recipeSimStats(df, id, mode=1, coefVal=0.5, coefName=0.5, coefIng=1/3) :
     # We return the probabilities
     return odds_2, odds_4, odds_6, odds_8
 
-# (https://towardsdatascience.com/calculating-string-similarity-in-python-276e18a7d33a)
-# Functions returning a clean string (punctuation removed, lowercase string, removed stopwords)
-def clean_string(text) :
-    text = ''.join([word for word in text if word not in string.punctuation])
-    text = text.lower()
-    text = ' '.join([word for word in text.split() if word not in stopwords])
-    return text
-
-# Function returning the cosine similarity between two strings
-def cosine_sim_vectors(vec1, vec2) :
-    vec1 = vec1.reshape(1, -1)
-    vec2 = vec2.reshape(1, -1)
-    return cosine_similarity(vec1, vec2)[0][0]
-
-def stringCosSim(string1, string2) :
-    # We clean the strings
-    cleaned = list(map(clean_string, [string1, string2]))
-
-    # We vectorize the strings
-    vectorizer = CountVectorizer()
-    vectors = vectorizer.fit_transform(cleaned).toarray()
-
-    # We return the cosine similarity
-    return cosine_sim_vectors(vectors[0], vectors[1])
-
-
-# Function returning the path to a recipe picture based on the id of the recipe
-def recipePicPath(id) :
-    dirid = int(id / 100)
-    dir_name = "pictures/recipes_" + str(dirid * 100) + "_" + str(dirid * 100 + 99) + "/"
-    return dir_name + "recipe_" + str(id) + ".png"
 
 # Get the list of ingredients (need a recipe dataframe and an ID)
 def getIngredientsList(df, id) :
@@ -583,16 +575,19 @@ def removeNoPictures(df) :
     newdf.drop(newdf[newdf["picture"] == ""].index, inplace=True)
     return newdf
 
-############################################################ USER EXPERIENCE ##################################################
+#################################################### USER EXPERIENCE FUNCTIONS ###########################################
 
 # Function generating a user experience based on a dataframe, a number of choices, an experience id and a similarity value
 # User experiences are represented by a .csv file containing for each choice :
 # it's id, the recipe A id, the recipe A name, the recipe A picture path, the recipe B id, the recipe B name, 
 # the recipe B picture path, the correct answer (1 for A, 2 for B)
-def generate_user_experience(df, nbQuestions, expId, simval, mode=1, coefVal=0.5, coefName=0.5, coefIng=1/3) :
+# If withIngs is True, it means the UEM is for the second experience sequence and will be in the UMEIngs folder
+def generate_user_experience(df, nbQuestions, expId, simval, mode=1, coefVal=0.5, coefName=0.5, coefIng=1/3, withIngs=1) :
     # File header
-    header = ["question_id", "recipe_A_id", "recipe_A_name", "recipe_A_picture", "recipe_B_id", "recipe_B_name", "recipe_B_picture", "correct_answer"]
-
+    if (withIngs) :
+        header = ["question_id", "recipe_A_id", "recipe_A_name", "recipe_A_picture", "recipe_B_id", "recipe_B_name", "recipe_B_picture", "correct_answer"]
+    else :
+        header = ["question_id", "recipe_A_id", "recipe_A_name", "recipe_A_picture", "recipe_B_id", "recipe_B_name", "recipe_B_picture", "correct_answer"]
     # We use a list to save all the used ids in the created user experience
     usedIds = []
 
@@ -600,7 +595,7 @@ def generate_user_experience(df, nbQuestions, expId, simval, mode=1, coefVal=0.5
     df = removeNoPictures(df)
 
     # We create the file
-    filename = "userExperiencesModels/model_" + expId + ".csv"
+    filename = "UEM/model_" + expId + ".csv"
     with open(filename, 'w', encoding='utf8') as f :
         # We create a writer
         writer = csv.writer(f)
@@ -765,3 +760,13 @@ def showBar(values, odds=False) :
     plt.bar(labels, counts, align='center')
     plt.gca().set_xticks(labels)
     plt.show()
+
+############################################# QUICK FUNCTIONS ####################################################
+
+# (https://towardsdatascience.com/calculating-string-similarity-in-python-276e18a7d33a)
+# Functions returning a clean string (punctuation removed, lowercase string, removed stopwords)
+def clean_string(text) :
+    text = ''.join([word for word in text if word not in string.punctuation])
+    text = text.lower()
+    text = ' '.join([word for word in text.split() if word not in stopwords])
+    return text

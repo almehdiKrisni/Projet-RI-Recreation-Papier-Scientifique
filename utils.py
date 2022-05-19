@@ -534,31 +534,39 @@ def computePictureStats(cStart, cRange, cEnd) :
     c = cStart
 
     while (c < cEnd) :
-        # We create the dataframe with pdCreator and only keep the id list
-        df = pdCreator(c, cRange, c + cRange)
-        idplist = df[["id", "picture"]].values.tolist()
-        valuesList = []
+        # We try in case the file is empty
+        try :
+            # We create the dataframe with pdCreator and only keep the id list
+            df = pdCreator(c, cRange, c + cRange)
 
-        # We iterate on the IDs
-        for i, p in idplist :
+            # We check if the file is empty or not
+            idplist = df[["id", "picture"]].values.tolist()
+            valuesList = []
 
-            # We check if the path isn't equal to '0'
-            if (p != "0") :
-                # We compute the picture data
-                b, s, e, col, con = picStats(i)
-                valuesList.append([i, b, s, e, col, con])
+            # We iterate on the IDs
+            for i, p in idplist :
 
-            # Else, we append a list of zeros
-            else :
-                valuesList.append([i, 0., 0., 0., 0., 0.])
+                # We check if the path isn't equal to '0'
+                if (p != "0") :
+                    # We compute the picture data
+                    b, s, e, col, con = picStats(i)
+                    valuesList.append([i, b, s, e, col, con])
 
-        # We create the filename
-        fn = "data_pictures/recipedata_" + str(c) + "_" + str(c + cRange - 1) + ".csv"
+                # Else, we append a list of zeros
+                else :
+                    valuesList.append([i, 0., 0., 0., 0., 0.])
 
-        # We create a csv file containing all the pictures data in the studied range
-        df = pd.DataFrame(valuesList)
-        df.columns = colMod
-        df.to_csv(fn)
+            # We create the filename
+            fn = "data_pictures/recipedata_" + str(c) + "_" + str(c + cRange - 1) + ".csv"
+
+            # We create a csv file containing all the pictures data in the studied range
+            df = pd.DataFrame(valuesList)
+            df.columns = colMod
+            df.to_csv(fn)
+
+        # Except case
+        except Exception as e :
+            print(str(e))
 
         # We update the counter
         c += cRange

@@ -210,6 +210,13 @@ def download_pictures(startIndex, rangeIndex) :
 
     print("Finished downloading the pictures (" + str(startIndex) + "_" + str(startIndex + rangeIndex - 1) + str(")"))
 
+
+
+
+
+
+
+
 #################################################### PICTURE FUNCTIONS ###########################################################
 
 # Function computing the brightness, sharpness, entropy, colorfulness and contrast of a picture
@@ -363,6 +370,12 @@ def reshape_pictures(startIndex, rangeIndex, shape) :
     print("Finished resizing the pictures (" + str(startIndex) + "_" + str(startIndex + rangeIndex - 1) + str(")"))
         
 
+
+
+
+
+
+
 ################################################# COSINE SIMILARITY FUNCTIONS ############################################
 
 # Compute the cosine similarity for two recipes without using the recipes names
@@ -474,6 +487,12 @@ def getIngredientsList(df, id) :
     return ing.split('#')
 
 
+
+
+
+
+
+
 ############################################# DATAFRAME MANAGEMENT ####################################################
 
 # Function used to read all the data collected and create a global pandas DataFrame
@@ -575,6 +594,11 @@ def removeNoPictures(df) :
     newdf.drop(newdf[newdf["picture"] == ""].index, inplace=True)
     return newdf
 
+
+
+
+
+
 #################################################### USER EXPERIENCE FUNCTIONS ###########################################
 
 # Function generating a user experience based on a dataframe, a number of choices, an experience id and a similarity value
@@ -582,20 +606,25 @@ def removeNoPictures(df) :
 # it's id, the recipe A id, the recipe A name, the recipe A picture path, the recipe B id, the recipe B name, 
 # the recipe B picture path, the correct answer (1 for A, 2 for B)
 # If withIngs is True, it means the UEM is for the second experience sequence and will be in the UMEIngs folder
-def generate_user_experience(df, nbQuestions, expId, simval, mode=1, coefVal=0.5, coefName=0.5, coefIng=1/3, withIngs=1) :
+def generate_user_experience(df, nbQuestions, expId, simval, mode=1, coefVal=0.5, coefName=0.5, coefIng=1/3, withIngs=False) :
     # File header
     if (withIngs) :
-        header = ["question_id", "recipe_A_id", "recipe_A_name", "recipe_A_picture", "recipe_B_id", "recipe_B_name", "recipe_B_picture", "correct_answer"]
+        header = ["recipe_A_id", "recipe_A_name", "recipe_A_picture", "recipe_B_id", "recipe_B_name", "recipe_B_picture", "correct_answer"]
     else :
-        header = ["question_id", "recipe_A_id", "recipe_A_name", "recipe_A_picture", "recipe_B_id", "recipe_B_name", "recipe_B_picture", "correct_answer"]
-    # We use a list to save all the used ids in the created user experience
+        header = ["recipe_A_id", "recipe_A_name", "recipe_A_picture", "recipe_A_ingredients", "recipe_B_id", "recipe_B_name", "recipe_B_picture", "recipe_B_ingredients", "correct_answer"]
+
+    # We keep a list of all the used ids in the current UE
     usedIds = []
 
     # We have to make sure all the recipes in the dataframe have a picture
     df = removeNoPictures(df)
 
     # We create the file
-    filename = "UEM/model_" + expId + ".csv"
+    if (withIngs) :
+        filename = "UEMIngs/model_" + expId + "_ingredients.csv"
+    else :
+        filename = "UEMI/model_" + expId + ".csv"
+
     with open(filename, 'w', encoding='utf8') as f :
         # We create a writer
         writer = csv.writer(f)
@@ -643,6 +672,14 @@ def generate_user_experience(df, nbQuestions, expId, simval, mode=1, coefVal=0.5
             fatAvalue = df.loc[df["id"] == recipeAindex]["fat"].values[0]
             fatBvalue = df.loc[df["id"] == recipeBindex]["fat"].values[0]
 
+            # We get the list of ingredients of each recipe if needed
+            ingsA = []
+            ingsB = []
+            if (withIngs) :
+                ingsA = df.loc[df["id"] == recipeAindex]["ingredients"].values[0]
+                ingsB = df.loc[df["id"] == recipeBindex]["ingredients"].values[0]
+
+            # We get the answer class
             if (fatAvalue >= fatBvalue) :
                 expectedAns = 1
             else :
@@ -653,10 +690,17 @@ def generate_user_experience(df, nbQuestions, expId, simval, mode=1, coefVal=0.5
             picPathB = recipePicPath(recipeBindex)
 
             # We save the data in the model file
-            writer.writerow([i + 1, recipeAindex, recipeAname, picPathA, recipeBindex, recipeBname, picPathB, expectedAns])
+            if (withIngs) :
+                writer.writerow([recipeAindex, recipeAname, picPathA, recipeBindex, recipeBname, picPathB, expectedAns])
+            else :
+                writer.writerow([recipeAindex, recipeAname, picPathA, ingsA, recipeBindex, recipeBname, picPathB, ingsB, expectedAns])
 
     # Message to signal the user experience model has been creater
     print("The experience user model id." + expId + " has been created.")
+
+
+
+
 
 
 ########################################################### FSA SCORE CALCULATOR ##############################################
@@ -736,7 +780,10 @@ def computeFSAscore(df) :
     # We save the new FSA score column with the list
     df["FSA_score"] = scoreList
 
-#################################################### VALUES MANAGEMENT ###########################################
+
+
+
+#################################################### NUMBER OF INGREDIENTS CALCULATOR ###########################################
 
 # Function adding the number of ingredients to the recipe dataframe
 def computeNumberIngredients(df) :
@@ -748,6 +795,10 @@ def computeNumberIngredients(df) :
 
     # We save the number of ingredients
     df["number_ingredients"] = [len(df.iloc[i]["ingredients"].split('#')) for i in range(len(df))]
+
+
+
+
 
 ############################################### VIZUALISATION FUNCTIONS ##########################################
 

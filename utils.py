@@ -606,12 +606,14 @@ def removeNoPictures(df) :
 # it's id, the recipe A id, the recipe A name, the recipe A picture path, the recipe B id, the recipe B name, 
 # the recipe B picture path, the correct answer (1 for A, 2 for B)
 # If withIngs is True, it means the UEM is for the second experience sequence and will be in the UMEIngs folder
-def generate_user_experience(df, nbQuestions, expId, simval, mode=1, coefVal=0.5, coefName=0.5, coefIng=1/3, withIngs=False) :
+def generate_user_experience(df, nbQuestions, expId, simval, mode=1, withIngs=False) :
     # File header
+    header = []
     if (withIngs) :
-        header = ["recipe_A_id", "recipe_A_name", "recipe_A_picture", "recipe_B_id", "recipe_B_name", "recipe_B_picture", "correct_answer"]
-    else :
         header = ["recipe_A_id", "recipe_A_name", "recipe_A_picture", "recipe_A_ingredients", "recipe_B_id", "recipe_B_name", "recipe_B_picture", "recipe_B_ingredients", "correct_answer"]
+    else :
+        header = ["recipe_A_id", "recipe_A_name", "recipe_A_picture", "recipe_B_id", "recipe_B_name", "recipe_B_picture", "correct_answer"]
+        
 
     # We keep a list of all the used ids in the current UE
     usedIds = []
@@ -647,7 +649,7 @@ def generate_user_experience(df, nbQuestions, expId, simval, mode=1, coefVal=0.5
                 recipeAindex = random.choice(df["id"].tolist())
 
                 # We now generate the list of similar recipes and pick a random id
-                simRecipesId = findSimRecipes(df, recipeAindex, simval, mode=mode, coefVal=coefVal, coefName=coefName, coefIng=coefIng)
+                simRecipesId = findSimRecipes(df, recipeAindex, simval, mode=mode)
 
                 # We check if there are similar recipes
                 if (len(simRecipesId) > 0) :
@@ -691,9 +693,10 @@ def generate_user_experience(df, nbQuestions, expId, simval, mode=1, coefVal=0.5
 
             # We save the data in the model file
             if (withIngs) :
-                writer.writerow([recipeAindex, recipeAname, picPathA, recipeBindex, recipeBname, picPathB, expectedAns])
-            else :
                 writer.writerow([recipeAindex, recipeAname, picPathA, ingsA, recipeBindex, recipeBname, picPathB, ingsB, expectedAns])
+            else :
+                writer.writerow([recipeAindex, recipeAname, picPathA, recipeBindex, recipeBname, picPathB, expectedAns])
+                
 
     # Message to signal the user experience model has been creater
     print("The experience user model id." + expId + " has been created.")

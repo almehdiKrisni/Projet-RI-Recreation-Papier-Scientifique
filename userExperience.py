@@ -14,7 +14,20 @@ from os.path import isfile, join
 # Function returning the list of existing user experience models
 def getUEMList() :
     # We get all the files in the userExperiencesModels folder
-    path = "userExperiencesModels/"
+    path = "UEM/"
+    onlyfiles = [f for f in listdir(path) if isfile(join(path, f))]
+
+    # We now strip the .csv part from the file names to make them more presentable
+    for i in range(len(onlyfiles)) :
+        onlyfiles[i] = onlyfiles[i].split('.')[0].split('_')[1]
+
+    # We return the files names
+    return onlyfiles
+
+# Function returning the list of existing user experience models
+def getUEMIngsList() :
+    # We get all the files in the userExperiencesModels folder
+    path = "UEMIngs/"
     onlyfiles = [f for f in listdir(path) if isfile(join(path, f))]
 
     # We now strip the .csv part from the file names to make them more presentable
@@ -57,13 +70,44 @@ def main() :
             username = sel
 
 
+    # We ask the user to if he wants to add the ingredients to the UE
+    withIngredients = False
+
+    # Correct input variable
+    redoInput = True
+
+    # Selection loop
+    while (redoInput) :
+        # We ask the user to choose a model
+        print("Would you like to have the recipes' ingredient lists shown ?\n(0 - No, 1 - Yes)")
+        sel = input()
+
+        # We use the ingredients
+        if (sel == "1") :
+            redoInput = False
+            withIngredients = True
+
+        # We don't use the ingredients
+        elif (sel == "0") :
+            redoInput = False
+            withIngredients = False
+
+        # We make the user choose again
+        else :
+            print("\nPlease answer with either 0 (No) or 1 (Yes).")
+
+
     # We collect all the models IDs
-    models = getUEMList()
+    if (withIngredients) :
+        models = getUEMIngsList()
+    else :
+        models = getUEMList()
 
     # We verify that at least one model exists
     if (len(models) == 0) :
         print("\nWe couldn't find any models in the corresponding folder ('userExperiencesModels').\nPlease check your files.\n")
         print("Exiting the interface ...")
+        return
 
     # We ask the user to select a model
     print("\nPlease select a model from the existing ones :")
@@ -110,7 +154,11 @@ def main() :
 
     # We extract all the data from the user experience data file
     # We also extract all the data from the recipes
-    uemdata = pd.read_csv("userExperiencesModels/model_" + selectedModel + ".csv")
+    uemdata = None
+    if (withIngredients) :
+        uemdata = pd.read_csv("UEMIngs/model_" + selectedModel + "_ingredients.csv")
+    else :
+        uemdata = pd.read_csv("UEM/model_" + selectedModel + ".csv")
 
     # List of recipe names
     recipeA_names = uemdata["recipe_A_name"].tolist()
@@ -125,6 +173,17 @@ def main() :
         recipeA_picture_list[i] = ImageTk.PhotoImage(im.open(recipeA_picture_list[i]))
     for i in range(len(recipeB_picture_list)) :
         recipeB_picture_list[i] = ImageTk.PhotoImage(im.open(recipeB_picture_list[i]))
+
+    # We also extract the ingredients if needed
+    recipeA_ings = []
+    recipeB_ings = []
+    if (withIngredients) :
+        recipeA_ings = uemdata["recipe_A_ingredients"].tolist()
+        recipeB_ings = uemdata["recipe_B_ingredients"].tolist()
+
+        for i in range(len(recipeA_ings)) :
+            recipeA_ings[i] = recipeA_ings[i].replace('\u2009', ' and ').split('#')
+            recipeB_ings[i] = recipeB_ings[i].replace('\u2009', ' and ').split('#')
 
     # We extract all the correct answers
     expAnswers = uemdata["correct_answer"].tolist()
@@ -181,9 +240,12 @@ def main() :
         nameChoice = IntVar() # Represents the value 2
         nameChoiceBox = Checkbutton(window, text="The names", variable=nameChoice)
 
+        ingredientsChoice = IntVar()
+        ingredientsChoiceBox = Checkbutton(window, text="The ingredients", variable=ingredientsChoice)
+
         # Function to check if the necessary boxes have been checked
         def validSelection() :
-            return (choiceA.get() + choiceB.get() == 1) and (pictureChoice.get() + nameChoice.get() == 1)
+            return (choiceA.get() + choiceB.get() == 1) and (pictureChoice.get() + nameChoice.get() + ingredientsChoice.get() == 1)
 
         # Function returning a tuple containing the choices the user made
         def saveChoices() :
@@ -192,16 +254,18 @@ def main() :
             rI = 0
 
             # Saving the recipe choice
-            if (choiceA.get() > choiceB.get()) :
+            if (choiceA.get() == 1) :
                 rC = 1
             else :
                 rC = 2
 
             # Saving the info choice
-            if (pictureChoice.get() > nameChoice.get()) :
+            if (pictureChoice.get() == 1) :
                 rI = 1
-            else :
+            elif (nameChoice.get() == 1) :
                 rI = 2
+            else :
+                rI = 3
 
             # Return the choice tuple
             return rC, rI
@@ -233,10 +297,27 @@ def main() :
         choiceABox.place(x=100, y=510)
         choiceBBox.place(x=600, y=510)
 
+        # We show the recipe ingredients
+        ListIngsA = Listbox(window)
+        ListIngsB = Listbox(window)
+        if (withIngredients) :
+            # We update the recipe A list
+            for e in recipeA_ings[questionID] :
+                ListIngsA.insert(END, e)
+            ListIngsA.place(x=100, y=550)
+
+            # We update the recipe A list
+            for e in recipeB_ings[questionID] :
+                ListIngsB.insert(END, e)
+            ListIngsB.place(x=600, y=550)
+            
+
         # We ask about what helped the user decide and add the next button
         Button(window, text="Next", command=goToNextQuestion).pack(side=BOTTOM)
         nameChoiceBox.pack(side=BOTTOM)
         pictureChoiceBox.pack(side=BOTTOM)
+        if (withIngredients) :
+            ingredientsChoiceBox.pack(side=BOTTOM)
         Label(window, text="Which information helped you choose ?").pack(side=BOTTOM)
     
 
@@ -248,7 +329,10 @@ def main() :
         clearWindow()
 
         # Saving the results in the results file
-        resultsfn = "results_" + username + "_" + str(np.random.randint(0, 1000)) + ".csv"
+        if (withIngredients) :
+            resultsfn = "results_" + username + "_" + str(np.random.randint(0, 1000)) + "_ingredients.csv"
+        else :
+            resultsfn = "results_" + username + "_" + str(np.random.randint(0, 1000)) + ".csv"
 
         # We open the .csv file
         with open(resultsfn, 'w', encoding='utf8') as f :

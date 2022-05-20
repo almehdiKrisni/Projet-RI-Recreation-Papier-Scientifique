@@ -192,7 +192,7 @@ def download_pictures(startIndex, rangeIndex) :
             print(str(e))
 
     # We create the panda database
-    df = pdCreator(startIndex, rangeIndex, startIndex + rangeIndex)
+    df = recipeDfMaker(startIndex, rangeIndex, startIndex + rangeIndex)
 
     # We iterate on the "picture" and "id" values
     for p in range(rangeIndex) :
@@ -346,7 +346,7 @@ def reshape_pictures(startIndex, rangeIndex, shape) :
     dir_name = "pictures/recipes_" + str(startIndex) + "_" + str(startIndex + rangeIndex - 1) + "/"
     if (os.path.isdir(dir_name)) :
         # We create the panda database
-        df = pdCreator(startIndex, rangeIndex, startIndex + rangeIndex)
+        df = recipeDfMaker(startIndex, rangeIndex, startIndex + rangeIndex)
 
         # We iterate on the "picture" and "id" values
         for p in range(rangeIndex) :
@@ -496,7 +496,7 @@ def getIngredientsList(df, id) :
 ############################################# DATAFRAME MANAGEMENT ####################################################
 
 # Function used to read all the data collected and create a global pandas DataFrame
-def pdCreator(cStart, cRange, cEnd) :
+def recipeDfMaker(cStart, cRange, cEnd) :
     # We get the right columns order. The right order is the one of the first .csv file (recipedata_10000_10099.csv)
     tmp = pd.read_csv("data/recipedata_10000_10099.csv")
     tmp = tmp.loc[:, ~tmp.columns.str.contains('^Unnamed')]
@@ -535,6 +535,46 @@ def pdCreator(cStart, cRange, cEnd) :
     df = df.dropna()
     return df
 
+# Function used to read all recipe pictures data collected into a pandas DF
+def pictureDataDfMaker(cStart, cRange, cEnd) :
+    # We get the right columns order. The right order is the one of the first .csv file (recipedata_10000_10099.csv)
+    tmp = pd.read_csv("data_pictures/recipedata_10000_10099.csv")
+    tmp = tmp.loc[:, ~tmp.columns.str.contains('^Unnamed')]
+    colMod = tmp.columns.tolist()
+
+    # We iterate on every data file to create a general pandas dataframe
+    c = cStart
+    # We create a list because it is faster to create a df from a list than to append to an
+    # existing df
+    # ( https://stackoverflow.com/questions/13784192/creating-an-empty-pandas-dataframe-then-filling-it )
+    valueslist = []
+
+    while (c < cEnd) :
+        # We get the filename
+        fn = "data_pictures/recipedata_" + str(c) + "_" + str(c + cRange - 1) + ".csv"
+        # We try get the file and transform it into a list
+        try :
+            # We create a dataframe containing all the data
+            tmp = pd.read_csv(fn)
+
+            # It's possible that the data file contains 
+            if not tmp.empty :
+                tmp = tmp.loc[:, ~tmp.columns.str.contains('^Unnamed')]
+                tmp = tmp[colMod]
+                valueslist = valueslist + tmp.values.tolist()
+        
+        # If we encounter an error, we skip the file
+        except Exception as e:
+            print(c, str(e))
+
+        # We update the counter
+        c += cRange
+
+    # We return the global dataframe after a few modifications (first column, column name)
+    df = pd.DataFrame(data=valueslist, columns=colMod)
+    df = df.dropna()
+    return df
+
 # Function computing all the pictures data from a recipe range
 # It works like the classic data creation in the data folder except it creates the files
 def computePictureStats(cStart, cRange, cEnd) :
@@ -547,8 +587,8 @@ def computePictureStats(cStart, cRange, cEnd) :
     while (c < cEnd) :
         # We try in case the file is empty
         try :
-            # We create the dataframe with pdCreator and only keep the id list
-            df = pdCreator(c, cRange, c + cRange)
+            # We create the dataframe with recipeDfMaker and only keep the id list
+            df = recipeDfMaker(c, cRange, c + cRange)
 
             # We check if the file is empty or not
             idplist = df[["id", "picture"]].values.tolist()
@@ -760,7 +800,7 @@ def getFSArecipe(rec, q1fat, q3fat, q1satfat, q3satfat, q1sod, q3sod, q1sug, q3s
 
 # Function adding a FSA Health score value to every example in the dataframe
 def computeFSAscore(df) :
-    # We need to pass as a parameter an unchanged recipe database (like the one created with pdCreator)
+    # We need to pass as a parameter an unchanged recipe database (like the one created with recipeDfMaker)
     # The FSA score is calculated with the 'fat', 'saturated fat', 'sodium' and 'sugars'
 
     # We create the empty FSA score column

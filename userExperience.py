@@ -160,6 +160,10 @@ def main() :
     else :
         uemdata = pd.read_csv("UEM/model_" + selectedModel + ".csv")
 
+    # List of recipe ids
+    recipeA_ids = uemdata["recipe_A_id"].tolist()
+    recipeB_ids = uemdata["recipe_B_id"].tolist()
+
     # List of recipe names
     recipeA_names = uemdata["recipe_A_name"].tolist()
     recipeB_names = uemdata["recipe_B_name"].tolist()
@@ -213,7 +217,10 @@ def main() :
         clearWindow()
 
         # We prepare the first question
-        window.geometry("1000x800")
+        if withIngredients :
+            window.geometry("1000x1000")
+        else :
+            window.geometry("1000x800")
         questionSequence(0)
 
     # Entries and buttons
@@ -275,7 +282,7 @@ def main() :
             if (validSelection()) :
                 # Saving the selection*
                 tmpC, tmpI = saveChoices()
-                answerList.append([questionID, tmpC, tmpI, expAnswers[questionID]])
+                answerList.append([questionID, recipeA_ids[questionID], recipeB_ids[questionID], tmpC, tmpI, expAnswers[questionID]])
 
                 # Ending the questionnary
                 if (questionID + 1 >= len(recipeA_names)) :
@@ -298,8 +305,8 @@ def main() :
         choiceBBox.place(x=600, y=510)
 
         # We show the recipe ingredients
-        ListIngsA = Listbox(window)
-        ListIngsB = Listbox(window)
+        ListIngsA = Listbox(window, width=50)
+        ListIngsB = Listbox(window, width=50)
         if (withIngredients) :
             # We update the recipe A list
             for e in recipeA_ings[questionID] :
@@ -340,7 +347,7 @@ def main() :
             writer = csv.writer(f)
 
             # We write the header
-            writer.writerow(["question_id", "recipe_choice", "information_choice", "expected_answer"])
+            writer.writerow(["question_id", "recipe_A_id", "recipe_B_id", "recipe_choice", "information_choice", "expected_answer"])
 
             # We write the result of the experience
             writer.writerows(answerList)

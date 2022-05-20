@@ -450,7 +450,7 @@ def stringCosSim(string1, string2) :
 # Compute the list of recipe ids with a cosine similarity to the model repice greater than a specific value
 def findSimRecipes(df, id, val, mode=1, coefVal=0.5, coefName=0.5, coefIng=1/3) :
     # We return the list of ids
-    return [c for c in df["id"] if (c != id) and (cosSimCalc(df, id, c, mode=mode, coefVal=coefVal, coefName=coefName) >= val)]
+    return [c for c in df["id"] if (c != id) and (cosSimCalc(df, id, c, mode=mode, coefVal=coefVal, coefName=coefName, coefIng=coefIng) >= val)]
 
 # Get the statistics of cosine similarity for a specific recipe
 # We use the following reference values : [0.8, 0.6, 0.4, 0.2]
@@ -473,6 +473,23 @@ def recipeSimStats(df, id, mode=1, coefVal=0.5, coefName=0.5, coefIng=1/3) :
     # We return the probabilities
     return odds_2, odds_4, odds_6, odds_8
 
+# Function returning the odds of finding with a recipe with a specific cosine similarity per recipe
+def computeSimilarityOdds(df) :
+    # We iterate on the recipes and save the results in 4 lists (for each similarity value)
+    cos2val = []
+    cos4val = []
+    cos6val = []
+    cos8val = []
+
+    for id in df["id"].tolist() :
+        print(id, end="\r")
+        s2, s4, s6, s8 = recipeSimStats(df, id, mode=2)
+        cos2val.append(s2)
+        cos4val.append(s4)
+        cos6val.append(s6)
+        cos8val.append(s8)
+
+    return cos2val, cos4val, cos6val, cos8val
 
 # Get the list of ingredients (need a recipe dataframe and an ID)
 def getIngredientsList(df, id) :
@@ -496,7 +513,7 @@ def getIngredientsList(df, id) :
 ############################################# DATAFRAME MANAGEMENT ####################################################
 
 # Function used to read all the data collected and create a global pandas DataFrame
-def recipeDfMaker(cStart, cRange, cEnd) :
+def recipeDfMaker(cStart, cRange, cEnd, verbose=False) :
     # We get the right columns order. The right order is the one of the first .csv file (recipedata_10000_10099.csv)
     tmp = pd.read_csv("data/recipedata_10000_10099.csv")
     tmp = tmp.loc[:, ~tmp.columns.str.contains('^Unnamed')]
@@ -525,7 +542,8 @@ def recipeDfMaker(cStart, cRange, cEnd) :
         
         # If we encounter an error, we skip the file
         except Exception as e:
-            print(c, str(e))
+            if (verbose) :
+                print(c, str(e))
 
         # We update the counter
         c += cRange
@@ -536,7 +554,7 @@ def recipeDfMaker(cStart, cRange, cEnd) :
     return df
 
 # Function used to read all recipe pictures data collected into a pandas DF
-def pictureDataDfMaker(cStart, cRange, cEnd) :
+def pictureDataDfMaker(cStart, cRange, cEnd, verbose=False) :
     # We get the right columns order. The right order is the one of the first .csv file (recipedata_10000_10099.csv)
     tmp = pd.read_csv("data_pictures/recipedata_10000_10099.csv")
     tmp = tmp.loc[:, ~tmp.columns.str.contains('^Unnamed')]
@@ -565,7 +583,8 @@ def pictureDataDfMaker(cStart, cRange, cEnd) :
         
         # If we encounter an error, we skip the file
         except Exception as e:
-            print(c, str(e))
+            if (verbose) :
+                print(c, str(e))
 
         # We update the counter
         c += cRange
@@ -634,8 +653,16 @@ def removeNoPictures(df) :
     newdf.drop(newdf[newdf["picture"] == ""].index, inplace=True)
     return newdf
 
-
-
+# Fuse recipe data and recipe picture data
+def fuseDfPictureData(df, picdf) :
+    # We get the columns we want to keep
+    # brightness_picture,sharpness_picture,entropy_picture,colorfulness_picture,contrast_picture
+    df["sharpness_picture"] = picdf["sharpness_picture"]
+    df["brightness_picture"] = picdf["brightness_picture"]
+    df["entropy_picture"] = picdf["entropy_picture"]
+    df["colorfulness_picture"] = picdf["colorfulness_picture"]
+    df["contrast_picture"] = picdf["contrast_picture"]
+    
 
 
 
@@ -665,7 +692,7 @@ def generate_user_experience(df, nbQuestions, expId, simval, mode=1, withIngs=Fa
     if (withIngs) :
         filename = "UEMIngs/model_" + expId + "_ingredients.csv"
     else :
-        filename = "UEMI/model_" + expId + ".csv"
+        filename = "UEM/model_" + expId + ".csv"
 
     with open(filename, 'w', encoding='utf8') as f :
         # We create a writer
@@ -847,10 +874,16 @@ def computeNumberIngredients(df) :
 
 # Function showing a bar plot (histogram) of the values of an array
 # The values should be continued for better usage
-def showBar(values, odds=False) :
+def showBar(values, odds=False, title=None, xAxis=None, yAxis=None) :
     labels, counts = np.unique(values, return_counts=True)
     if (odds) :
         counts = counts / len(values)
+    if (title) :
+        plt.title(title)
+    if (xAxis) :
+        plt.xlabel(xAxis)
+    if (yAxis) :
+        plt.ylabel(yAxis)
     plt.bar(labels, counts, align='center')
     plt.gca().set_xticks(labels)
     plt.show()

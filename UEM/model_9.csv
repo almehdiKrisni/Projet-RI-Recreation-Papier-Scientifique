@@ -1,0 +1,11 @@
+recipe_A_id,recipe_A_name,recipe_A_picture,recipe_B_id,recipe_B_name,recipe_B_picture,correct_answer
+15604,Mild Cheesy Chicken Enchiladas,pictures/recipes_15600_15699/recipe_15604.png,15811,Cheesy Chicken,pictures/recipes_15800_15899/recipe_15811.png,1
+21694,Marinated Grilled Shrimp,pictures/recipes_21600_21699/recipe_21694.png,12775,Spicy Grilled Shrimp,pictures/recipes_12700_12799/recipe_12775.png,1
+21108,Oatmeal Whole Wheat Quick Bread,pictures/recipes_21100_21199/recipe_21108.png,24932,Whole Wheat Beer Bread,pictures/recipes_24900_24999/recipe_24932.png,1
+20222,Vodka Slush,pictures/recipes_20200_20299/recipe_20222.png,20220,Watermelon Vodka Slush,pictures/recipes_20200_20299/recipe_20220.png,2
+23285,Green Rice I,pictures/recipes_23200_23299/recipe_23285.png,21741,Fantastic Green Rice Dish,pictures/recipes_21700_21799/recipe_21741.png,2
+10936,Almond Cookies II,pictures/recipes_10900_10999/recipe_10936.png,10956,Anise Cookies II,pictures/recipes_10900_10999/recipe_10956.png,1
+10509,Mocha Chocolate Cookies,pictures/recipes_10500_10599/recipe_10509.png,11658,Chocolate Spice Cookies,pictures/recipes_11600_11699/recipe_11658.png,1
+12956,Corn Chowder I,pictures/recipes_12900_12999/recipe_12956.png,13030,Corn Chowder II,pictures/recipes_13000_13099/recipe_13030.png,1
+20380,Microwave Raisin Bread Pudding,pictures/recipes_20300_20399/recipe_20380.png,13842,Raisin Bread Pudding I,pictures/recipes_13800_13899/recipe_13842.png,1
+13217,Creamy Potato Soup,pictures/recipes_13200_13299/recipe_13217.png,13319,Potato Soup III,pictures/recipes_13300_13399/recipe_13319.png,2

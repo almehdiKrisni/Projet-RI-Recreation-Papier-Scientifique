@@ -3,7 +3,9 @@
 ###################################### Imports #########################################
 
 # Needed for data collection
+from calendar import c
 from tracemalloc import stop
+from pyrsistent import v
 import requests as rq
 import lxml
 from bs4 import BeautifulSoup as bs
@@ -15,6 +17,10 @@ from PIL import Image as im, ImageStat
 import argparse
 import imutils
 import cv2
+
+# Needed for file access
+from os import listdir
+from os.path import isfile, join
 
 # Needed for cosine similarity
 from numpy.linalg import norm
@@ -887,6 +893,56 @@ def showBar(values, odds=False, title=None, xAxis=None, yAxis=None) :
     plt.bar(labels, counts, align='center')
     plt.gca().set_xticks(labels)
     plt.show()
+
+
+
+
+################################################ RESULTS STUDY FUNCTIONS #########################################
+
+# Function returning the list of existing user experience models
+def getStudyFileResults(study2=False) :
+    # We get all the files in the userExperiencesModels folder
+    path = "results/"
+    onlyfiles = [f for f in listdir(path) if isfile(join(path, f))]
+
+    # We return the files depending on the parameter study2 (False -> Study1 and True -> Study2 (ingredients))
+    if (study2) :
+        return [path + f for f in onlyfiles if "_ingredients.csv" in f]
+    else :
+        return [path + f for f in onlyfiles if "_ingredients.csv" not in f]
+
+# Function reading all the results from the study 1 or 2 and saving the results in a dataframe (without ingredients)
+def readResultsStudy(study2=False) :
+    # We get the filenames corresponding to the study results
+    files = getStudyFileResults(study2=study2)
+    
+    # We create a dataframe from all the results. We create a list and keep stacking the values into it
+    values = []
+    colmod = []
+
+    for f in files :
+        df = pd.read_csv(f)
+
+        if (colmod == []) :
+            colmod = df.columns.to_list()[1:]
+
+        df = df.loc[:, ~df.columns.str.contains('question_id')]
+        values = values + df.values.tolist()
+    
+    return pd.DataFrame(values, columns=colmod)
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ############################################# QUICK FUNCTIONS ####################################################
 

@@ -648,6 +648,58 @@ def computePictureStats(cStart, cRange, cEnd) :
         c += cRange
 
 
+# Function returning a dataframe with only the features extracted from the title with the results files(it will be used for ML purposes)
+def extractFeaturesTests(df, transform="") :
+    '''
+    Possible transformations - "picture", "title", "nutrition", "ingredients", "total"\n
+    Pass a value to the transform function parameter
+    '''
+
+    # We check if the asked transformation exists or not
+    tlist = ["picture", "title", "nutrition", "ingredients", "total"]
+    if transform not in tlist :
+        print(transform, "is not a possible transformation parameter.")
+        return [], []
+
+    # We get all the results files
+    path = "results/"
+    files = [path + f for f in listdir(path) if isfile(join(path, f)) if 'results_' in f]
+
+    # We iterate on all the results file and create the X and Y datasets
+    X = [] # Recipe ids
+    FX = [] # Recipe attributes (will be returned)
+    Y = [] # Expected answers (will be returned)
+
+    for f in files :
+        # In case there is a file with the wrong format (first version)
+        try :
+            tmp = pd.read_csv(f)
+            X = X + tmp[["recipe_A_id", "recipe_B_id"]].values.tolist() # We only keep the recipe ids in order to transform X later
+            Y = Y + tmp["expected_answer"].values.tolist() # We only keep the recipe id
+
+        # If there is a problem, we print the file linked to it
+        except Exception as e :
+            print(str(e))
+            print(f)
+
+    # We transform the X values
+    if (transform == "picture") :
+        # We only keep the following features for each recipe
+        for idA, idB in X :
+            tmpA = df.loc[df["id"] == idA][["sharpness_picture", "brightness_picture", "entropy_picture", "colorfulness_picture", "contrast_picture"]].values.tolist()[0]
+            tmpB = df.loc[df["id"] == idB][["sharpness_picture", "brightness_picture", "entropy_picture", "colorfulness_picture", "contrast_picture"]].values.tolist()[0]
+            tmpL = tmpA + tmpB
+
+            # When analysing the values, it seems that values can be equal to 'inf'. We modify them to 255
+            for i in range(len(tmpL)) :
+                if tmpL[i] > 255 :
+                    tmpL[i] = 255.
+
+            # We append to the list
+            FX.append(tmpL)
+
+    return FX, Y
+
 # Function removing all the exemples without a picture
 def removeNoPictures(df) :
     # We return a new df
@@ -871,28 +923,6 @@ def computeNumberIngredients(df) :
 
     # We save the number of ingredients
     df["number_ingredients"] = [len(df.iloc[i]["ingredients"].split('#')) for i in range(len(df))]
-
-
-
-
-
-############################################### VIZUALISATION FUNCTIONS ##########################################
-
-# Function showing a bar plot (histogram) of the values of an array
-# The values should be continued for better usage
-def showBar(values, odds=False, title=None, xAxis=None, yAxis=None) :
-    labels, counts = np.unique(values, return_counts=True)
-    if (odds) :
-        counts = counts / len(values)
-    if (title) :
-        plt.title(title)
-    if (xAxis) :
-        plt.xlabel(xAxis)
-    if (yAxis) :
-        plt.ylabel(yAxis)
-    plt.bar(labels, counts, align='center')
-    plt.gca().set_xticks(labels)
-    plt.show()
 
 
 

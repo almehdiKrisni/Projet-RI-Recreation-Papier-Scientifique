@@ -3,9 +3,6 @@
 ###################################### Imports #########################################
 
 # Needed for data collection
-from calendar import c
-from tracemalloc import stop
-from pyrsistent import v
 import requests as rq
 import lxml
 from bs4 import BeautifulSoup as bs
@@ -17,6 +14,15 @@ from PIL import Image as im, ImageStat
 import argparse
 import imutils
 import cv2
+
+# Machine learning libraries
+from sklearn.model_selection import train_test_split
+from sklearn.naive_bayes import GaussianNB
+from sklearn.ensemble import RandomForestClassifier
+from sklearn.linear_model import LogisticRegression
+from sklearn.model_selection import cross_val_score
+from sklearn import metrics
+from sklearn.model_selection import KFold
 
 # Needed for file access
 from os import listdir
@@ -683,6 +689,7 @@ def extractFeaturesTests(df, transform="") :
             print(f)
 
     # We transform the X values
+    ##################################################### Picture ###########################################################
     if (transform == "picture") :
         # We only keep the following features for each recipe
         for idA, idB in X :
@@ -690,13 +697,41 @@ def extractFeaturesTests(df, transform="") :
             tmpB = df.loc[df["id"] == idB][["sharpness_picture", "brightness_picture", "entropy_picture", "colorfulness_picture", "contrast_picture"]].values.tolist()[0]
             tmpL = tmpA + tmpB
 
-            # When analysing the values, it seems that values can be equal to 'inf'. We modify them to 255
+            # When analysing the values, it seems that values can be equal to 'inf'. We modify them to 255 (max possible value)
             for i in range(len(tmpL)) :
                 if tmpL[i] > 255 :
                     tmpL[i] = 255.
 
             # We append to the list
             FX.append(tmpL)
+
+    #################################################### Nutrition ##########################################################
+    elif (transform == "nutrition") :
+        # We only keep the following features for each recipe
+        for idA, idB in X :
+            tmpA = df.loc[df["id"] == idA][["FSA_score", "calories", "fat", "saturated fat", "sugars", "sodium"]].values.tolist()[0]
+            tmpB = df.loc[df["id"] == idB][["FSA_score", "calories", "fat", "saturated fat", "sugars", "sodium"]].values.tolist()[0]
+            tmpL = tmpA + tmpB
+
+            # When analysing the values, it seems that values can be equal to 'inf'. We modify them to 255 (max possible value)
+            for i in range(len(tmpL)) :
+                if tmpL[i] > 255 :
+                    tmpL[i] = 255.
+
+            # We append to the list
+            FX.append(tmpL)
+
+    ################################################### Title ###############################################################
+    elif (transform == "title") :
+        pass
+
+    ################################################# Ingredients ###########################################################
+    elif (transform == "ingredients") :
+        pass
+
+    ################################################### Total ###############################################################
+    else :
+        pass
 
     return FX, Y
 

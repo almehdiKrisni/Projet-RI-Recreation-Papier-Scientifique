@@ -31,8 +31,10 @@ from os.path import isfile, join
 # Needed for cosine similarity
 from numpy.linalg import norm
 import string
+from scipy.stats import gaussian_kde
 from sklearn.metrics.pairwise import cosine_similarity
 from sklearn.feature_extraction.text import CountVectorizer
+import nltk
 from nltk.corpus import stopwords
 stopwords = stopwords.words('english')
 
@@ -662,7 +664,7 @@ def extractFeaturesTests(df, transform="") :
     '''
 
     # We check if the asked transformation exists or not
-    tlist = ["picture", "title", "nutrition", "ingredients", "total"]
+    tlist = ["picture", "name", "nutrition", "ingredients", "total"]
     if transform not in tlist :
         print(transform, "is not a possible transformation parameter.")
         return [], []
@@ -690,6 +692,7 @@ def extractFeaturesTests(df, transform="") :
 
     # We transform the X values
     ##################################################### Picture ###########################################################
+
     if (transform == "picture") :
         # We only keep the following features for each recipe
         for idA, idB in X :
@@ -706,6 +709,7 @@ def extractFeaturesTests(df, transform="") :
             FX.append(tmpL)
 
     #################################################### Nutrition ##########################################################
+
     elif (transform == "nutrition") :
         # We only keep the following features for each recipe
         for idA, idB in X :
@@ -722,18 +726,71 @@ def extractFeaturesTests(df, transform="") :
             FX.append(tmpL)
 
     ################################################### Title ###############################################################
-    elif (transform == "title") :
-        pass
+
+    elif (transform == "name") :
+        # We have to transfrom the titles into numerous features
+        for idA, idB in X :
+            # For recipe A
+            tmpA = df.loc[df["id"] == idA][["name"]].values[0][0]
+            tmpA = textTokenExtraction(tmpA)
+
+            # For recipe B
+            tmpB = df.loc[df["id"] == idB][["name"]].values[0][0]
+            tmpB = textTokenExtraction(tmpB)
+
+            tmpL = tmpA + tmpB
+            FX.append(tmpL)            
 
     ################################################# Ingredients ###########################################################
+
     elif (transform == "ingredients") :
-        pass
+        # We have to transfrom the ingredients into numerous features
+        for idA, idB in X :
+            # For recipe A
+            tmpA = df.loc[df["id"] == idA][["ingredients"]].values[0][0]
+            tmpA = textTokenExtraction(tmpA)
+
+            # For recipe B
+            tmpB = df.loc[df["id"] == idB][["ingredients"]].values[0][0]
+            tmpB = textTokenExtraction(tmpB)
+
+            tmpL = tmpA + tmpB
+            FX.append(tmpL)
 
     ################################################### Total ###############################################################
+
     else :
         pass
 
     return FX, Y
+
+
+# List of POS tagging
+tagList = ["CC", "CD", "DT", "EX", "FW", "IN", "JJ", "JJR", "JJS", "LS", "MD", "NN", "NNS", "NNP", 
+            "NNPS", "PDT", "POS", "PRP", "PRP", "RB", "RBR", "RBS", "RP", "TO", "UH", "VB", "VBD", 
+            "VBG", "VBN", "VBP", "VBZ", "WDT", "WP", "WP", "WRB"]
+
+# Text feature extraction
+def textTokenExtraction(text) :
+    # We create a dictionnary containing all of the POS-tags as entries
+    tok = dict()
+    for tag in tagList :
+        tok[tag] = 0
+
+    # We do the different modifications of the text
+    text = text.lower()
+    text = text.replace("#", "")
+
+    # We tokenize the text and iterate on it
+    tokens = nltk.word_tokenize(text)
+    tagged = nltk.pos_tag(tokens)
+    for (_, t) in tagged :
+        if (t in tok.keys()) :
+            tok[t] += 1
+
+    # We return the values of the text
+    return list(tok.values())
+
 
 # Function removing all the exemples without a picture
 def removeNoPictures(df) :

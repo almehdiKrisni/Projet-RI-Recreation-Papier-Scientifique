@@ -62,7 +62,6 @@ def recipeCollector(startCounter, counter, research, toCSV=False, filepath="data
     nutr = []
 
     # Note - It is possible some addresses won't return any recipe
-    # The basic data scraped is 
 
     # Header creation (to avoid any problem when accessing the website)
     headers = {
@@ -657,21 +656,32 @@ def computePictureStats(cStart, cRange, cEnd) :
 
 
 # Function returning a dataframe with only the features extracted from the title with the results files(it will be used for ML purposes)
-def extractFeaturesTests(df, transform="") :
+def extractFeaturesTests(df, transform="", sset=0) :
     '''
     Possible transformations - "picture", "title", "nutrition", "ingredients", "total"\n
     Pass a value to the transform function parameter
+
+    Possible set IDs - 0 (use all the data), 1 (use only the study 1 data), 2 (use only the study 2 data)
     '''
 
     # We check if the asked transformation exists or not
     tlist = ["picture", "name", "nutrition", "ingredients", "total"]
+    slist = [0, 1 ,2]
+    files = []
     if transform not in tlist :
         print(transform, "is not a possible transformation parameter.")
         return [], []
+    if sset not in slist :
+        print(sset, "is not a possible set ID.")
 
     # We get all the results files
-    path = "results/"
-    files = [path + f for f in listdir(path) if isfile(join(path, f)) if 'results_' in f]
+    if (sset == 0) :
+        path = "results/"
+        files = [path + f for f in listdir(path) if isfile(join(path, f)) if 'results_' in f]
+    elif (sset == 1) :
+        files = getStudyFileResults(False)
+    elif (sset == 2) :
+        files = getStudyFileResults(True)
 
     # We iterate on all the results file and create the X and Y datasets
     X = [] # Recipe ids
@@ -683,7 +693,7 @@ def extractFeaturesTests(df, transform="") :
         try :
             tmp = pd.read_csv(f)
             X = X + tmp[["recipe_A_id", "recipe_B_id"]].values.tolist() # We only keep the recipe ids in order to transform X later
-            Y = Y + tmp["expected_answer"].values.tolist() # We only keep the recipe id
+            Y = Y + tmp["recipe_choice"].values.tolist() # We only keep the recipe id
 
         # If there is a problem, we print the file linked to it
         except Exception as e :
@@ -759,8 +769,17 @@ def extractFeaturesTests(df, transform="") :
 
     ################################################### Total ###############################################################
 
-    else :
-        pass
+    elif (transform == "total") :
+        # We use the other parameters to create the total features dataset
+        PICX, _ = extractFeaturesTests(df, "picture", sset = sset)
+        NAMEX, _ = extractFeaturesTests(df, "name", sset = sset)
+        NUTRITIONX, _ = extractFeaturesTests(df, "nutrition", sset = sset)
+        INGX, _ = extractFeaturesTests(df, "ingredients", sset = sset)
+
+        # We iterate on the lists to create the ultimate one
+        for i in range(len(PICX)) :
+            tmpL = PICX[0] + NAMEX[0] + NUTRITIONX[0] + INGX[0]
+            FX.append(tmpL)
 
     return FX, Y
 

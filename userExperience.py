@@ -79,7 +79,7 @@ def main() :
     # Selection loop
     while (redoInput) :
         # We ask the user to choose a model
-        print("Would you like to have the recipes' ingredient lists shown ?\n(0 - No, 1 - Yes)")
+        print("\nWould you like to have the recipes' ingredient lists shown ?\n(0 - No, 1 - Yes)")
         sel = input()
 
         # We use the ingredients

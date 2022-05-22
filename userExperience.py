@@ -1,3 +1,6 @@
+# Web scraper in Python
+# Tutorial from - https://www.topcoder.com/thrive/articles/web-crawler-in-python
+
 # USER EXPERIENCE SEQUENCE USE FILE - Read the README.md file for explanations on how to use
 
 ################################################### IMPORTS ################################################

@@ -8,6 +8,10 @@ Recréation de papiers scientifiques - Exploiting Food Choices Biases for Health
 
 Source - https://dl.acm.org/doi/pdf/10.1145/3077136.3080826
 
+## **GitHub Link**
+You need to clone the repository in order to access the pictures and be able to participate in the user experiences.
+> https://github.com/almehdiKrisni/Projet_RI
+
 ## **First step**
 Web crawler creation. Data scraping on the *https://www.allrecipes.com* website.
 We only consider recipes with nutritional contents available. <br/>We only collect a recipe if all of the following elements are available on the website :

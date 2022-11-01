@@ -1097,3 +1097,9 @@ def clean_string(text) :
     text = text.lower()
     text = ' '.join([word for word in text.split() if word not in stopwords])
     return text
+
+def sum_two_numbers(val1, val2) :
+    if (val1 == None) or (val2 == None) :
+        raise TypeError("No values should be equal to None")
+    else :
+        return val1 + val2
